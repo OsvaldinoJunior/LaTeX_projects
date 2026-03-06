@@ -1,0 +1,23 @@
+% ================================================================
+%  config/capa.tex
+%  Define o comando \capa{título}{autores}{disciplina}.
+%
+%  Uso em main.tex:
+%    \capa
+%        {Título da Prática}
+%        {Estudante 1 \\ Estudante 2}
+%        {Processos Fermentativos Industriais I \\ Profª ...}
+% ================================================================
+
+\newcommand{\capa}[3]{%
+    \begin{titlepage}
+        \begin{center}
+            \vspace*{3cm}
+            {\large\bfseries #1}\\[2cm]
+            {\normalsize #2}\\[1cm]
+            \vfill
+            {\normalsize #3}\\[0.5cm]
+            {\normalsize Rio Grande, \the\year}
+        \end{center}
+    \end{titlepage}
+}

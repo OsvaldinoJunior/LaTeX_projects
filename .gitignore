@@ -1,0 +1,24 @@
+# Compilados LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex
+*.synctex.gz
+
+# PDF
+*.pdf
+
+# Imagens
+*.eps
+
+# Diretórios de compilação
+*.fls
+*.fdb_latexmk
+
+# Arquivos OS
+.DS_Store
+Thumbs.db
+

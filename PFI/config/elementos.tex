@@ -1,0 +1,51 @@
+% ================================================================
+%  config/elementos.tex
+%  Configuração de figuras, tabelas, quadros e equações.
+%
+%  Figuras : legenda ABAIXO,  centralizada
+%  Tabelas : legenda ACIMA,   centralizada
+%  Quadros : legenda ACIMA,   com contador próprio e bordas fechadas
+%  Equações: numeradas à direita (padrão amsmath)
+%  Fonte   : \fonte{Autor (ano)} — abaixo de qualquer elemento
+% ================================================================
+
+% -------- CAPTION GERAL --------
+\captionsetup{
+    labelsep=endash,          % separador " – "
+    justification=justified,
+    singlelinecheck=false,
+    font=normalsize,
+    labelfont=normalfont
+}
+
+% -------- FIGURA: legenda centralizada --------
+\captionsetup[figure]{
+    justification=centering,
+    singlelinecheck=false
+}
+
+% -------- TABELA: legenda centralizada --------
+\captionsetup[table]{
+    justification=centering,
+    singlelinecheck=false
+}
+
+% -------- QUADRO: contador próprio + comando de legenda --------
+% Uso:
+%   \quadrocaption{Título do quadro}
+%   \begin{center}
+%     \begin{tabular}{|...|} ... \end{tabular}
+%     \par\noindent Fonte: Autor (ano)
+%   \end{center}
+%   \justifying
+\newcounter{quadro}
+\newcommand{\quadrocaption}[1]{%
+    \refstepcounter{quadro}%
+    \par\noindent\textbf{Quadro \thequadro} -- #1\par%
+}
+
+% -------- FONTE: linha abaixo de figuras, tabelas e quadros --------
+% Uso: \fonte{Autor (ano)}
+\newcommand{\fonte}[1]{%
+    \par\noindent Fonte: #1\par%
+}
