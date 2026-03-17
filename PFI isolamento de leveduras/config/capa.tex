@@ -1,0 +1,40 @@
+% ================================================================
+%  config/capa.tex
+%  Define o comando \capa{título}{autores}{disciplina}.
+%
+%  Uso em main.tex:
+%    \capa
+%        {Título da Prática}
+%        {Estudante 1 \\ Estudante 2}
+%        {Processos Fermentativos Industriais I \\ Profª ...}
+% ================================================================
+
+\newcommand{\capa}[3]{%
+    \begin{titlepage}
+        % Cabeçalho: FURG à esquerda, texto centralizado, Eng. Bioquímica à direita
+        \noindent
+        \begin{minipage}[c]{0.2\textwidth}
+            \includegraphics[width=2.33cm]{image/furg.png}
+        \end{minipage}%
+        \begin{minipage}[c]{0.55\textwidth}
+            \centering
+            {\small\bfseries UNIVERSIDADE FEDERAL DO RIO GRANDE}\\[0.15cm]
+            {\small\bfseries ESCOLA DE QUÍMICA E ALIMENTOS -- EQA}\\[0.15cm]
+            {\small\bfseries CURSO DE ENGENHARIA BIOQUÍMICA}\\[0.15cm]
+            {\small\bfseries PROCESSOS FERMENTATIVOS INDUSTRIAIS I}
+        \end{minipage}%
+        \begin{minipage}[c]{0.29\textwidth}
+            \raggedleft
+            \includegraphics[width=4cm]{image/eng_bioq.jpg}
+        \end{minipage}
+
+        \vspace*{2cm}
+        \begin{center}
+            {\large\bfseries #1}\\[2cm]
+            {\normalsize #2}\\[1cm]
+            \vfill
+            {\normalsize #3}\\[0.5cm]
+            {\normalsize Rio Grande, \the\year}
+        \end{center}
+    \end{titlepage}
+}
