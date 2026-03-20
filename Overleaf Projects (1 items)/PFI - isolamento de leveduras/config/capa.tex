@@ -1,15 +1,13 @@
 % ================================================================
 %  config/capa.tex
-%  Define o comando \capa{título}{autores}{disciplina}.
-%
-%  Uso em main.tex:
-%    \capa
-%        {Título da Prática}
-%        {Estudante 1 \\ Estudante 2}
-%        {Processos Fermentativos Industriais I \\ Profª ...}
 % ================================================================
-
 \newcommand{\capa}[3]{%
+    \newgeometry{
+        top    = 3cm,
+        bottom = 2cm,
+        left   = 2.5cm,
+        right  = 2.5cm
+    }%
     \begin{titlepage}
         % Cabeçalho: FURG à esquerda, texto centralizado, Eng. Bioquímica à direita
         \noindent
@@ -25,9 +23,8 @@
         \end{minipage}%
         \begin{minipage}[c]{0.29\textwidth}
             \raggedleft
-            \includegraphics[width=4cm]{image/eng_bioq.jpg}
+            \includegraphics[width=3.6cm]{image/eng_bioq.jpg}
         \end{minipage}
-
         \vspace*{2cm}
         \begin{center}
             {\large\bfseries #1}\\[2cm]
@@ -36,5 +33,6 @@
             {\normalsize #3}\\[0.5cm]
             {\normalsize Rio Grande, \the\year}
         \end{center}
-    \end{titlepage}
+    \end{titlepage}%
+    \restoregeometry
 }
