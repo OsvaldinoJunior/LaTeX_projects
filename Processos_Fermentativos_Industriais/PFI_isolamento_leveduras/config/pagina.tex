@@ -1,0 +1,30 @@
+% ================================================================
+%  config/pagina.tex
+%  Margens, espaçamento, parágrafo, paginação e alinhamento.
+% ================================================================
+
+% -------- MARGENS (ABNT) --------
+% Superior e esquerda: 3cm | Inferior e direita: 2cm
+\geometry{
+    top=3cm,
+    left=3cm,
+    bottom=2cm,
+    right=2cm
+}
+
+% -------- ESPAÇAMENTO 1,5 --------
+\onehalfspacing
+
+% -------- PARÁGRAFO: recuo 1,25cm, sem espaço entre parágrafos --------
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+
+% -------- ALINHAMENTO JUSTIFICADO --------
+\AtBeginDocument{\justifying}
+
+% -------- PAGINAÇÃO: algarismo arábico, canto superior direito --------
+\setlength{\headheight}{14.5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}   % sem linha no cabeçalho
+\rhead{\thepage}

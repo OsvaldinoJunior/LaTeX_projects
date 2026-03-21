@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+
+% ================================================================
+%  ARQUIVOS DE CONFIGURAÇÃO
+%  Cada arquivo em config/ cuida de um aspecto da formatação.
+%  Para alterar qualquer configuração, edite apenas o arquivo
+%  correspondente — não é necessário mexer aqui.
+% ================================================================
+\input{config/pacotes}       % 1. Pacotes LaTeX necessários
+\input{config/pagina}        % 2. Margens, espaçamento e parágrafo
+\input{config/titulos}       % 3. Formato dos títulos (ABNT)
+\input{config/sumario}       % 4. Aparência do sumário
+\input{config/elementos}     % 5. Tabelas, figuras, quadros e equações
+\input{config/capa}          % 6. Comando \capa{}{}{}
+
+% ================================================================
+%                        DOCUMENTO
+% ================================================================
+\begin{document}
+
+% ----- CAPA -----
+% \capa{Título da Prática}{Nomes dos Estudantes}{Disciplina / Professora}
+\capa
+    {Isolamento de micro-organismo}
+    {Maria Eduarda Kruger Sodré (152461) \\ Osvaldino Corrêa da Silveira Júnior (126170)}
+    {Processos Fermentativos Industriais I \\ Profª Lucielen Oliveira dos Santos}
+
+% ----- SUMÁRIO -----
+\tableofcontents
+\newpage
+
+% ================================================================
+%  SEÇÕES DO RELATÓRIO
+% ================================================================
+\input{conteudo/introducao}
+\input{conteudo/objetivos}
+\input{conteudo/revisao}
+\input{conteudo/material_metodos}
+\input{conteudo/resultados}
+\input{conteudo/conclusao}
+\input{conteudo/referencias}
+
+\end{document}
