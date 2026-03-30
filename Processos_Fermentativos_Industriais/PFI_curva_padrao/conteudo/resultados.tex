@@ -20,16 +20,37 @@ Após o cultivo de \textit{Saccharomyces cerevisiae} ATCC~7754 em meio YM por 27
 \textbf{Volume (L)} &
 \textbf{Concentração (g/L)} \\
 \midrule
-1 & 5,5054 & 5,5341 & 0,0288 & 0,010 & 2,88 \\
-2 & 5,3165 & 5,3420 & 0,0273 & 0,010 & 2,73 \\
+1 & 5,5054 & 5,5341 & 0,0287 & 0,010 & 2,87 \\
+2 & 5,3165 & 5,3420 & 0,0255 & 0,010 & 2,55 \\
 3 & 5,4825 & 5,5095 & 0,0270 & 0,010 & 2,70 \\
 \midrule
-\multicolumn{5}{r}{\textbf{Média}} & \textbf{2,77} \\
+\multicolumn{5}{r}{\textbf{Média}} & \textbf{2,71} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-A média das três determinações foi de 2,77~g/L, valor adotado como concentração da solução principal para o cálculo das diluições subsequentes. A boa reprodutibilidade entre os tubos, com variação inferior a 0,2~g/L entre os extremos, indica que o procedimento gravimétrico foi conduzido com adequado controle experimental.
+A média das três determinações foi de 2,71~g/L, valor adotado como concentração da solução principal para o cálculo das diluições subsequentes. A boa reprodutibilidade entre os tubos, com variação inferior a 0,35~g/L entre os extremos, indica que o procedimento gravimétrico foi conduzido com adequado controle experimental.
+
+A Tabela~2 apresenta as concentrações reais obtidas por diluição da solução principal ($C_\text{principal} = 2{,}71$~g/L) juntamente com as concentrações calculadas, permitindo avaliar a concordância entre os valores esperados e os preditos pelo modelo.
+
+\begin{table}[H]
+\caption{Concentrações reais por diluição }
+\centering
+\begin{tabular}{ccccc}
+\toprule
+\textbf{FD} &
+\textbf{Cálculo} &
+\textbf{$C_\text{real}$ (g/L)} \\
+\midrule
+5   & $2{,}71 \div 5$   & 0,5420  \\
+10  & $2{,}71 \div 10$  & 0,2710  \\
+15  & $2{,}71 \div 15$  & 0,1807  \\
+25  & $2{,}71 \div 25$  & 0,1084  \\
+50  & $2{,}71 \div 50$  & 0,0542  \\
+100 & $2{,}71 \div 100$ & 0,0271  \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \begin{figure}[H]
 \centering
@@ -39,26 +60,45 @@ A média das três determinações foi de 2,77~g/L, valor adotado como concentra
 
 \subsection{Medidas de Absorbância por Turbidimetria}
 
-A partir da solução principal, foram preparadas diluições com fatores de 5, 10, 15, 25, 50 e 100. Para cada diluição, mediu-se a transmitância (\%T) tanto da suspensão celular quanto do sobrenadante, e calcularam-se as respectivas absorbâncias. A absorbância corrigida foi obtida pela diferença entre a absorbância da suspensão e a do sobrenadante, eliminando a contribuição dos componentes do meio YM na leitura. A Tabela~2 consolida os resultados obtidos.
+A partir da solução principal, foram preparadas diluições com fatores de 5, 10, 15, 25, 50 e 100. Para cada diluição, mediu-se a transmitância (\%T) tanto da suspensão celular quanto do sobrenadante, convertendo-se os valores em absorbância pela Equação~\ref{eq:absorbancia}. A absorbância corrigida foi obtida pela diferença entre a absorbância da suspensão e a do sobrenadante, eliminando a contribuição dos componentes do meio YM na leitura.
+
+A Tabela~3 apresenta os dados da suspensão celular e a Tabela~4 os dados do sobrenadante com as absorbâncias corrigidas resultantes.
 
 \begin{table}[H]
-\caption{Transmitâncias e absorbâncias medidas por fator de diluição}
+\caption{Transmitância e absorbância da suspensão celular por fator de diluição}
 \centering
-\begin{tabular}{cccccc}
+\begin{tabular}{ccc}
 \toprule
-\textbf{FD} &
+\textbf{Fator de Diluição} &
 \textbf{\%T suspensão} &
-\textbf{Abs. suspensão} &
+\textbf{Abs. suspensão} \\
+\midrule
+5   & 18,12 & 0,7418 \\
+10  & 39,70 & 0,4012 \\
+15  & 59,55 & 0,2251 \\
+25  & 65,57 & 0,1833 \\
+50  & 81,95 & 0,0865 \\
+100 & 91,25 & 0,0398 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Transmitância e absorbância do sobrenadante e absorbância corrigida por fator de diluição}
+\centering
+\begin{tabular}{cccc}
+\toprule
+\textbf{Fator de Diluição} &
 \textbf{\%T sobrenadante} &
 \textbf{Abs. sobrenadante} &
 \textbf{Abs. corrigida} \\
 \midrule
-5   & 18,12 & 0,7418 & 97,95 & $8,99 \times 10^{-3}$ & 0,7328 \\
-10  & 59,55 & 0,2251 & 98,85 & $5,03 \times 10^{-3}$ & 0,2201 \\
-15  & 39,70 & 0,4012 & 99,40 & $2,61 \times 10^{-3}$ & 0,3986 \\
-25  & 65,57 & 0,1833 & 99,20 & $3,48 \times 10^{-3}$ & 0,1798 \\
-50  & 81,95 & 0,0865 & 99,85 & $6,51 \times 10^{-4}$ & 0,0858 \\
-100 & 91,25 & 0,0398 & 99,95 & $2,17 \times 10^{-4}$ & 0,0396 \\
+5   & 97,95 & $8{,}99 \times 10^{-3}$ & 0,7328 \\
+10  & 98,85 & $5{,}03 \times 10^{-3}$ & 0,3962 \\
+15  & 99,40 & $2{,}61 \times 10^{-3}$ & 0,2225 \\
+25  & 99,20 & $3{,}48 \times 10^{-3}$ & 0,1798 \\
+50  & 99,85 & $6{,}51 \times 10^{-4}$ & 0,0858 \\
+100 & 99,95 & $2{,}17 \times 10^{-4}$ & 0,0396 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -67,7 +107,7 @@ O sobrenadante apresentou absorbância mensurável em todas as diluições, por�
 
 \subsection{Curva Padrão e Ajuste Linear}
 
-A correlação entre os valores de absorbância corrigida e as concentrações de biomassa revelou comportamento linear ao longo de toda a faixa avaliada, conforme evidenciado pela Figura~2. O ajuste linear aos dados experimentais resultou na equação apresentada na Equação~\ref{eq:curva_padrao}, com coeficiente de determinação R²~=~0,9935, indicando que 99,35\% da variação nos dados é explicada pelo modelo linear proposto.
+A correlação entre os valores de absorbância corrigida e as concentrações de biomassa revelou comportamento linear ao longo de toda a faixa avaliada, conforme evidenciado pela Figura~2. O ajuste linear aos dados experimentais resultou na equação apresentada na Equação~\ref{eq:curva_padrao}, com coeficiente de determinação R²~=~0,9937, indicando que 99,37\% da variação nos dados é explicada pelo modelo linear proposto.
 
 \begin{equation}
     C = 0{,}7501 \cdot A_{600} - 0{,}0079
@@ -83,3 +123,4 @@ em que $C$ é a concentração de biomassa em g/L e $A_{600}$ é a absorbância 
 \end{figure}
 
 O elevado valor de R² confirma a validade da correlação linear entre a densidade óptica e a concentração de biomassa seca na faixa avaliada, em conformidade com os limites de linearidade da Lei de Beer-Lambert para suspensões celulares homogêneas (MIRA et al., 2022). A proximidade do intercepto com zero ($-$0,0079~g/L) reforça a consistência física do modelo, uma vez que a ausência de células deveria corresponder a absorbância nula.
+
