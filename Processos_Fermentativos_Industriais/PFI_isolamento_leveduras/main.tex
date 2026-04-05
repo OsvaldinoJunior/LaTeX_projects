@@ -27,7 +27,10 @@
 
 % ----- SUMÁRIO -----
 \pagestyle{empty}
-\tableofcontents
+{
+  \renewcommand{\contentsname}{\hfill\bfseries Sumário\hfill}
+  \tableofcontents
+}
 \newpage
 \pagestyle{fancy}
 

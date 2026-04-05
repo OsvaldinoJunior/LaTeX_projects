@@ -1,0 +1,331 @@
+% ================================================================
+%  conteudo/equipamentos.tex
+%  Descrição detalhada dos equipamentos do CIA/FURG:
+%  histórico, princípio, cálculos e importância.
+% ================================================================
+
+\section{Equipamentos do CIA/FURG}
+
+O Centro Integrado de Análises da FURG (CIA/FURG) reúne infraestrutura
+analítica de alto nível, oferecendo suporte a pesquisas nas áreas de
+química, engenharia, ciências dos materiais e biotecnologia. A seguir
+são descritos os principais equipamentos disponíveis, seus fundamentos
+teóricos, metodologias de cálculo e relevância científico-industrial.
+
+% ---------------------------------------------------------------
+\subsection{GC-MS --- Cromatografia Gasosa acoplada à Espectrometria de Massas}
+% ---------------------------------------------------------------
+
+\subsubsection*{Histórico}
+
+A cromatografia gasosa foi introduzida por Archer Martin e Richard Synge
+no início da década de 1950, trabalho que lhes rendeu o Prêmio Nobel de
+Química em 1952. O acoplamento com a espectrometria de massas tornou-se
+viável comercialmente na década de 1960, quando McLafferty e Holmes
+demonstraram que os fragmentos iônicos gerados no espectrômetro poderiam
+ser usados como impressão digital molecular. Desde então, o GC-MS
+consolidou-se como a técnica de referência para identificação e
+quantificação de compostos orgânicos voláteis e semivoláteis em matrizes
+complexas.
+
+\subsubsection*{Princípio de funcionamento}
+
+A amostra é vaporizada e introduzida em um fluxo de gás de arraste inerte
+(geralmente He ou $\text{N}_2$) que a conduz por uma coluna capilar
+recoberta internamente com uma fase estacionária. Cada componente da
+mistura interage de forma distinta com essa fase, sendo eluído em tempos
+diferentes --- o \textbf{tempo de retenção} ($t_R$). Ao sair da coluna, os
+compostos entram no espectrômetro de massas, onde são ionizados
+(tipicamente por ionização por elétrons, EI, a 70 eV) e acelerados em
+direção ao analisador (quadrupolo, armadilha iônica ou TOF). O detector
+registra a razão massa/carga ($m/z$) dos fragmentos, gerando o espectro de
+massas, que é comparado a bibliotecas como a NIST para identificação.
+
+\subsubsection*{Grandezas e cálculos principais}
+
+\textbf{Fator de retenção ($k$):}
+\begin{equation}
+    k = \frac{t_R - t_M}{t_M}
+\end{equation}
+onde $t_R$ é o tempo de retenção do analito e $t_M$ é o tempo morto da
+coluna (tempo de retenção de um composto não retido).
+
+\textbf{Resolução entre dois picos ($R_s$):}
+\begin{equation}
+    R_s = \frac{2\,(t_{R2} - t_{R1})}{w_1 + w_2}
+\end{equation}
+onde $w_1$ e $w_2$ são as larguras de base dos picos. Valores $R_s \geq 1{,}5$
+indicam separação completa (linha de base).
+
+\textbf{Quantificação por padronização interna:}
+\begin{equation}
+    C_{\text{analito}} = \frac{A_{\text{analito}}}{A_{\text{padrão}}}
+                          \times \frac{C_{\text{padrão}}}{FR}
+\end{equation}
+onde $A$ representa a área do pico cromatográfico e $FR$ é o fator de
+resposta relativo do detector para o analito em relação ao padrão interno.
+
+\subsubsection*{Importância}
+
+O GC-MS é fundamental na análise de ácidos graxos (como ésteres metílicos
+de ácidos graxos, FAMEs), compostos de aroma, contaminantes ambientais,
+fármacos e metabólitos de fermentação. No contexto do CIA/FURG, a técnica
+é especialmente relevante para caracterização de biomassa microalgal e
+bioprodutos, diretamente vinculada ao perfil de pesquisa da engenharia
+bioquímica da instituição.
+
+% ---------------------------------------------------------------
+\subsection{BET --- Adsorção de Nitrogênio (Área Superficial)}
+% ---------------------------------------------------------------
+
+\subsubsection*{Histórico}
+
+O modelo BET foi desenvolvido em 1938 por Stephen Brunauer, Paul Emmett
+e Edward Teller como extensão da teoria de Langmuir para adsorção em
+multicamadas. Publicado no \textit{Journal of the American Chemical Society},
+tornou-se o método padrão internacional (ISO 9277) para determinação de
+área superficial específica de sólidos porosos.
+
+\subsubsection*{Princípio de funcionamento}
+
+A amostra é submetida a vácuo e resfriada a 77 K (temperatura do
+nitrogênio líquido). Doses controladas de $\text{N}_2$ são introduzidas
+progressivamente, e a quantidade adsorvida é medida manométrica ou
+gravimetricamente em função da pressão relativa ($P/P_0$).
+
+\subsubsection*{Grandezas e cálculos principais}
+
+A equação linearizada BET é:
+\begin{equation}
+    \frac{P/P_0}{n\,(1 - P/P_0)}
+    = \frac{1}{n_m\,C} + \frac{C-1}{n_m\,C}\cdot\frac{P}{P_0}
+\end{equation}
+onde $n$ é a quantidade adsorvida, $n_m$ é a capacidade de monocamada e
+$C$ é a constante BET relacionada à entalpia de adsorção.
+
+A área superficial específica é então:
+\begin{equation}
+    S_{\text{BET}} = \frac{n_m \cdot N_A \cdot \sigma}{m}
+\end{equation}
+sendo $N_A$ o número de Avogadro, $\sigma = 0{,}162\;\text{nm}^2$ a área
+ocupada por uma molécula de $\text{N}_2$ em monocamada e $m$ a massa da
+amostra.
+
+\subsubsection*{Importância}
+
+A área superficial é parâmetro crítico em catálise heterogênea, adsorção
+de poluentes, caracterização de carvões ativados, zeólitas e materiais
+nanoporosos. Em biotecnologia, é usada para avaliar suportes de
+imobilização enzimática e biomateriais para liberação controlada de
+fármacos.
+
+% ---------------------------------------------------------------
+\subsection{RMN --- Ressonância Magnética Nuclear}
+% ---------------------------------------------------------------
+
+\subsubsection*{Histórico}
+
+O fenômeno da ressonância magnética nuclear foi descoberto independentemente
+por Felix Bloch e Edward Purcell em 1946, ambos premiados com o Nobel de
+Física em 1952. O desenvolvimento dos espectrômetros de transformada de
+Fourier (FT-RMN) por Richard Ernst na década de 1970 (Nobel de Química,
+1991) revolucionou a técnica, tornando-a a principal ferramenta de
+elucidação estrutural de moléculas orgânicas.
+
+\subsubsection*{Princípio de funcionamento}
+
+Núcleos atômicos com spin não nulo (como $^1$H e $^{13}$C) possuem momento
+magnético. Quando expostos a um campo magnético estático $B_0$, alinham-se
+paralelamente ou antiparalelamente a ele, com diferença de energia:
+\begin{equation}
+    \Delta E = h\,\nu_0 = \hbar\,\gamma\,B_0
+\end{equation}
+onde $\gamma$ é a razão giromagnética do núcleo. Pulsos de radiofrequência
+excitam os núcleos, e o sinal de relaxação (FID --- \textit{free induction
+decay}) é coletado e convertido em espectro por transformada de Fourier.
+
+\subsubsection*{Grandezas e cálculos principais}
+
+O \textbf{deslocamento químico} ($\delta$, em ppm) normaliza a frequência
+de ressonância em relação a um padrão (TMS):
+\begin{equation}
+    \delta = \frac{\nu_{\text{amostra}} - \nu_{\text{ref}}}{\nu_{\text{ref}}} \times 10^6
+\end{equation}
+
+A \textbf{constante de acoplamento} $J$ (em Hz) descreve a interação
+spin--spin entre núcleos vizinhos e é independente do campo $B_0$,
+auxiliando na determinação da conectividade molecular.
+
+\subsubsection*{Importância}
+
+A RMN permite elucidação completa de estruturas orgânicas, análise de
+pureza, estudo de dinâmica molecular e quantificação sem calibração
+prévia (RMN quantitativa, qRMN). É indispensável em síntese orgânica,
+desenvolvimento de fármacos e caracterização de polímeros e materiais.
+
+% ---------------------------------------------------------------
+\subsection{DSC --- Calorimetria Exploratória de Varredura}
+% ---------------------------------------------------------------
+
+\subsubsection*{Histórico}
+
+A calorimetria diferencial de varredura foi introduzida comercialmente em
+1963 pela Perkin-Elmer, a partir de trabalhos de Watson e O'Neill. O
+método evoluiu da análise térmica diferencial (DTA), existente desde o
+século XIX, mas passou a medir diretamente o fluxo de calor, e não apenas
+diferenças de temperatura.
+
+\subsubsection*{Princípio de funcionamento}
+
+A amostra e uma referência inerte são aquecidas (ou resfriadas) a uma taxa
+constante $\beta = \mathrm{d}T/\mathrm{d}t$. O instrumento mede a
+diferença de fluxo de calor necessária para manter ambas na mesma
+temperatura. Transições de fase (fusão, cristalização, desnaturação) e
+reações químicas (polimerização, decomposição) produzem picos endotérmicos
+ou exotérmicos no termograma.
+
+\subsubsection*{Grandezas e cálculos principais}
+
+A entalpia de transição é obtida pela integração do pico:
+\begin{equation}
+    \Delta H = \frac{1}{m} \int_{T_1}^{T_2}
+               \frac{\dot{q}_{\text{amostra}} - \dot{q}_{\text{ref}}}{\beta}\;\mathrm{d}T
+\end{equation}
+A capacidade calorífica da amostra é:
+\begin{equation}
+    c_p = \frac{\dot{q}}{m\,\beta}
+\end{equation}
+
+\subsubsection*{Importância}
+
+O DSC é fundamental para caracterização de polímeros (grau de
+cristalinidade, temperatura de transição vítrea $T_g$), estabilidade de
+fármacos, análise de lipídios e estudo de proteínas. Em engenharia de
+processos, auxilia no dimensionamento de trocadores de calor e na avaliação
+de riscos de reações exotérmicas.
+
+% ---------------------------------------------------------------
+\subsection{TGA --- Termogravimetria}
+% ---------------------------------------------------------------
+
+\subsubsection*{Histórico}
+
+A termogravimetria tem raízes nos estudos de Le Chatelier no final do
+século XIX, mas ganhou formato analítico consolidado na década de 1950,
+com a popularização de balanças termogravimétricas de alta precisão. A
+norma ASTM E1131 regulamenta atualmente o método.
+
+\subsubsection*{Princípio de funcionamento}
+
+A massa da amostra é monitorada continuamente enquanto a temperatura é
+variada segundo um programa controlado (aquecimento dinâmico ou
+isotérmico), geralmente sob atmosfera controlada (ar, $\text{N}_2$ ou
+$\text{O}_2$). Perdas de massa são associadas a eventos como desidratação,
+decomposição e oxidação.
+
+\subsubsection*{Grandezas e cálculos principais}
+
+A perda de massa percentual em cada evento:
+\begin{equation}
+    \Delta m\,(\%) = \frac{m_i - m_f}{m_i} \times 100
+\end{equation}
+A curva derivada (DTG) localiza com precisão a temperatura de máxima taxa
+de decomposição:
+\begin{equation}
+    \text{DTG} = \frac{\mathrm{d}m}{\mathrm{d}T}
+\end{equation}
+
+\subsubsection*{Importância}
+
+TGA é amplamente usada para determinar estabilidade térmica de polímeros,
+teor de cinzas, umidade residual, composição de compósitos e cinética de
+decomposição. Em biotecnologia, é aplicada à caracterização de biomassa,
+avaliação de biocombustíveis e estudo de materiais encapsulantes.
+
+% ---------------------------------------------------------------
+\subsection{FTIR-Raman --- Espectroscopia Vibracional}
+% ---------------------------------------------------------------
+
+\subsubsection*{Histórico}
+
+A espectroscopia no infravermelho por transformada de Fourier (FTIR)
+popularizou-se nos anos 1970, substituindo os espectrômetros dispersivos
+de prisma. O efeito Raman, por sua vez, foi previsto teoricamente por
+Smekal em 1923 e observado experimentalmente por C.V. Raman em 1928
+(Nobel de Física, 1930). O acoplamento de ambas as técnicas em um único
+instrumento tornou-se padrão laboratorial a partir dos anos 1990.
+
+\subsubsection*{Princípio de funcionamento}
+
+\textbf{FTIR:} a amostra absorve radiação infravermelha em frequências que
+coincidem com modos vibracionais de ligações químicas (estiramento e
+deformação). O interferograma resultante é convertido em espectro por
+transformada de Fourier.
+
+\textbf{Raman:} luz monocromática (laser) ilumina a amostra. A maior parte
+é espalhada elasticamente (Rayleigh), mas uma fração sofre espalhamento
+inelástico com deslocamento de frequência proporcional à energia dos modos
+vibracionais da molécula (deslocamento Raman, $\Delta\tilde{\nu}$, em
+cm$^{-1}$).
+
+\subsubsection*{Grandezas e cálculos principais}
+
+O número de onda de absorção/espalhamento:
+\begin{equation}
+    \tilde{\nu} = \frac{1}{\lambda} \quad [\text{cm}^{-1}]
+\end{equation}
+Lei de Beer-Lambert (quantificação por FTIR):
+\begin{equation}
+    A = \varepsilon\,c\,l
+\end{equation}
+onde $A$ é a absorbância, $\varepsilon$ o coeficiente de absorção molar,
+$c$ a concentração e $l$ o caminho óptico.
+
+\subsubsection*{Importância}
+
+FTIR e Raman são complementares: modos ativos em um tendem a ser inativos
+no outro. Juntos, fornecem identificação completa de grupos funcionais,
+análise de pureza, controle de qualidade industrial, estudo de
+biomoléculas (proteínas, lipídios, ácidos nucleicos) e caracterização de
+materiais como grafeno, nanotubos e polímeros.
+
+% ---------------------------------------------------------------
+\subsection{IRMS --- Espectrometria de Massas de Razão Isotópica}
+% ---------------------------------------------------------------
+
+\subsubsection*{Histórico}
+
+A IRMS surgiu dos trabalhos de Nier e McKinney nos anos 1940--1950, que
+construíram espectrômetros capazes de medir com precisão as razões entre
+isótopos estáveis. A partir dos anos 1970, o acoplamento com analisadores
+elementares (EA-IRMS) e cromatógrafos (GC-IRMS) expandiu enormemente as
+aplicações, tornando a técnica essencial em geoquímica, arqueologia,
+controle de alimentos e fisiologia.
+
+\subsubsection*{Princípio de funcionamento}
+
+A amostra é convertida em gases simples ($\text{CO}_2$, $\text{N}_2$,
+$\text{SO}_2$, $\text{H}_2$) por combustão ou pirólise. Esses gases são
+introduzidos no espectrômetro, ionizados por impacto de elétrons e
+separados em um setor magnético. Coletores de Faraday simultâneos medem
+as correntes iônicas dos isótopos de interesse com precisão da ordem de
+0,01‰.
+
+\subsubsection*{Grandezas e cálculos principais}
+
+A razão isotópica da amostra é expressa em delta (\textperthousand)
+relativa a um padrão internacional:
+\begin{equation}
+    \delta\,(\text{\textperthousand}) =
+    \left(\frac{R_{\text{amostra}}}{R_{\text{padrão}}} - 1\right) \times 1000
+\end{equation}
+onde $R$ é a razão entre o isótopo pesado e o leve (ex.: $^{13}$C/$^{12}$C,
+$^{15}$N/$^{14}$N, $^{18}$O/$^{16}$O).
+
+\subsubsection*{Importância}
+
+A IRMS permite rastrear a origem geográfica de alimentos e bebidas,
+detectar adulterações, estudar ciclos biogeoquímicos, reconstruir paleoclimas
+e investigar rotas metabólicas \textit{in vivo}. Na área de biocombustíveis,
+é empregada para certificar a origem renovável de compostos e estimar
+frações biogênicas em misturas com derivados fósseis.

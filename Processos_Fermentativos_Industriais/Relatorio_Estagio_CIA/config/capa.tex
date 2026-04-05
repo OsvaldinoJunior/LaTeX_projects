@@ -1,0 +1,38 @@
+% ================================================================
+%  config/capa.tex
+% ================================================================
+\newcommand{\capa}[3]{%
+    \newgeometry{
+        top    = 3cm,
+        bottom = 2cm,
+        left   = 2.5cm,
+        right  = 2.5cm
+    }%
+    \begin{titlepage}
+        % Cabeçalho: FURG à esquerda, texto centralizado, Eng. Bioquímica à direita
+        \noindent
+        \begin{minipage}[c]{0.2\textwidth}
+            \includegraphics[width=2.33cm]{image/furg.png}
+        \end{minipage}%
+        \begin{minipage}[c]{0.55\textwidth}
+            \centering
+            {\small\bfseries UNIVERSIDADE FEDERAL DO RIO GRANDE}\\[0.15cm]
+            {\small\bfseries ESCOLA DE QUÍMICA E ALIMENTOS -- EQA}\\[0.15cm]
+            {\small\bfseries CURSO DE ENGENHARIA BIOQUÍMICA}\\[0.15cm]
+            {\small\bfseries ESTÁGIO OBRIGATÓRIO}
+        \end{minipage}%
+        \begin{minipage}[c]{0.29\textwidth}
+            \raggedleft
+            \includegraphics[width=3.6cm]{image/eng_bioq.jpg}
+        \end{minipage}
+        \vspace*{2cm}
+        \begin{center}
+            {\large\bfseries #1}\\[2cm]
+            {\normalsize #2}\\[1cm]
+            \vfill
+            {\normalsize #3}\\[0.5cm]
+            {\normalsize Rio Grande, \the\year}
+        \end{center}
+    \end{titlepage}%
+    \restoregeometry
+}
