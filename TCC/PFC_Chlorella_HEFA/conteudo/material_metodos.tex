@@ -1,0 +1,107 @@
+% ================================================================
+%  conteudo/material_metodos.tex
+% ================================================================
+
+\section{Material e Métodos}
+
+\subsection{Microrganismo e Condições de Cultivo}
+
+Será utilizada a microalga \textit{Chlorella fusca}, obtida de coleção de
+cultura institucional. O pré-inóculo será conduzido em erlenmeyers de 500~mL
+contendo 200~mL de meio BG-11 modificado sob iluminação artificial contínua
+(150~$\mu$mol fótons m$^{-2}$ s$^{-1}$), temperatura de 25~°C e agitação
+orbital a 120~rpm, por 7 dias, até atingir fase exponencial de crescimento.
+
+\subsection{Delineamento Experimental}
+
+O experimento será conduzido em dois tratamentos em triplicata:
+
+\begin{itemize}
+    \item \textbf{Tratamento A -- Meio Sintético (controle):} meio BG-11
+          preparado com reagentes analíticos conforme Rippka et al.\ (1979),
+          contendo NaNO\textsubscript{3} (1,5~g/L) como fonte de nitrogênio
+          e K\textsubscript{2}HPO\textsubscript{4} (0,04~g/L) como fonte
+          de fósforo;
+
+    \item \textbf{Tratamento B -- Meio com Efluente Industrial:} meio BG-11
+          com substituição parcial da fonte de nitrogênio e fósforo por
+          efluente industrial centrifugado e esterilizado em autoclave,
+          diluído na proporção necessária para ajustar as concentrações de
+          N e P às mesmas do Tratamento~A.
+\end{itemize}
+
+O cultivo será conduzido em fotobiorreatores tubulares de 2~L,
+iluminados por LEDs de espectro branco (100~$\mu$mol fótons m$^{-2}$ s$^{-1}$),
+com fotoperíodo de 16:8~h (claro:escuro), temperatura de 25~$\pm$~1~°C,
+aeração com ar enriquecido a 2\% de CO\textsubscript{2} e vazão de
+0,5~vvm, por 15 dias consecutivos.
+
+\subsection{Monitoramento do Crescimento}
+
+O crescimento celular será acompanhado diariamente por leitura de
+absorbância a 680~nm em espectrofotômetro (Shimadzu UV-1800), com
+conversão para concentração de biomassa seca (g/L) por meio de curva
+padrão previamente construída para a espécie. A cada 3 dias serão
+retiradas amostras de 30~mL para determinação direta da biomassa seca
+por método gravimétrico (centrifugação a 3.500~rpm por 15~min, lavagem
+com água destilada, secagem a 105~°C até massa constante).
+
+\subsection{Extração e Quantificação de Lipídeos Totais}
+
+Ao final do cultivo (dia~15), a biomassa será colhida por centrifugação
+(3.500~rpm, 15~min), liofilizada e submetida à extração de lipídeos
+totais pelo método de Bligh \& Dyer (1959), utilizando mistura de
+clorofórmio:metanol:água (1:2:0,8 v/v). A massa lipídica extraída será
+determinada gravimetricamente após evaporação do solvente em rota-evaporador
+a 40~°C sob pressão reduzida.
+
+\subsection{Caracterização do Perfil de Ácidos Graxos por GC-MS}
+
+Os lipídeos extraídos serão transesterificados com metanol em presença de
+HCl 5\% (v/v) a 80~°C por 90~min, produzindo ésteres metílicos de ácidos
+graxos (FAMEs). Os FAMEs serão analisados em cromatógrafo gasoso acoplado
+a espectrômetro de massas (Shimadzu GCMS-QP2020), utilizando coluna
+capilar RTX-WAX (30~m $\times$ 0,25~mm $\times$ 0,25~$\mu$m), hélio como
+gás de arraste (1,0~mL/min) e rampa de temperatura de 60~°C (2~min) a
+240~°C (5~°C/min). A identificação dos ácidos graxos será feita por
+comparação com a biblioteca NIST~17 e por padrões externos certificados
+(Sigma-Aldrich FAME mix).
+
+\subsection{Simulação do Processo HEFA}
+
+A partir das frações molares dos ácidos graxos identificados por GC-MS,
+será realizada a simulação estequiométrica do processo HEFA em duas etapas:
+(i)~HDO, com rendimento mássico em hidrocarbonetos de 80\% e consumo de
+H\textsubscript{2} de 0,04~kg/kg de óleo (PEARLSON et al., 2013); e
+(ii)~hidrocraqueamento, com distribuição de produtos em nafta~(20\%),
+SAF~(50\%) e diesel verde~(30\%). O poder calorífico inferior (LHV) do SAF
+será estimado por média ponderada dos LHVs típicos dos hidrocarbonetos
+C8--C16 (TURNS, 2012), e a eficiência energética será calculada conforme a
+Equação~\ref{eq:eficiencia}:
+
+\begin{equation}
+    \eta = \frac{\sum \dot{m}_i \cdot \text{LHV}_i}{\dot{m}_{\text{H}_2}
+    \cdot \text{LHV}_{\text{H}_2}}
+    \label{eq:eficiencia}
+\end{equation}
+
+em que $\dot{m}_i$ é a vazão mássica de cada produto combustível (kg/h),
+$\text{LHV}_i$ é o poder calorífico inferior correspondente (MJ/kg) e
+$\dot{m}_{\text{H}_2}$ é a vazão de H\textsubscript{2} consumido (kg/h).
+
+\subsection{Análise Orçamentária}
+
+O custo operacional de cada tratamento será estimado com base nos preços
+de mercado dos reagentes, do efluente (custo de transporte e pré-tratamento),
+energia elétrica (tarifa industrial vigente), mão de obra e consumíveis de
+laboratório. Os resultados serão expressos em R\$/kg de biomassa seca e
+em R\$/kg de SAF equivalente, permitindo a comparação direta entre os
+dois meios de cultivo e a estimativa da redução de custo propiciada pelo
+uso do efluente industrial.
+
+\subsection{Análise Estatística}
+
+Os dados serão analisados por meio de ANOVA de um fator seguida de teste
+de Tukey (p~$< 0{,}05$) para comparação das médias entre os tratamentos,
+utilizando o software R versão 4.3 (R CORE TEAM, 2024).
+
