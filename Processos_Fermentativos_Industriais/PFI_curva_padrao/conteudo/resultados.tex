@@ -6,7 +6,7 @@
 
 \subsection{Determinação da Biomassa Seca}
 
-Após o cultivo de \textit{Saccharomyces cerevisiae} ATCC~7754 em meio YM por 27 horas a 30~°C e 100~rpm, determinou-se a concentração de biomassa seca a partir de triplicatas de 10~mL de suspensão celular. Os tubos foram previamente tarados, centrifugados, lavados e secos em estufa a 105~°C até massa constante, conforme descrito na seção de Material e Métodos. A Tabela~1 apresenta as massas e concentrações obtidas para cada tubo.
+Após o cultivo de \textit{Saccharomyces cerevisiae} ATCC~7754 em meio YM por 27 horas a 30~°C e 100~rpm, determinou-se a concentração de biomassa seca a partir de triplicatas de 10~mL de suspensão celular. Os tubos foram previamente tarados, centrifugados, lavados e secos em estufa a 58~°C até massa constante. A Tabela~2 apresenta as massas e concentrações obtidas para cada tubo.
 
 \begin{table}[H]
 \caption{Determinação da biomassa seca de \textit{S. cerevisiae} por método gravimétrico}
@@ -29,7 +29,7 @@ Após o cultivo de \textit{Saccharomyces cerevisiae} ATCC~7754 em meio YM por 27
 \end{tabular}
 \end{table}
 
-A média das três determinações foi de 2,71~g/L, valor adotado como concentração da solução principal para o cálculo das diluições subsequentes. A variação entre os extremos foi de 0,32~g/L, o que representa um coeficiente de variação de aproximadamente 6,1\%, indicando reprodutibilidade satisfatória para o método gravimétrico em escala laboratorial. A Figura~1 ilustra a biomassa obtida após centrifugação e secagem, evidenciando a formação do pellet celular característico de \textit{S.~cerevisiae}.
+A média das três determinações foi de 2,71~g/L, obtidas usando a Equação 1, valor adotado como concentração da solução principal para o cálculo das diluições subsequentes. A variação entre os extremos foi de 0,32~g/L, o que representa um coeficiente de variação de aproximadamente 6,1\%, indicando reprodutibilidade satisfatória para o método gravimétrico em escala laboratorial. A Figura~1 ilustra a biomassa obtida após centrifugação e secagem, evidenciando a formação do pellet celular característico de \textit{S.~cerevisiae}.
 
 \begin{figure}[H]
 \centering
@@ -37,10 +37,10 @@ A média das três determinações foi de 2,71~g/L, valor adotado como concentra
 \includegraphics[width=0.5\textwidth]{image/biomass.jpeg}
 \end{figure}
 
-As concentrações reais de cada ponto da curva padrão foram obtidas por diluição simples da solução principal, aplicando a relação $C_\text{real} = C_\text{principal} \div \text{FD}$, em que FD é o fator de diluição utilizado. A Tabela~2 apresenta os seis pontos assim obtidos, que cobrem uma faixa de concentração de 0,027 a 0,542~g/L, adequada para o estabelecimento de uma curva padrão com comportamento linear.
+As concentrações reais de cada ponto da curva padrão foram obtidas por diluição simples da solução principal, aplicando as Equações 2 e 3. A Tabela~3 apresenta os seis pontos assim obtidos, que cobrem uma faixa de concentração de 0,027 a 0,542~g/L, adequada para o estabelecimento de uma curva padrão com comportamento linear.
 
 \begin{table}[H]
-\caption{Concentrações reais obtidas por diluição da solução principal ($C_\text{principal} = 2{,}71$~g/L)}
+\caption{Concentrações reais obtidas por diluição da solução principal}
 \centering
 \begin{tabular}{cc}
 \toprule
@@ -59,7 +59,7 @@ As concentrações reais de cada ponto da curva padrão foram obtidas por dilui�
 
 \subsection{Medidas de Absorbância por Turbidimetria}
 
-A partir da solução principal, foram preparadas diluições com os fatores definidos na Tabela~2. Para cada diluição, mediu-se a transmitância (\%T) tanto da suspensão celular quanto do sobrenadante obtido após centrifugação, convertendo-se os valores em absorbância pela Equação~\ref{eq:absorbancia}. A leitura do sobrenadante foi necessária para isolar a contribuição exclusiva das células à turbidez, descontando a absorção residual dos componentes do meio YM. A absorbância corrigida foi obtida pela diferença entre os valores da absorbância das células em suspensão pelas absorbâncias do sobrenadante, e foram apresentado nas Tabelas~3 e~4.
+A partir da solução principal, foram preparadas diluições com os fatores definidos na Tabela~2. Para cada diluição, mediu-se a transmitância (\%T) tanto da suspensão celular quanto do sobrenadante obtido após centrifugação, convertendo-se os valores em absorbância pela Equação~\ref{eq:absorbancia}. A leitura do sobrenadante foi necessária para isolar a contribuição exclusiva das células à turbidez, descontando a absorção residual dos componentes do meio YM. A absorbância corrigida foi obtida pela diferença entre os valores da absorbância das células em suspensão pelas absorbâncias do sobrenadante utilizando a Equação~5, posteriormente foram apresentado nas Tabelas~4 e~5.
 
 \begin{table}[H]
 \caption{Transmitância e absorbância da suspensão celular por fator de diluição}
@@ -104,7 +104,7 @@ Os valores de absorbância do sobrenadante foram substancialmente inferiores aos
 
 \subsection{Curva Padrão e Ajuste Linear}
 
-Os valores de absorbância corrigida obtidos nas Tabelas~3 e~4 foram associados às respectivas concentrações de biomassa da Tabela~2 e submetidos a regressão linear. A correlação revelou comportamento linear ao longo de toda a faixa avaliada, conforme evidenciado pela Figura~2. O ajuste resultou pela equação apresentada na Equação~\ref{eq:curva_padrao}, com coeficiente de determinação R²~=~0,9937, indicando que 99,37\% da variação nos dados é explicada pelo modelo proposto.
+Os valores de absorbância corrigida obtidos nas Tabelas~4 e~5 foram associados às respectivas concentrações de biomassa da Tabela~2 e submetidos a regressão linear. A correlação revelou comportamento linear ao longo de toda a faixa avaliada, conforme evidenciado pela Figura~2. O ajuste resultou pela equação apresentada na Equação~\ref{eq:curva_padrao}, com coeficiente de determinação R²~=~0,9937, indicando que 99,37\% da variação nos dados é explicada pelo modelo proposto.
 
 \begin{equation}
     A_{600} = 1{,}3372 \cdot C - 0{,}0124

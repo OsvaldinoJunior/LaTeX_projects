@@ -4,39 +4,28 @@
 
 \section{Revisão da Literatura}
 
+Nesta seção, por solicitação da orientadora, devem ser apenas indicados os tópicos que precisam ser abordados na revisão bibliográfica do experimento realizado:
+
 \subsection{Leveduras}
-
-\subsubsection{\textit{Saccharomyces cerevisiae}}
-
-\textit{Saccharomyces cerevisiae} é uma levedura eucariota pertencente ao filo Ascomycota, amplamente empregada em processos biotecnológicos industriais. Sua capacidade de fermentar açúcares como glicose e sacarose, produzindo etanol e dióxido de carbono, a torna o microrganismo modelo por excelência na indústria de bebidas, panificação e biocombustíveis (WALKER; WALKER, 2018). A linhagem ATCC~7754 é uma cepa de referência laboratorial amplamente utilizada em estudos de fisiologia e controle de bioprocessos.
-
-Do ponto de vista fisiológico, \textit{S. cerevisiae} é um organismo facultativo, capaz de crescer tanto na presença quanto na ausência de oxigênio. Em condições aeróbias e com baixa disponibilidade de glicose, o metabolismo é predominantemente respiratório, com maior produção de biomassa. Já em condições de excesso de glicose ou anaerobiose, o efeito Crabtree direciona o metabolismo para a fermentação alcoólica, mesmo na presença de oxigênio (VENKATARAMAN et al., 2021). Esse mecanismo tem sido explorado tanto em processos de produção de etanol de primeira geração quanto em plataformas de engenharia metabólica para síntese de compostos de interesse industrial (TOPALOGLU et al., 2023; VASYLYSHYN et al., 2025).
+\begin{itemize}
+    \item Características gerais das leveduras de interesse biotecnológico.
+    \item Importância industrial de \textit{Saccharomyces cerevisiae}.
+    \item Aspectos fisiológicos e metabólicos relevantes ao crescimento celular.
+    \item Influência das condições de cultivo na formação de biomassa.
+\end{itemize}
 
 \subsection{Métodos de Quantificação de Biomassa}
+\begin{itemize}
+    \item Fundamentos da turbidimetria e da leitura de densidade óptica.
+    \item Aplicação da Lei de Beer-Lambert em suspensões microbianas.
+    \item Princípios e limitações do método de biomassa por massa seca.
+    \item Importância da correlação entre absorbância e concentração celular.
+\end{itemize}
 
-\subsubsection{Densidade Óptica}
-
-A turbidimetria é um método indireto de quantificação de biomassa baseado na capacidade das células microbianas de dispersar a luz incidente em uma suspensão. A absorbância medida a 600~nm é proporcional à concentração de células na amostra, desde que se trabalhe dentro da faixa linear do espectrofotômetro (MIRA et al., 2022). Para amostras com absorbância superior ao intervalo linear, é necessário realizar diluições da suspensão a fim de garantir a proporcionalidade da leitura.
-
-A relação entre a absorbância e a concentração celular é frequentemente descrita pela Lei de Beer-Lambert, que estabelece uma proporcionalidade entre a quantidade de luz absorvida e a concentração do soluto. No contexto microbiológico, essa correlação é válida para suspensões homogêneas de células com tamanho e morfologia uniformes, como é o caso das leveduras, mas perde linearidade em densidades elevadas, onde o espalhamento múltiplo de fótons passa a interferir na leitura (MIRA et al., 2022). A conversão dos valores de transmitância (\%T) em absorbância é realizada conforme a Equação~\ref{eq:absorbancia}.
-
-\begin{equation}
-    A = 2 - \log \%T
-    \label{eq:absorbancia}
-\end{equation}
-
-\subsubsection{Determinação de Biomassa por Massa Seca}
-
-O método gravimétrico da massa seca é considerado o padrão de referência para a quantificação direta de biomassa microbiana. O procedimento consiste na separação das células do meio de cultura por centrifugação, seguida de lavagem com água destilada para remoção de sais e componentes do meio, e posterior secagem em estufa até massa constante (SCHMIDELL et al., 2001). A concentração de biomassa, expressa em g/L, é calculada conforme as Equações~\ref{eq:massa_seca} e \ref{eq:concentracao}.
-
-\begin{equation}
-    m_{\text{seca}} = m_{\text{total}} - m_{\text{tubo}}
-    \label{eq:massa_seca}
-\end{equation}
-
-\begin{equation}
-    \text{Concentração} = \frac{m_{\text{seca}}}{V}
-    \label{eq:concentracao}
-\end{equation}
-
-Apesar de ser um método preciso, a determinação da massa seca é demorada e consome volume de amostra, o que limita sua aplicação em acompanhamentos cinéticos de alta frequência. Por isso, a curva padrão que correlaciona massa seca e absorbância é uma ferramenta essencial em laboratórios de bioprocessos (SCHMIDELL et al., 2001).
+\subsection{Curva Padrão em Bioprocessos}
+\begin{itemize}
+    \item Finalidade da curva padrão para estimativa rápida de biomassa.
+    \item Uso de regressão linear na correlação entre dados experimentais.
+    \item Limites de linearidade e fontes de erro analítico.
+    \item Aplicações da curva padrão no monitoramento de cultivos fermentativos.
+\end{itemize}

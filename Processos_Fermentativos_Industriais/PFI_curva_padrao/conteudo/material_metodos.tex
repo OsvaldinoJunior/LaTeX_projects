@@ -4,26 +4,83 @@
 
 \section{Material e Métodos}
 
-\subsection{Microrganismo}
+\subsection{Materiais}
 
-O microrganismo utilizado foi a levedura \textit{Saccharomyces cerevisiae} ATCC~7754.
+A Tabela~1 apresenta os principais materiais, reagentes e equipamentos utilizados durante a prática.
 
-\subsection{Preparo do Meio de Cultura}
+\begin{table}[H]
+\caption{Materiais utilizados na prática}
+\centering
+\begin{tabular}{cc}
+\toprule
+\textbf{Materiais} & \textbf{Especificação} \\
+\midrule
+Microrganismo & Levedura \textit{Saccharomyces cerevisiae} ATCC~7754 \\
+Tubos de ensaio & Manuseio da biomassa \\
+Pipetas & Transferência e preparo das diluições \\
+Agitador \textit{shaker} & Incubação do cultivo a 30~°C e 100~rpm \\
+Centrífuga & Separação da biomassa celular \\
+Estufa & Secagem da biomassa a 105~°C \\
+Espectrofotômetro & Leituras de transmitância a 600~nm \\
+Balança Analítica & Medição de biomassa \\
+Meio de cultura & Meio YM \\
+Fonte de carbono & Glicose (10~g/L) \\
+\parbox[c][1.8cm][c]{2cm}{\centering Nutrientes} & \parbox[c][2cm][c]{6.2cm}{\centering Extrato de levedura (3~g/L) \\ extrato de malte (3~g/L) \\ peptona (5~g/L)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Métodos}
+
+\subsubsection{Preparo do Meio de Cultura}
 
 O cultivo foi conduzido em meio YM, cuja formulação consistiu em glicose (10~g/L), extrato de levedura (3~g/L), extrato de malte (3~g/L) e peptona (5~g/L). Após a homogeneização dos componentes, o pH da solução foi ajustado para 5,0.
 
-\subsection{Cultivo}
+\subsubsection{Cultivo}
 
 A suspensão celular foi obtida a partir da inoculação da levedura \textit{Saccharomyces cerevisiae} em 150~mL do meio YM, seguida de incubação em agitador \textit{shaker} a 30~°C e 100~rpm, durante 27 horas.
 
-\subsection{Determinação da Biomassa Seca}
+\subsubsection{Determinação da Biomassa Seca}
 
-Para quantificar a biomassa seca, utilizaram-se alíquotas de 10~mL da suspensão celular, acondicionadas em tubos de centrífuga previamente tarados. O material foi centrifugado a 3500~rpm durante 15~minutos e o sobrenadante foi descartado. Realizaram-se apenas uma lavagem com água destilada, seguidas de centrifugação para remoção de resíduos do meio de cultivo. Após o descarte do sobrenadante, os tubos contendo a biomassa foram levados à estufa a 105~°C até atingirem massa constante. A massa seca foi determinada conforme a Equação~\ref{eq:massa_seca} e a concentração de biomassa conforme a Equação~\ref{eq:concentracao}.
+Para quantificar a biomassa seca, utilizaram-se alíquotas de 10~mL da suspensão celular, acondicionadas em tubos de centrífuga previamente tarados. O material foi centrifugado a 3500~rpm durante 15~minutos e o sobrenadante foi descartado. Realizou-se uma lavagem com água destilada, seguida de nova centrifugação para remoção de resíduos do meio de cultivo. Após o descarte do sobrenadante, os tubos contendo a biomassa foram levados à estufa a 58~°C até atingirem massa constante. A massa seca foi determinada conforme a Equação~\ref{eq:massa_seca} e a concentração de biomassa conforme a Equação~\ref{eq:concentracao}.
 
-\subsection{Determinação da Absorbância}
+\begin{equation}
+    m_{\text{seca}} = m_{\text{total}} - m_{\text{tubo}}
+    \label{eq:massa_seca}
+\end{equation}
+
+\begin{equation}
+    C = \frac{m_{\text{seca}}}{V}
+    \label{eq:concentracao}
+\end{equation}
+
+em que $m_{\text{seca}}$ é a massa seca de biomassa, $m_{\text{total}}$ é a massa do tubo com biomassa seca, $m_{\text{tubo}}$ é a massa do tubo vazio, $C$ é a concentração de biomassa e $V$ é o volume da amostra.
+
+As diluições da solução principal foram preparadas com fatores de diluição de 5, 10, 15, 25, 50 e 100, a partir da relação apresentada na Equação~\ref{eq:creal}. Os valores numéricos obtidos para cada diluição são apresentados posteriormente na seção de Resultados e Discussão.
+
+\begin{equation}
+    C_{\text{real}} = \frac{C_{\text{principal}}}{FD}
+    \label{eq:creal}
+\end{equation}
+
+em que $C_{\text{real}}$ é a concentração real da diluição, $C_{\text{principal}}$ é a concentração da solução principal e $FD$ é o fator de diluição.
+
+\subsubsection{Determinação da Absorbância}
 
 A determinação da absorbância foi realizada a partir de diluições seriadas da suspensão celular, empregando-se os fatores de diluição de 5, 10, 15, 25, 50 e 100. As amostras foram preparadas em duplicata e submetidas à leitura de transmitância em espectrofotômetro a 600~nm. Os valores de transmitância (\%T) foram convertidos em absorbância pela Equação~\ref{eq:absorbancia}.
 
-\subsection{Curva Padrão de Biomassa}
+\begin{equation}
+    A = 2 - \log \%T
+    \label{eq:absorbancia}
+\end{equation}
 
-A curva padrão foi elaborada a partir da correlação entre a absorbância (turbidimetria a 600~nm) e as concentrações de biomassa determinadas pelo método da massa seca (g/L). Os dados foram utilizados para gerar um gráfico de concentração em função da absorbância, com ajuste linear e cálculo do coeficiente de determinação (R²).
+Para descontar a contribuição do meio de cultivo, a absorbância corrigida foi calculada conforme a Equação~\ref{eq:abs_corrigida}. Os valores experimentais de transmitância, absorbância da suspensão, absorbância do sobrenadante e absorbância corrigida são apresentados na seção de Resultados e Discussão.
+
+\begin{equation}
+    A_{\text{corrigida}} = A_{\text{suspensão}} - A_{\text{sobrenadante}}
+    \label{eq:abs_corrigida}
+\end{equation}
+
+\subsubsection{Curva Padrão de Biomassa}
+
+A curva padrão foi elaborada a partir da correlação entre a absorbância corrigida a 600~nm e as concentrações reais de biomassa determinadas pelo método da massa seca (g/L). Os dados foram utilizados para gerar um gráfico de concentração em função da absorbância, com ajuste linear e cálculo do coeficiente de determinação (R²).

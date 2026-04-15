@@ -25,14 +25,18 @@
             \raggedleft
             \includegraphics[width=3.6cm]{image/eng_bioq.jpg}
         \end{minipage}
-        \vspace*{2cm}
-        \begin{center}
-            {\large\bfseries #1}\\[2cm]
-            {\normalsize #2}\\[1cm]
-            \vfill
-            {\normalsize #3}\\[0.5cm]
-            {\normalsize Rio Grande, \the\year}
-        \end{center}
+        \par\vspace*{2cm}
+        \noindent\makebox[\textwidth][c]{%
+            \begin{minipage}[t][0.72\textheight]{0.9\textwidth}
+                \centering
+                \vspace*{\fill}
+                {\large\bfseries #1}\par\vspace{2cm}
+                {\normalsize #2}\par
+                \vspace*{\fill}
+                {\normalsize #3}\par\vspace{0.5cm}
+                {\normalsize Rio Grande, \the\year}
+            \end{minipage}%
+        }
     \end{titlepage}%
     \restoregeometry
 }
