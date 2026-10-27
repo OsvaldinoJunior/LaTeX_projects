@@ -67,3 +67,7 @@ PDF: `termodinamica_2_etanol_benzeno/build/main.pdf`. Veja o [guia do projeto](t
 ## Arquivos locais
 
 A pasta `.tools/` contém o GitHub CLI usado na autenticação do Git e deve ser mantida neste computador. Ela e os PDFs compilados não são enviados ao GitHub. O histórico dos projetos está no Git do repositório principal. Mantenha também um backup independente.
+
+## Instruções para IAs
+
+O [AGENTS.md](AGENTS.md) aponta para a skill [latex-atualizar-pdf](.agents/skills/latex-atualizar-pdf/SKILL.md). Ao editar um trabalho, a orientação é recompilar e substituir o PDF anterior no mesmo caminho, mantendo o último PDF válido se ocorrer erro. Essas instruções acompanham o repositório ao clonar em outro computador.
