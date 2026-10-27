@@ -22,3 +22,19 @@
 .DS_Store
 Thumbs.db
 
+
+# Compilação e ambientes locais
+build/
+*.nav
+*.snm
+*.vrb
+__pycache__/
+.venv/
+.env
+.env.*
+!.env.example
+
+# Ferramentas, cópias locais e ZIP original
+/.tools/
+/.backups/
+/Etanol_Benzeno.zip

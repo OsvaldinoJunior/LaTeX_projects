@@ -1,47 +1,69 @@
-# LaTeX Projects
+# Projetos LaTeX — OsvaldinoJunior
 
-Este repositório contém projetos em LaTeX para criação de documentos acadêmicos.
+Um único repositório para editar e sincronizar todos os trabalhos entre computadores.
+Remoto: https://github.com/OsvaldinoJunior/LaTeX_projects (público).
 
-## Estrutura
+## Organização
 
-```
-LaTeX_projects/
-├── PFI/
-│   ├── main.tex           # Arquivo principal
-│   ├── config/            # Arquivos de configuração
-│   │   ├── capa.tex
-│   │   ├── elementos.tex
-│   │   ├── espacamento.tex
-│   │   ├── margens.tex
-│   │   ├── pacotes.tex
-│   │   ├── pagina.tex
-│   │   ├── paginacao.tex
-│   │   ├── sumario.tex
-│   │   └── titulos.tex
-│   ├── conteudo/          # Conteúdo do documento
-│   │   ├── introducao.tex
-│   │   ├── objetivos.tex
-│   │   ├── material_metodos.tex
-│   │   ├── resultados.tex
-│   │   ├── revisao.tex
-│   │   ├── conclusao.tex
-│   │   └── referencias.tex
-│   └── image/             # Imagens
-│       └── furg.png
-└── .gitignore
-```
+| Pasta | Trabalho |
+| --- | --- |
+| `Etanol_Benzeno/` | Termodinâmica: apresentação de equilíbrio líquido-vapor etanol–benzeno |
+| `Estagio_CIA_Relatorio/` | Relatório de estágio |
+| `Processos_Fermentativos_Industriais/PFI_curva_padrao/` | Curva padrão |
+| `Processos_Fermentativos_Industriais/PFI_isolamento_leveduras/` | Isolamento de leveduras |
+| `TCC/PFC_Chlorella_HEFA/` | Projeto de conclusão |
+| `TCC/Resumo_TCC/` | Resumo do TCC |
+| `Tratamento_de_dados/` | Scripts e materiais de tratamento de dados |
 
-## Compilação
+Edite os arquivos nas respectivas pastas. Novos trabalhos podem ser criados em novas pastas desta raiz; não execute `git init` dentro deles.
 
-Para compilar o documento, execute:
+## Rotina neste computador
 
-```bash
-cd PFI
-pdflatex main.tex
-bibtex main
-pdflatex main.tex
-pdflatex main.tex
+```sh
+cd ~/Documents/Projetos/Latex
+# Ao começar, com a pasta sem alterações pendentes:
+./sincronizar.py --baixar
+
+# Edite seus trabalhos. Confira o que será enviado:
+./sincronizar.py --simular
+
+# Ao terminar:
+./sincronizar.py -m "Descreve as alterações nos trabalhos"
 ```
 
-Ou utilize uma ferramenta como VS Code com extensão LaTeX Workshop.
+O script encontra a raiz pelo próprio caminho, mesmo executado de outra pasta. Sem `-m`, usa data e hora na mensagem. Requer Python 3 e Git; a autenticação do GitHub deve estar configurada no terminal.
 
+Os arquivos modificados são atualizados **no mesmo caminho do GitHub**. Arquivos novos são adicionados e exclusões locais também são registradas. Todos os trabalhos são enviados no mesmo commit quando alterados juntos. O `.gitignore` exclui arquivos temporários, PDFs compilados e configurações locais; os arquivos já rastreados continuam versionados.
+
+A simulação é local e não consulta a nuvem. O envio consulta `origin/main` antes do commit e recusa prosseguir se houver alterações remotas ausentes localmente. Nunca força a substituição do histórico. Se outro computador enviar mudanças durante o push, o Git também pode recusá-lo; o commit permanece salvo localmente para resolver a divergência. Código de saída 1 indica falha.
+
+Se houver alterações locais ao tentar baixar, primeiro envie ou guarde essas alterações. Havendo divergência de histórico, resolva com Git antes de repetir. Envie as mudanças antes de trocar de computador.
+
+## Preparar outro computador
+
+Instale Git, Python 3 e a mesma versão do TeX Live. Autentique sua conta no GitHub para poder enviar (por exemplo, `gh auth login` e `gh auth setup-git`).
+
+```sh
+mkdir -p ~/Documents/Projetos
+cd ~/Documents/Projetos
+git clone https://github.com/OsvaldinoJunior/LaTeX_projects.git Latex
+cd Latex
+git config user.name "OsvaldinoJunior"
+git config user.email "osvaldinocsjunior@gmail.com"
+./sincronizar.py --baixar
+```
+
+Se já existir uma pasta `Latex` com arquivos nesse computador, preserve-a e clone em outro diretório antes de reunir suas alterações. Use `git clone` na primeira vez; depois use o script para atualizar.
+
+## Compilar termodinâmica
+
+```sh
+cd Etanol_Benzeno
+make pdf
+```
+
+PDF: `Etanol_Benzeno/build/main.pdf`. Veja o [guia do projeto](Etanol_Benzeno/README.md) para gerar os gráficos. Os outros trabalhos mantêm seus scripts e configuração originais; a compilação deles não foi validada nesta organização.
+
+## Cópias locais
+
+O ZIP original, `.tools/` e `.backups/` ficam apenas neste computador e são ignorados pelo Git. `.backups/antes-unificacao/` preserva os guias anteriores, o script anterior e o histórico Git local original de termodinâmica. O histórico anterior de `LaTeX_projects` continua no repositório principal. Mantenha também um backup independente.

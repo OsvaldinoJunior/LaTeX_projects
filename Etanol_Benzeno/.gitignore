@@ -1,0 +1,17 @@
+# Compilação LaTeX
+build/
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.vrb
+# Ambiente local
+.venv/
+__pycache__/
+.env
+.DS_Store
