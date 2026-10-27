@@ -2,6 +2,8 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{anyfontsize}
 \usetheme{Boadilla}
 \usecolortheme{dolphin}
 
@@ -41,21 +43,35 @@
   }%
 }
 \setbeamertemplate{title page}{%
-  \vbox{}\vfill
-  \begin{centering}
-    \begin{beamercolorbox}[wd=0.88\paperwidth,sep=1.25em,center,rounded=true]{title}
-      {\usebeamerfont{title}\inserttitle\par}
-      \vskip0.55em
-      {\usebeamerfont{subtitle}\insertsubtitle\par}
-    \end{beamercolorbox}
-    \vskip1.4em
-    {\usebeamerfont{author}\insertauthor\par}
-    \vskip0.35em
-    {\usebeamerfont{institute}\color{PrismTeal}\insertinstitute\par}
-    \vskip1em
-    {\usebeamerfont{date}\insertdate\par}
-  \end{centering}
-  \vfill
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[PrismNavy] (current page.south west) rectangle (current page.north east);
+    \begin{scope}[shift={(current page.south west)},x=\paperwidth,y=\paperheight]
+      \fill[PrismTeal] (0.74,0) rectangle (1,1);
+      \fill[PrismGold] (0.07,0.745) rectangle (0.14,0.752);
+      \node[anchor=north west,text=PrismMist,inner sep=0,font=\small\bfseries]
+        at (0.07,0.88) {TERMODINÂMICA II};
+      \node[anchor=north west,text=white,inner sep=0,align=left,
+        font=\fontsize{29}{34}\selectfont\bfseries]
+        at (0.07,0.67) {Equilíbrio\\líquido--vapor};
+      \node[anchor=north west,text=PrismMist,inner sep=0,align=left,font=\large]
+        at (0.07,0.365) {Etanol (1) + benzeno (2)};
+      \node[anchor=north west,text=PrismMist,inner sep=0,font=\small]
+        at (0.07,0.29) {Modelo de Van Laar};
+      \draw[white,opacity=0.25,line width=0.4pt] (0.07,0.20) -- (0.67,0.20);
+      \node[anchor=north west,text=PrismGold,inner sep=0,font=\small\bfseries]
+        at (0.07,0.145) {\insertauthor};
+      \node[anchor=north west,text=white,inner sep=0,font=\small]
+        at (0.07,0.095) {\insertinstitute};
+      \node[text=white,opacity=0.85,font=\scriptsize\bfseries,align=center]
+        at (0.87,0.77) {SISTEMA BINÁRIO};
+      \node[text=white,font=\fontsize{34}{38}\selectfont\bfseries]
+        at (0.87,0.59) {ELV};
+      \draw[PrismGold,line width=1pt] (0.80,0.48) -- (0.94,0.48);
+      \node[text=white,font=\Large\bfseries] at (0.87,0.36) {1 atm};
+      \node[text=white,opacity=0.85,font=\scriptsize,align=center]
+        at (0.87,0.28) {PRESSÃO DO SISTEMA};
+    \end{scope}
+  \end{tikzpicture}%
 }
 
 \title{Equilíbrio Líquido--Vapor}
@@ -66,7 +82,7 @@
 
 \begin{document}
 
-\begin{frame}
+\begin{frame}[plain]
   \titlepage
 \end{frame}
 
