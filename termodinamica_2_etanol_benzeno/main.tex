@@ -15,33 +15,48 @@
 \setbeamercolor{normal text}{fg=PrismNavy,bg=white}
 \setbeamercolor{structure}{fg=PrismTeal}
 \setbeamercolor{frametitle}{fg=white,bg=PrismNavy}
-\setbeamercolor{framesubtitle}{fg=PrismTeal,bg=white}
-\setbeamercolor{title}{fg=white,bg=PrismNavy}
-\setbeamercolor{subtitle}{fg=white}
-\setbeamercolor{block title}{fg=white,bg=PrismTeal}
+\setbeamercolor{framesubtitle}{fg=PrismMist,bg=PrismNavy}
+\setbeamercolor{block title}{fg=PrismNavy,bg=PrismMist}
 \setbeamercolor{block body}{fg=PrismNavy,bg=PrismMist}
-\setbeamercolor{itemize item}{fg=PrismGold}
-\setbeamercolor{author in head/foot}{fg=PrismNavy,bg=PrismMist}
-\setbeamercolor{date in head/foot}{fg=white,bg=PrismNavy}
-\setbeamerfont{title}{size=\LARGE,series=\bfseries}
-\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamercolor{itemize item}{fg=PrismTeal}
+\setbeamercolor{enumerate item}{fg=PrismTeal}
+\setbeamerfont{normal text}{size=\small}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
 \setbeamerfont{framesubtitle}{size=\small}
 \setbeamerfont{author}{size=\large,series=\bfseries}
 \setbeamerfont{institute}{size=\normalsize}
+\setbeamersize{text margin left=0.8cm,text margin right=0.8cm}
 \setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{frametitle}[default][center]
-\setbeamertemplate{blocks}[rounded][shadow=false]
-\setbeamertemplate{footline}{%
-  \leavevmode%
-  \hbox{%
-    \begin{beamercolorbox}[wd=0.78\paperwidth,ht=2.5ex,dp=1ex,leftskip=1em]{author in head/foot}%
-      \scriptsize Grupo 5 \textcolor{PrismTeal}{\textbullet} Etanol--benzeno
-    \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=0.22\paperwidth,ht=2.5ex,dp=1ex,center]{date in head/foot}%
-      \scriptsize \insertframenumber/\inserttotalframenumber
-    \end{beamercolorbox}%
-  }%
+\setbeamertemplate{itemize item}{\raisebox{0.15ex}{\scriptsize$\blacktriangleright$}}
+\setbeamertemplate{enumerate item}{\insertenumlabel.}
+\setbeamertemplate{blocks}[default]
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\paperwidth,sep=0.18cm,leftskip=0.62cm,rightskip=0.62cm]{frametitle}
+    {\usebeamerfont{frametitle}\strut\insertframetitle\strut\par}
+    \vskip0.02cm
+    {\usebeamerfont{framesubtitle}\color{PrismMist}\strut\insertframesubtitle\strut\par}
+  \end{beamercolorbox}%
 }
+\setbeamertemplate{footline}{%
+  \hbox{\hspace{0.8cm}\color{PrismMist}\rule{\dimexpr\paperwidth-1.6cm\relax}{0.5pt}}%
+  \vskip0.08cm
+  \hbox to\paperwidth{\hspace{0.8cm}%
+    {\color{PrismTeal}\fontsize{7.5}{9}\selectfont TERMODINÂMICA II}%
+    \hspace{0.25cm}{\color{PrismNavy}\fontsize{7.5}{9}\selectfont Etanol + benzeno\enspace\textbullet\enspace Grupo 5}%
+    \hfill{\color{PrismNavy}\fontsize{8}{9}\selectfont\bfseries\insertframenumber\,/\,\inserttotalframenumber}%
+    \hspace{0.8cm}}
+  \vskip0.15cm
+}
+
+% Cabeçalhos e notas repetidos nos slides de gráficos.
+\newcommand{\figureheading}[2]{%
+  \noindent\parbox{\linewidth}{%
+    \fontsize{11}{13}\selectfont\bfseries
+    \textcolor{PrismTeal}{Figura~#1}\hspace{0.16cm}#2}%
+  \par\vspace{0.10cm}}
+\newcommand{\figurenote}[1]{%
+  \par\vspace{0.05cm}\noindent\parbox[t]{\linewidth}{\raggedright\fontsize{9.5}{12}\selectfont #1}\par}
 \setbeamertemplate{title page}{%
   \begin{tikzpicture}[remember picture,overlay]
     \fill[PrismNavy] (current page.south west) rectangle (current page.north east);
@@ -86,72 +101,83 @@
   \titlepage
 \end{frame}
 
-\begin{frame}{Gráficos: não idealidade da fase líquida}
-  \framesubtitle{Modelo de Van Laar a $73{,}55\,^{\circ}\mathrm{C}$}
+\begin{frame}[t]{Não idealidade da fase líquida}
+  \framesubtitle{Modelo de Van Laar \enspace\textbullet\enspace $T=73{,}55\,^{\circ}\mathrm{C}$}
+  \vspace{0.12cm}
   \begin{columns}[T,onlytextwidth]
-    \begin{column}{0.49\textwidth}
-      \centering
-      \begin{beamercolorbox}[wd=\linewidth,sep=0.3em,center,rounded=true]{block body}
-        \textbf{Figura 1 — Coeficientes de atividade}\\[0.2em]
-        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{1_ln_gamma.png}
-      \end{beamercolorbox}
-      \vspace{-0.1em}
-      \scriptsize $\ln\gamma_1$ e $\ln\gamma_2$ positivos no interior da mistura: desvio positivo da lei de Raoult.\\
-      Nos limites de diluição infinita: $\gamma_1^{\infty}\approx7$ e $\gamma_2^{\infty}\approx5$.
+    \begin{column}{0.485\textwidth}
+      \figureheading{1}{Coeficientes de atividade}
+      \includegraphics[width=\linewidth,height=4.15cm,keepaspectratio]{1_ln_gamma.png}\par
+      \figurenote{\textbf{$\gamma_i>1$: desvio positivo da lei de Raoult.}\\
+      Diluição infinita: $\gamma_1^{\infty}\approx7$ e $\gamma_2^{\infty}\approx5$.}
     \end{column}
-    \begin{column}{0.49\textwidth}
-      \centering
-      \begin{beamercolorbox}[wd=\linewidth,sep=0.3em,center,rounded=true]{block body}
-        \textbf{Figura 2 — Energia de Gibbs em excesso}\\[0.2em]
-        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{2_GE.png}
-      \end{beamercolorbox}
-      \vspace{-0.1em}
-      \scriptsize $G^E$ é zero nos componentes puros e positivo nas misturas.\\
-      Máximo: $1{,}273\,\mathrm{J/mol}$ em $x_1\approx0{,}476$. O gráfico mostra $G^E$, não $G^E/RT$.
+    \begin{column}{0.485\textwidth}
+      \figureheading{2}{Gibbs em excesso}
+      \includegraphics[width=\linewidth,height=4.15cm,keepaspectratio]{2_GE.png}\par
+      \figurenote{\textbf{Máximo: $1{,}273\,\mathrm{kJ/mol}$ em $x_1\approx0{,}476$.}\\
+      $G^E>0$ nas misturas; $G^E=0$ nos componentes puros.}
     \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}{Gráficos: equilíbrio líquido--vapor}
-  \framesubtitle{A 1 atm}
+\begin{frame}[t]{Equilíbrio líquido--vapor}
+  \framesubtitle{Etanol (1) + benzeno (2) \enspace\textbullet\enspace $P=1\,\mathrm{atm}$}
+  \vspace{0.12cm}
   \begin{columns}[T,onlytextwidth]
-    \begin{column}{0.49\textwidth}
-      \centering
-      \begin{beamercolorbox}[wd=\linewidth,sep=0.3em,center,rounded=true]{block body}
-        \textbf{Figura 3 — Diagrama $T$--$x$--$y$}\\[0.2em]
-        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{3_Txy.png}
-      \end{beamercolorbox}
-      \vspace{-0.1em}
-      \scriptsize Curvas de líquido e vapor saturados. O mínimo indica azeótropo de ebulição mínima: $x_1=y_1\approx0{,}464$ a $66{,}93\,^{\circ}\mathrm{C}$.
+    \begin{column}{0.485\textwidth}
+      \figureheading{3}{Diagrama $T$--$x$--$y$}
+      \includegraphics[width=\linewidth,height=4.15cm,keepaspectratio]{3_Txy.png}\par
+      \figurenote{\textbf{Azeótropo de ebulição mínima.}\\
+      $x_1=y_1\approx0{,}464$ a $66{,}93\,^{\circ}\mathrm{C}$.}
     \end{column}
-    \begin{column}{0.49\textwidth}
-      \centering
-      \begin{beamercolorbox}[wd=\linewidth,sep=0.3em,center,rounded=true]{block body}
-        \textbf{Figura 4 — Diagrama $x$--$y$}\\[0.2em]
-        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{4_xy.png}
-      \end{beamercolorbox}
-      \vspace{-0.1em}
-      \scriptsize A curva cruza $y_1=x_1$ no azeótropo. Abaixo dele, $y_1>x_1$; acima, $y_1<x_1$. Em $x_1=y_1$, a destilação simples não altera a composição.
+    \begin{column}{0.485\textwidth}
+      \figureheading{4}{Diagrama $x$--$y$}
+      \includegraphics[width=\linewidth,height=4.15cm,keepaspectratio]{4_xy.png}\par
+      \figurenote{\textbf{No azeótropo: $x_1=y_1$.}\\
+      $x_1<0{,}464$: $y_1>x_1$;\quad $x_1>0{,}464$: $y_1<x_1$.}
     \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}{Aplicação profissional: unidade de recuperação de solventes}
-  \framesubtitle{Exemplo de decisão de processo}
-  \begin{block}{Onde e para quê}
-    Em uma unidade de recuperação de solventes de uma indústria química ou petroquímica, a equipe recebe uma corrente com etanol e benzeno e avalia se uma coluna de destilação a 1 atm consegue recuperar o etanol na pureza especificada.
-  \end{block}
-  \begin{itemize}
-    \item O diagrama $T$--$x$--$y$ estima a temperatura de operação; o diagrama $x$--$y$ mostra quanto etanol passa ao vapor em cada estágio.
-    \item O azeótropo calculado ($x_1\approx0{,}464$) é o limite: a destilação simples não consegue atravessar essa composição.
-    \item Se a especificação exigir ultrapassá-lo, o engenheiro deve avaliar outra rota de separação e os controles de segurança para o benzeno [6].
-  \end{itemize}
+\begin{frame}[t]{Aplicação: recuperação de solventes}
+  \framesubtitle{Como os diagramas orientam uma decisão de processo}
+  \vspace{0.12cm}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.60\textwidth}
+      {\color{PrismTeal}\small\bfseries O CENÁRIO}\par\vspace{0.13cm}
+      {\fontsize{12}{15}\selectfont Uma unidade química ou petroquímica precisa recuperar etanol de uma corrente com benzeno.\par}
+      \vspace{0.24cm}
+      {\color{PrismTeal}\small\bfseries O QUE CADA DIAGRAMA ENTREGA}\par\vspace{0.12cm}
+      {\fontsize{10.5}{14}\selectfont
+        \textbf{$T$--$x$--$y$}\quad Estima a temperatura de operação.\par\vspace{0.16cm}
+        \textbf{$x$--$y$}\quad Mostra o enriquecimento do vapor em etanol e subsidia a análise dos estágios.\par}
+      \vspace{0.24cm}
+      {\color{PrismTeal}\small\bfseries A DECISÃO}\par\vspace{0.12cm}
+      {\fontsize{10.5}{14}\selectfont Para ultrapassar o azeótropo, avaliar outra rota de separação e os controles de segurança do benzeno [6].\par}
+    \end{column}
+    \begin{column}{0.35\textwidth}
+      \begin{beamercolorbox}[wd=\linewidth,sep=0.30cm]{block body}
+        {\color{PrismTeal}\fontsize{9}{12}\selectfont\bfseries LIMITE A 1 atm}\par
+        \vspace{0.26cm}
+        {\color{PrismNavy}\fontsize{29}{32}\selectfont\bfseries 0,464}\par
+        \vspace{0.10cm}
+        {\fontsize{11}{14}\selectfont Fração molar de etanol no azeótropo calculado.}\par
+        \vspace{0.28cm}
+        {\color{PrismGold}\rule{1.1cm}{1.4pt}}\par
+        \vspace{0.22cm}
+        {\fontsize{11}{14}\selectfont $x_1=y_1$\par\vspace{0.12cm}
+        Líquido e vapor têm a mesma composição.}
+      \end{beamercolorbox}
+    \end{column}
+  \end{columns}
 \end{frame}
 
-\begin{frame}{Referências}
-  \scriptsize
+\begin{frame}[t]{Referências}
+  \framesubtitle{Fontes do modelo, dados de equilíbrio e segurança}
+  \vspace{0.14cm}
+  \fontsize{9}{11.5}\selectfont
   \begin{enumerate}
-    \setlength{\itemsep}{0.35em}
+    \setlength{\itemsep}{0.21cm}
     \item Smith, J. M.; Van Ness, H. C.; Abbott, M. M. \textit{Introduction to Chemical Engineering Thermodynamics}. 7. ed. McGraw-Hill, 2005. (Antoine e Van Laar.)
     \item Prausnitz, J. M.; Lichtenthaler, R. N.; Azevedo, E. G. \textit{Molecular Thermodynamics of Fluid-Phase Equilibria}. 3. ed. Prentice Hall, 1999.
     \item NIST. \textit{Chemistry WebBook}, SRD 69: registros de etanol e benzeno.
