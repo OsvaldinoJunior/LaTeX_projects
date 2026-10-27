@@ -30,6 +30,6 @@ As dependências Python ainda não têm versões fixadas. Para resultados consis
 
 ## Sincronização com o GitHub
 
-Este trabalho integra o repositório único `OsvaldinoJunior/LaTeX_projects`, na pasta `Etanol_Benzeno/`.
+Este trabalho integra o repositório único `OsvaldinoJunior/LaTeX_projects`, na pasta `termodinamica_2_etanol_benzeno/`.
 
 Na raiz `Latex/`, use `./sincronizar.py --baixar` antes de trabalhar e `./sincronizar.py -m "Atualiza termodinâmica"` ao terminar. Veja o [guia principal](../README.md) para configurar outro computador. Não inicialize outro Git dentro desta pasta.

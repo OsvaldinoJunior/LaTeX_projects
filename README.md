@@ -7,7 +7,7 @@ Remoto: https://github.com/OsvaldinoJunior/LaTeX_projects (público).
 
 | Pasta | Trabalho |
 | --- | --- |
-| `Etanol_Benzeno/` | Termodinâmica: apresentação de equilíbrio líquido-vapor etanol–benzeno |
+| `termodinamica_2_etanol_benzeno/` | Termodinâmica: apresentação de equilíbrio líquido-vapor etanol–benzeno |
 | `Estagio_CIA_Relatorio/` | Relatório de estágio |
 | `Processos_Fermentativos_Industriais/PFI_curva_padrao/` | Curva padrão |
 | `Processos_Fermentativos_Industriais/PFI_isolamento_leveduras/` | Isolamento de leveduras |
@@ -58,11 +58,11 @@ Se já existir uma pasta `Latex` com arquivos nesse computador, preserve-a e clo
 ## Compilar termodinâmica
 
 ```sh
-cd Etanol_Benzeno
+cd termodinamica_2_etanol_benzeno
 make pdf
 ```
 
-PDF: `Etanol_Benzeno/build/main.pdf`. Veja o [guia do projeto](Etanol_Benzeno/README.md) para gerar os gráficos. Os outros trabalhos mantêm seus scripts e configuração originais; a compilação deles não foi validada nesta organização.
+PDF: `termodinamica_2_etanol_benzeno/build/main.pdf`. Veja o [guia do projeto](termodinamica_2_etanol_benzeno/README.md) para gerar os gráficos. Os outros trabalhos mantêm seus scripts e configuração originais; a compilação deles não foi validada nesta organização.
 
 ## Cópias locais
 
