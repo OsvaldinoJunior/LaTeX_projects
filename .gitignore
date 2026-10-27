@@ -34,7 +34,5 @@ __pycache__/
 .env.*
 !.env.example
 
-# Ferramentas, cópias locais e ZIP original
+# Ferramentas locais
 /.tools/
-/.backups/
-/Etanol_Benzeno.zip

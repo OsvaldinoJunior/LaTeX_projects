@@ -64,6 +64,6 @@ make pdf
 
 PDF: `termodinamica_2_etanol_benzeno/build/main.pdf`. Veja o [guia do projeto](termodinamica_2_etanol_benzeno/README.md) para gerar os gráficos. Os outros trabalhos mantêm seus scripts e configuração originais; a compilação deles não foi validada nesta organização.
 
-## Cópias locais
+## Arquivos locais
 
-O ZIP original, `.tools/` e `.backups/` ficam apenas neste computador e são ignorados pelo Git. `.backups/antes-unificacao/` preserva os guias anteriores, o script anterior e o histórico Git local original de termodinâmica. O histórico anterior de `LaTeX_projects` continua no repositório principal. Mantenha também um backup independente.
+A pasta `.tools/` contém o GitHub CLI usado na autenticação do Git e deve ser mantida neste computador. Ela e os PDFs compilados não são enviados ao GitHub. O histórico dos projetos está no Git do repositório principal. Mantenha também um backup independente.
