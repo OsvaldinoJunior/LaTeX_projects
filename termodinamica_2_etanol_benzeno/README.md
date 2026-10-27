@@ -13,7 +13,7 @@ Na pasta deste projeto:
 make pdf
 ```
 
-Resultado: `build/main.pdf`. Arquivos temporários ficam em `build/`, fora do Git.
+Resultado: `output/termodinamica_2_etanol_benzeno.pdf`. Arquivos temporários ficam em `build/`, fora do Git.
 
 ## Regenerar os gráficos (opcional)
 

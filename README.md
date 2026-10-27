@@ -62,7 +62,7 @@ cd termodinamica_2_etanol_benzeno
 make pdf
 ```
 
-PDF: `termodinamica_2_etanol_benzeno/build/main.pdf`. Veja o [guia do projeto](termodinamica_2_etanol_benzeno/README.md) para gerar os gráficos. Os outros trabalhos mantêm seus scripts e configuração originais; a compilação deles não foi validada nesta organização.
+PDF: `termodinamica_2_etanol_benzeno/output/termodinamica_2_etanol_benzeno.pdf`. Veja o [guia do projeto](termodinamica_2_etanol_benzeno/README.md) para gerar os gráficos. Os outros trabalhos mantêm seus scripts e configuração originais. Os seis documentos foram compilados com sucesso neste computador.
 
 ## Arquivos locais
 
@@ -71,3 +71,16 @@ A pasta `.tools/` contém o GitHub CLI usado na autenticação do Git e deve ser
 ## Instruções para IAs
 
 O [AGENTS.md](AGENTS.md) aponta para a skill [latex-atualizar-pdf](.agents/skills/latex-atualizar-pdf/SKILL.md). Ao editar um trabalho, a orientação é recompilar e substituir o PDF anterior no mesmo caminho, mantendo o último PDF válido se ocorrer erro. Essas instruções acompanham o repositório ao clonar em outro computador.
+
+## Local dos PDFs
+
+Todos os trabalhos usam o mesmo padrão: `<pasta-do-projeto>/output/<nome-da-pasta-do-projeto>.pdf`. Cada atualização substitui o PDF nesse caminho após compilar com sucesso. `build/` é reservado a arquivos temporários.
+
+- [Termodinâmica](termodinamica_2_etanol_benzeno/output/termodinamica_2_etanol_benzeno.pdf)
+- [Relatório de estágio](Estagio_CIA_Relatorio/output/Estagio_CIA_Relatorio.pdf)
+- [Curva padrão](Processos_Fermentativos_Industriais/PFI_curva_padrao/output/PFI_curva_padrao.pdf)
+- [Isolamento de leveduras](Processos_Fermentativos_Industriais/PFI_isolamento_leveduras/output/PFI_isolamento_leveduras.pdf)
+- [TCC Chlorella HEFA](TCC/PFC_Chlorella_HEFA/output/PFC_Chlorella_HEFA.pdf)
+- [Resumo do TCC](TCC/Resumo_TCC/output/Resumo_TCC.pdf)
+
+Os links dos PDFs funcionam após a compilação local; os PDFs são ignorados pelo Git e não ficam disponíveis no site do GitHub.
