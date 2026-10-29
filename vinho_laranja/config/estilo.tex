@@ -23,6 +23,8 @@
 \setbeamerfont{frametitle}{size=\Large,series=\bfseries}
 \setbeamerfont{framesubtitle}{size=\small}
 \setbeamersize{text margin left=0.8cm,text margin right=0.8cm}
+% Aplicar dentro do grupo da tabela para centralizar as células na vertical.
+\newcommand{\AlinharTabela}{\renewcommand{\tabularxcolumn}[1]{m{##1}}}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{itemize item}{\color{Amber}\small\textbullet}
 \setbeamertemplate{frametitle}{%

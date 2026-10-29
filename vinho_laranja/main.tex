@@ -73,31 +73,39 @@
 \begin{frame}[t]{Laranja, branco e tinto: qual é a diferença?}
   \framesubtitle{Comparação de estilos usuais de elaboração}
   \vspace{0.18cm}
-  {\fontsize{10.5}{13}\selectfont
-    \renewcommand{\arraystretch}{1.05}
-    \setlength{\aboverulesep}{1pt}
-    \setlength{\belowrulesep}{1.5pt}
-    \setlength{\tabcolsep}{0.17cm}
-    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.35cm}
-      >{\raggedright\arraybackslash}X
-      >{\columncolor{Cream}\raggedright\arraybackslash}X
-      >{\raggedright\arraybackslash}X@{}}
-      \toprule
-      \textbf{Critério} & \textbf{Branco convencional} &
-        \textcolor{Amber}{\textbf{Vinho laranja}} & \textbf{Tinto convencional} \\
+  % Critérios à esquerda; três estilos centralizados na horizontal e na vertical.
+  % A configuração fica restrita a esta tabela.
+  {\fontsize{11}{13.5}\selectfont
+    \AlinharTabela
+    \renewcommand{\arraystretch}{1.06}
+    \setlength{\extrarowheight}{1pt}
+    \setlength{\aboverulesep}{0pt}
+    \setlength{\belowrulesep}{0pt}
+    \setlength{\tabcolsep}{0.20cm}
+    \arrayrulecolor{Honey!50}
+    \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash\bfseries}m{2.60cm}
+      >{\centering\arraybackslash}X
+      >{\columncolor{Cream}\centering\arraybackslash}X
+      >{\centering\arraybackslash}X}
+      \rowcolor{Ink}
+      \textcolor{white}{Critério} &
+        \color{white}\textbf{Branco}\par convencional &
+        \cellcolor{Amber}\color{white}\textbf{Vinho}\par\textbf{laranja} &
+        \color{white}\textbf{Tinto}\par convencional \\
       \midrule
-      \textbf{Uvas} & Em geral, brancas & Brancas & Tintas \\
+      Uvas & Em geral, brancas & \textcolor{Amber}{\textbf{Brancas}} & Tintas \\
       \midrule
-      \textbf{Cascas na fermentação} & Em geral, sem cascas & Com cascas &
+      Cascas na fermentação & Em geral, sem cascas & \textcolor{Amber}{\textbf{Com cascas}} &
         Em geral, com cascas \\
       \midrule
-      \textbf{Cor usual} & Palha a amarelo & Dourado a âmbar & Tons de vermelho \\
+      Cor usual & Palha a amarelo & Dourado a âmbar & Tons de vermelho \\
       \midrule
-      \textbf{Taninos e textura} & Em geral, discretos &
+      Taninos e textura & Em geral, discretos &
         Podem ser mais perceptíveis & Variam com a uva e a extração \\
       \bottomrule
-    \end{tabularx}\par}
-  \callout{\textbf{Ideia-chave:} uvas brancas com uma maceração semelhante à dos tintos.}
+    \end{tabularx}\par
+    \arrayrulecolor{black}}
+  \callout{\centering\textbf{Ideia-chave:} uvas brancas com uma maceração semelhante à dos tintos.}
   \photocaption{Padrões usuais: uva, maceração e evolução alteram cor e textura. Há exceções, inclusive brancos feitos de uvas tintas.}
   \source{[1], [4], [7], [8]}
 \end{frame}
