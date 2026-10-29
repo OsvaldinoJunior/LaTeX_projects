@@ -4,7 +4,7 @@ Apresentação introdutória com enfoque em produção, composição e perfil se
 
 ## Estrutura da fala
 
-- **Introdução (slides 1–2):** definição, objetivo e caminho da apresentação.
+- **Introdução (slides 1–2):** raízes na tradição georgiana e vestígios de vinho de cerca de 6000–5800 a.C. (aproximadamente 8 mil anos), distinguindo essa datação da origem exata do estilo laranja.
 - **Desenvolvimento (slides 3–8):** comparação com branco e tinto convencionais, história, produção, partes da uva, perfil sensorial e controle de qualidade.
 - **Conclusão (slide 9):** síntese e resposta ao objetivo inicial.
 - **Referências (slide 10):** fontes e materiais de aula.

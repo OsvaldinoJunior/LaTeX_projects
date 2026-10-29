@@ -4,17 +4,17 @@
 
 ## Estrutura da apresentação
 
-- **Introdução — slides 1–2:** tema, definição, objetivo e caminho da explicação.
+- **Introdução — slides 1–2:** raízes históricas na Geórgia, datação dos vestígios de vinho e ligação com a maceração de uvas brancas.
 - **Desenvolvimento — slides 3–8:** comparação, origem, produção, partes da uva, perfil sensorial e qualidade.
 - **Conclusão — slide 9:** resposta ao objetivo e três mensagens centrais.
 - **Fontes — slide 10:** referências e agradecimento.
 
 | Slide | Assunto | Tempo | Acumulado |
 | --- | --- | --- | --- |
-| 1 | Abertura | 0:20 | 0:20 |
-| 2 | Introdução e objetivo | 0:40 | 1:00 |
-| 3 | Laranja × branco × tinto | 1:00 | 2:00 |
-| 4 | Tradição georgiana | 0:45 | 2:45 |
+| 1 | Abertura histórica | 0:25 | 0:25 |
+| 2 | Introdução: raízes na Geórgia | 0:40 | 1:05 |
+| 3 | Laranja × branco × tinto | 1:00 | 2:05 |
+| 4 | Tradição georgiana | 0:40 | 2:45 |
 | 5 | Produção e maceração | 1:30 | 4:15 |
 | 6 | Partes da baga e extração | 1:10 | 5:25 |
 | 7 | Perfil sensorial | 1:00 | 6:25 |
@@ -22,17 +22,17 @@
 | 9 | Conclusão | 0:40 | 8:10 |
 | 10 | Referências | 0:20 | 8:30 |
 
-## Slide 1 — Abertura
+## Slide 1 — Abertura histórica
 
-“Hoje vou apresentar o vinho laranja a partir de uma pergunta: como uma decisão de elaboração muda a identidade de uma bebida? Vamos acompanhar o caminho da uva à taça, destacando o contato com as cascas, as características sensoriais e os cuidados durante a produção.”
+“O vinho laranja tem raízes na tradição georgiana de fermentação com cascas. Na Geórgia, há registros de vinho de cerca de 6000 a 5800 antes de Cristo, aproximadamente 8 mil anos. A partir dessa história, vamos entender o processo e as características desse estilo.”
 
-**Transição:** apresente a definição e o objetivo antes de comparar os estilos.
+**Transição:** apresente a datação dos achados e sua relação com a tradição. Bases: [2], [4], [9].
 
-## Slide 2 — Introdução e objetivo
+## Slide 2 — Introdução: desde quando existe essa tradição?
 
-“O vinho laranja é elaborado com uvas brancas fermentadas em contato com as cascas. O nome se refere à cor, não à fruta laranja. A ideia central desta apresentação é entender como essa escolha de processo muda o vinho. Primeiro vamos compará-lo aos vinhos branco e tinto convencionais; depois acompanharemos sua origem, produção e resultado sensorial. Ao final, quero mostrar a relação entre maceração e qualidade.”
+“Os vestígios arqueológicos situam a produção de vinho na Geórgia entre cerca de 6000 e 5800 antes de Cristo. O vinho laranja está ligado à tradição georgiana de fermentar uvas brancas com as cascas. É importante distinguir as duas informações: os achados datam vinho em geral e não determinam a data exata de invenção do estilo laranja. A partir dessas raízes históricas, vamos compará-lo aos vinhos convencionais e entender sua elaboração, sua cor, seus aromas e sua textura.”
 
-**Transição:** “Para entender a diferença, vamos colocar os três estilos lado a lado.” Bases: [1], [4], [7].
+**Transição:** “Para entender o que caracteriza esse estilo, vamos comparar o laranja com o branco e o tinto.” Bases: [2], [4], [9].
 
 ## Slide 3 — Diferenças em relação aos vinhos convencionais
 
@@ -107,5 +107,7 @@ O objetivo não é extrair o máximo possível. É buscar equilíbrio entre arom
 7. Materiais de aula fornecidos pelo apresentador: **Aula 6 — Vinho tinto** (`aula 6_15092026.pdf`); **Aula 7 — Vinho tinto, continuação** (`Aula 7_29092026.pdf`); **Aula 8 — Vinho tinto, continuação** (`Aula 8 - 06092026.pdf`); **Aula 10 — Vinho branco** (`Aula 10 - 20102026.pdf`). A **Aula 9** (`Aula 9 - 08102026.pptx`) trata de cerveja e foi consultada somente para princípios gerais de controle fermentativo.
 
 8. [WSET — What determines the colour of wine? (2021)](https://www.wsetglobal.com/knowledge-centre/blog/2021/september/23/what-determines-the-colour-of-wine). Base complementar para uvas, contato com cascas e comparação dos estilos. Consultado em 29/10/2026.
+
+9. [McGovern et al. — Early Neolithic wine of Georgia in the South Caucasus (PNAS, 2017)](https://doi.org/10.1073/pnas.1714728114). [Resumo do estudo no PubMed](https://pubmed.ncbi.nlm.nih.gov/29133421/). Evidências arqueológicas de vinho na Geórgia em cerca de 6000–5800 a.C.; o estudo não estabelece uma data de invenção específica do vinho laranja. Consultado em 29/10/2026.
 
 O fluxograma é um esquema didático original. As imagens fotorrealistas são ilustrações geradas por IA, não registros de locais identificados nem dados experimentais; os prompts estão em `assets/prompts.json`. O roteiro é uma síntese própria; as falas não são citações literais das fontes.
