@@ -2,8 +2,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
+\usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{anyfontsize}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{colortbl}
 \usetikzlibrary{arrows.meta,positioning,calc}
 \usetheme{default}
 \definecolor{Ink}{RGB}{54,39,34}
@@ -32,16 +36,17 @@
   \hbox{\hspace{0.8cm}\color{Honey}\rule{\dimexpr\paperwidth-1.6cm\relax}{0.5pt}}%
   \vskip0.08cm
   \hbox to\paperwidth{\hspace{0.8cm}%
-    {\color{Amber}\fontsize{7.5}{9}\selectfont VINHO LARANJA}%
+    {\color{Amber}\fontsize{7.5}{9}\selectfont \insertsectionhead}%
     \hspace{0.25cm}{\color{Muted}\fontsize{7.5}{9}\selectfont Processo e identidade sensorial}%
-    \hfill{\color{Ink}\fontsize{8}{9}\selectfont\insertframenumber\,/\,\inserttotalframenumber}%
+    \hfill{\color{Muted}\fontsize{6.5}{8}\selectfont Imagens ilustrativas por IA}\hspace{0.25cm}%
+    {\color{Ink}\fontsize{8}{9}\selectfont\insertframenumber\,/\,\inserttotalframenumber}%
     \hspace{0.8cm}}
   \vskip0.15cm
 }
 \newcommand{\kicker}[1]{{\color{Amber}\fontsize{9}{11}\selectfont\bfseries #1}\par\vspace{0.12cm}}
 \newcommand{\bodytext}[1]{{\fontsize{12}{16}\selectfont #1\par}}
 \newcommand{\smalltext}[1]{{\fontsize{10.5}{14}\selectfont #1\par}}
-\newcommand{\source}[1]{\par\vspace{0.18cm}{\color{Muted}\fontsize{7.5}{9}\selectfont Fontes: #1.\par}}
+\newcommand{\source}[1]{\par\vspace{0.12cm}{\color{Muted}\fontsize{7.5}{9}\selectfont Fontes: #1.\par}}
 \newcommand{\callout}[1]{%
   \par\vspace{0.18cm}
   \begin{beamercolorbox}[wd=\linewidth,sep=0.19cm]{block body}
@@ -53,29 +58,29 @@
     {\fontsize{16}{19}\selectfont\bfseries #2}\par\vspace{0.17cm}
     {\fontsize{11}{15}\selectfont #3}\par
   \end{beamercolorbox}}
-% Taça esquemática em vetor.
-\newcommand{\wineglass}{%
-  \begin{tikzpicture}[x=1cm,y=1cm,scale=1.05]
-    \fill[Honey] (-0.99,1.60) .. controls (-0.83,0.75) and (-0.48,0.30) .. (0,0.30)
-      .. controls (0.48,0.30) and (0.83,0.75) .. (0.99,1.60) -- cycle;
-    \draw[white,line width=1.1pt] (-1.15,2.75) -- (-1.05,1.90)
-      .. controls (-0.95,0.80) and (-0.50,0.25) .. (0,0.25)
-      .. controls (0.50,0.25) and (0.95,0.80) .. (1.05,1.90) -- (1.15,2.75) -- cycle;
-    \draw[white,line width=1.1pt] (0,0.25) -- (0,-1.1);
-    \draw[white,line width=1.1pt] (-0.72,-1.1) -- (0.72,-1.1);
-    \draw[white,opacity=0.65,line width=1.2pt] (-0.83,2.40) -- (-0.76,1.94);
-  \end{tikzpicture}}
-% Qvevri esquemático: vaso de argila em contato com o solo.
-\newcommand{\qvevri}{%
-  \begin{tikzpicture}[scale=0.90]
-    \fill[Cream] (-2.45,-2.2) rectangle (2.45,0.6);
-    \draw[Muted,dashed] (-2.45,0.6) -- (2.45,0.6);
-    \fill[Amber!80] (-0.46,0.95) -- (-0.46,0.5)
-      .. controls (-2.0,-0.0) and (-1.70,-1.50) .. (0,-2.0)
-      .. controls (1.70,-1.50) and (2.0,-0.0) .. (0.46,0.5) -- (0.46,0.95) -- cycle;
-    \draw[Ink,line width=1pt] (-0.46,0.95) -- (-0.46,0.5)
-      .. controls (-2.0,-0.0) and (-1.70,-1.50) .. (0,-2.0)
-      .. controls (1.70,-1.50) and (2.0,-0.0) .. (0.46,0.5) -- (0.46,0.95) -- cycle;
-    \draw[Honey,line width=2pt] (-0.57,1.02) -- (0.57,1.02);
-    \node[font=\small,text=Muted] at (0,-2.65) {Vaso de argila enterrado};
-  \end{tikzpicture}}
+
+% Fotografia recortada apenas no layout; o arquivo original é preservado.
+% Uso: \photo{assets/nome.png}{largura}{altura}
+\newsavebox{\PhotoBox}
+\newcommand{\photo}[3]{%
+  \sbox{\PhotoBox}{\includegraphics[height=#3]{#1}}%
+  \ifdim\wd\PhotoBox<#2\relax
+    \sbox{\PhotoBox}{\includegraphics[width=#2]{#1}}%
+  \fi
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \begin{pgfinterruptboundingbox}
+      \clip (0,0) rectangle (#2,#3);
+      \node[inner sep=0pt] at ({0.5*(#2)},{0.5*(#3)}) {\usebox{\PhotoBox}};
+    \end{pgfinterruptboundingbox}
+    \path[use as bounding box] (0,0) rectangle (#2,#3);
+  \end{tikzpicture}%
+}
+\newcommand{\photocaption}[1]{%
+  \par\vspace{0.06cm}{\color{Muted}\fontsize{7}{9}\selectfont #1\par}}
+\newcommand{\textrow}[2]{%
+  {\color{Amber}\fontsize{9}{11}\selectfont\bfseries #1}\par\vspace{0.06cm}
+  {\fontsize{10.5}{13}\selectfont #2\par}\vspace{0.12cm}}
+\newcommand{\sensory}[3]{%
+  {\color{Amber}\fontsize{9}{11}\selectfont\bfseries #1}\par\vspace{0.08cm}
+  {\fontsize{13}{16}\selectfont\bfseries #2}\par\vspace{0.10cm}
+  {\fontsize{10}{13}\selectfont #3\par}}

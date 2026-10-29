@@ -1,0 +1,36 @@
+{
+  "mode": "built-in image_gen",
+  "note": "Imagens ilustrativas geradas por IA; não são registros de pessoas, produtos ou locais identificados.",
+  "images": [
+    {
+      "name": "hero",
+      "prompt": "Use case: photorealistic-natural. Asset type: portrait editorial photograph for a university presentation about orange wine. Create an exceptionally realistic, tasteful persuasive photograph: one elegant thin-stemmed wine glass with transparent luminous amber-orange WHITE-GRAPE SKIN-CONTACT WINE (not orange juice, not red wine), with a small cluster of pale golden-green white grapes near its base on a dark walnut table. Full glass and stem visible, glass centered. An unbranded dark wine bottle softly out of focus behind, no readable label. Rich amber highlights, warm cellar side light, subtle real glass reflections, natural imperfect grape skin texture and very fine condensation. Sophisticated restrained editorial food photography, believable wine clarity and realistic proportion. Portrait 3:4 composition suitable for right-hand panel cropping. Subject occupies central 65%, spacious dark background at edges. No text, typography, watermarks, logos, citrus fruit, people, advertising claims, illustrations or CGI.",
+      "asset": "assets/hero.png"
+    },
+    {
+      "name": "uvas",
+      "prompt": "Use case: photorealistic-natural. Asset type: editorial close-up photograph for an educational presentation on orange wine. Highly realistic still life of pale green-gold WHITE wine grapes with one naturally cut-open grape in the foreground on warm neutral stone. Show moist translucent pale pulp, thin yellow-green skin and two natural small tan grape seeds visible, without exaggerated scientific anatomy or diagrams. A small fresh bunch of white grapes and softly blurred vine leaves behind. Close enough that the opened grape and real skin texture are legible. Warm daylight with soft shadows, natural muted cream, olive and honey palette, authentic photographic depth of field, refined but not glossy or artificial. Landscape 4:3 frame, subject centered with enough edge margin to crop as a sidebar. No text, labels, numbers, watermark, citrus fruit, red grapes, surreal anatomy or fake data.",
+      "asset": "assets/uvas.png"
+    },
+    {
+      "name": "qvevri",
+      "prompt": "Use case: photorealistic-natural. Asset type: historically informed illustrative editorial photograph for an educational slide about Georgian qvevri winemaking. Realistic quiet Georgian-style traditional wine cellar interior, stone walls, warm light entering from a high window. Several large earthenware qvevri vessels BURIED IN THE FLOOR, with only their round terracotta necks flush with the earthen floor and round lids visible. One open mouth in foreground, other mouths covered by plain lids farther back. Qvevri bodies are underground and must NOT appear as big freestanding jars. Beautiful restrained atmosphere, textured clay, aged wood and stone, realistic exposure, documentary-style photographic realism. No claim to represent a specific real winery or historic photograph. Landscape 4:3 composition, visually clear subject, generous margin for layout cropping. No people, text, labels, branding, wine bottles with writing, impossible architecture, fantasy or CGI.",
+      "asset": "assets/qvevri.png"
+    },
+    {
+      "name": "maceracao",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide editorial process photograph for a technical presentation on orange wine. Close overhead-oblique view of an open stainless steel fermentation vat containing crushed WHITE wine grapes, pale gold and beige grape skins and a small amount of amber must, visible wet skins cap with tiny natural fermentation bubbles. Authentic clean winery setting, brushed stainless rim, no red or purple grapes, no orange fruit, no artificial foam. Warm but accurate natural light, rich wet grape textures, restrained realistic food-science editorial photography. The broad center of frame must show the skin-contact process clearly when cropped as a wide short horizontal strip. Landscape 16:9. No people, text, labels, watermarks, promotional branding, glowing liquid, cartoons or CGI.",
+      "asset": "assets/maceracao.png"
+    },
+    {
+      "name": "tacas",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide editorial sensory photograph for educational slides about orange wine. Three matching elegant clear stemmed wine glasses standing in a straight line on warm pale stone, each with the same moderate amount of clear skin-contact white wine: first golden straw-amber, second rich golden amber, third deeper copper amber (not dark brown and not red). Subtle visual range of the style, no claim of experimental data. Background softly blurred neutral taupe cellar wall with warm daylight and real optical glass refractions. Elevated tasteful persuasive editorial photography, true-to-life materials, no excessive saturation. All three bowls and stems visible with generous space around glasses. Landscape 16:9 composition, glasses centered across the frame for wide image strip cropping. No text, labels, numbers, fruit, people, logos, brands or watercolor.",
+      "asset": "assets/tacas.png"
+    },
+    {
+      "name": "controle",
+      "prompt": "Use case: photorealistic-natural. Asset type: realistic editorial winery process-control photograph for educational slides about orange wine. Adult winemaker in a clean small modern winery seen only as an anonymous cropped torso and naturally proportioned gloved hands, no face. Holding a clear sample glass of amber orange skin-contact white wine next to a clean stainless fermentation vessel; a simple stainless temperature probe and a plain unmarked sampling tray nearby. Credible professional careful sampling and observation, no fabricated technical readings, no readable screen, no labels or writing, no unsafe action. Wine clearly amber-gold, grapes never orange fruit. Warm natural side light, stainless steel and honey highlights, natural skin and material details, very realistic documentary editorial photograph, restrained premium presentation quality. Portrait 4:5 with central subject that crops cleanly as right sidebar. No text, logos, watermark, white-coat stock-photo cliché, extra fingers, disembodied hands, CGI or illustration.",
+      "asset": "assets/controle.png"
+    }
+  ]
+}
