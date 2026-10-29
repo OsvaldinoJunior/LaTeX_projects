@@ -1,12 +1,12 @@
 # Roteiro de fala — Vinho laranja
 
-**Duração planejada: 8 min 30 s.** As falas são um apoio, não um texto para projetar. Use as pausas para apontar os diagramas. Ensaie com cronômetro: os tempos abaixo são metas de apresentação, não uma medição de gravação.
+**Duração planejada: 9 min 20 s.** As falas são um apoio, não um texto para projetar. Use as pausas para apontar os diagramas. Ensaie com cronômetro: os tempos abaixo são metas de apresentação, não uma medição de gravação.
 
 ## Estrutura da apresentação
 
 - **Introdução — slides 1–2:** raízes históricas na Geórgia, datação dos vestígios de vinho e ligação com a maceração de uvas brancas.
 - **Desenvolvimento — slides 3–8:** comparação, origem, produção, partes da uva, perfil sensorial e qualidade.
-- **Conclusão — slide 9:** resposta ao objetivo e três mensagens centrais.
+- **Conclusão — slide 9:** como maceração, fermentação e maturação mudam a identidade sensorial.
 - **Fontes — slide 10:** referências e agradecimento.
 
 | Slide | Assunto | Tempo | Acumulado |
@@ -14,13 +14,13 @@
 | 1 | Abertura histórica | 0:25 | 0:25 |
 | 2 | Introdução: raízes na Geórgia | 0:40 | 1:05 |
 | 3 | Laranja × branco × tinto | 1:00 | 2:05 |
-| 4 | Tradição georgiana | 0:40 | 2:45 |
-| 5 | Produção e maceração | 1:30 | 4:15 |
-| 6 | Partes da baga e extração | 1:10 | 5:25 |
-| 7 | Perfil sensorial | 1:00 | 6:25 |
-| 8 | Controle de processo | 1:05 | 7:30 |
-| 9 | Conclusão | 0:40 | 8:10 |
-| 10 | Referências | 0:20 | 8:30 |
+| 4 | Qvevri: método e tempos | 1:10 | 3:15 |
+| 5 | Da colheita ao envase | 1:40 | 4:55 |
+| 6 | Partes da baga e extração | 1:10 | 6:05 |
+| 7 | Perfil sensorial | 1:00 | 7:05 |
+| 8 | Controle de processo | 1:05 | 8:10 |
+| 9 | Identidade construída pelo processo | 0:50 | 9:00 |
+| 10 | Referências | 0:20 | 9:20 |
 
 ## Slide 1 — Abertura histórica
 
@@ -44,19 +44,29 @@ Por isso, pode apresentar mais textura e adstringência. O quadro mostra tendên
 
 **Transição:** “Esse modo de elaborar tem uma tradição importante na Geórgia.”
 
-## Slide 4 — Uma tradição antiga
+## Slide 4 — Como funciona a fermentação em qvevri?
 
-“Esse modo de elaboração tem uma referência importante na Geórgia. A imagem ilustrativa mostra uma adega com qvevri, vasos de argila tradicionalmente enterrados. Nele, a vinificação pode manter o líquido junto às cascas e outras partes da uva. Em 2013, o método tradicional georgiano foi reconhecido pela UNESCO como patrimônio cultural imaterial. O vinho laranja atual apresenta várias interpretações: o contato com as cascas pode ser realizado em diferentes recipientes e países. Portanto, vale separar o princípio do processo da escolha do equipamento.”
+“O qvevri é um vaso de argila enterrado. No exemplo de Kakheti para uvas brancas, o recipiente limpo recebe mosto, cascas, sementes e, conforme o método, engaços. As leveduras transformam açúcar em álcool e gás carbônico. Durante a alcoólica, as cascas que flutuam são mergulhadas no líquido várias vezes ao dia. A agência georgiana apresenta uma duração aproximada de 20 a 40 dias, dependendo da uva e da safra.
 
-**Transição:** “Essa tradição fica mais clara quando acompanhamos o processo.” Evite detalhar arqueologia. Bases: [2], [6].
+Depois, os sólidos sedimentam. Nesse método, a vedação hermética ocorre após a malolática, que transforma ácido málico em lático. O vinho permanece com os sólidos até a primavera georgiana, quando é separado e trasfegado. O contato total costuma ser de cerca de cinco a seis meses, incluindo os dias da alcoólica: não devemos somar esses períodos. O amadurecimento posterior e o envase dependem do estilo.”
 
-## Slide 5 — Como é produzido?
+**Apoio para dúvidas:** os números são um exemplo tradicional de Kakheti, não uma receita universal. Carga e trasfega não têm duração única; dependem do volume e da operação. A vedação depende do término das fermentações. O método usa leveduras locais tradicionalmente; a malolática é realizada por bactérias, não pelas mesmas leveduras da alcoólica. Os tempos de 20–40 dias e 5–6 meses vêm da [National Wine Agency, site oficial japonês](https://www.georgianwine.jp/wine-making/). A sequência de fechamento e primeira trasfega é confirmada na [descrição oficial de Kakheti](https://wine.gov.ge/En/WineMakingRegions/1). Base geral: [2]; malolática: [7].
 
-“Vamos percorrer este fluxo simplificado, relacionado às etapas pré-fermentativas vistas em aula: maturação e recepção, preparo das uvas e início da fermentação. A levedura, principalmente Saccharomyces cerevisiae, transforma glicose e frutose em etanol e gás carbônico. Ao mesmo tempo, a maceração mantém o mosto em contato com as cascas e sementes, extraindo compostos. Esse contato pode continuar depois da fermentação. A descuba marca o fim do período de contato escolhido, mas não significa necessariamente que a fermentação terminou. Separam-se os sólidos, faz-se a prensagem e o vinho segue para trasfega, estabilização, clarificação e envase.
+**Pausa:** aponte primeiro a fermentação e depois os cinco a seis meses de contato total.
 
-Existe uma distinção de nomenclatura: na categoria específica da OIV, o branco com maceração exige pelo menos um mês de contato. No uso comercial mais amplo, também se encontram vinhos chamados laranja com tempos menores. Por isso, o nome sozinho não descreve toda a elaboração.”
+**Transição:** “Esse é um exemplo de recipiente e manejo. Agora vamos acompanhar o caminho das uvas desde a colheita.”
 
-**Pausa:** percorra as cinco etapas com o cursor e diferencie fermentação de maceração. Bases: [1], [3], [7].
+## Slide 5 — Da colheita e seleção ao envase
+
+“A produção começa no vinhedo: a maturação, considerando açúcar, acidez e sanidade, orienta o momento de colher as uvas brancas. No transporte e na recepção, é importante evitar demora e danos. A seleção retira frutos deteriorados e impurezas. Assim, a qualidade começa na matéria-prima.
+
+Vem o preparo: o desengace retira os engaços, quando previsto pelo estilo, e o esmagamento libera o mosto sem triturar as sementes. Na fermentação, leveduras, principalmente Saccharomyces cerevisiae, transformam glicose e frutose em etanol e gás carbônico. Ao mesmo tempo, o contato com cascas e sementes extrai compostos que participam da cor, dos aromas e da textura. Essa maceração pode continuar após a alcoólica.
+
+Ao atingir o contato desejado, separam-se o vinho e os sólidos na descuba e faz-se a prensagem. A descuba não comprova que a fermentação já terminou. O vinho segue para trasfega, acompanhamento da maturação, estabilização e envase, conforme a elaboração. Na categoria específica da OIV, exige-se pelo menos um mês de maceração. No uso comercial mais amplo, o nome laranja também aparece em estilos com tempos menores.”
+
+**Pausa:** percorra as cinco caixas. Explique a colheita e a seleção antes de apontar o preparo. Desengace não é obrigatório em todo método tradicional: alguns mantêm engaços. As operações e os tempos dependem do estilo. Bases: [1], [3], [7]; exemplo técnico de vinho âmbar: [4].
+
+**Transição:** “Para entender o que é extraído, vamos olhar para cada parte da uva.”
 
 ## Slide 6 — O que cada parte da baga fornece?
 
@@ -80,11 +90,13 @@ O objetivo não é extrair o máximo possível. É buscar equilíbrio entre arom
 
 **Transição:** “Depois de ver as diferenças e o processo, podemos responder ao objetivo inicial.” Bases: [4], [7].
 
-## Slide 9 — Conclusão
+## Slide 9 — O que significa identidade construída pelo processo?
 
-“Voltando ao objetivo inicial: o que diferencia o vinho laranja é o modo de elaborar uvas brancas em contato com suas cascas. Para concluir, podemos guardar três ideias. A matéria-prima são uvas brancas. A principal diferença é a fermentação em contato com as cascas. E o resultado sensorial depende de como esse contato é conduzido. O vinho laranja permite enxergar a relação entre uma tradição de elaboração e o controle do processo: a mesma escolha que amplia as possibilidades de aroma e textura também exige acompanhamento para alcançar o equilíbrio desejado.”
+“Identidade é o conjunto de características que reconhecemos na cor, no aroma e na boca. O processo muda esse conjunto, mesmo quando partimos da mesma uva.
 
-**Fechamento:** faça uma pausa após as três ideias, antes de mostrar as referências.
+Primeiro, o tempo e o manejo das cascas mudam a extração. Mais extração pode trazer cor mais intensa, taninos e adstringência. Segundo, leveduras e condições de fermentação influenciam os aromas, o álcool e o açúcar que sobra. Terceiro, recipiente, tempo de maturação e manejo de oxigênio mudam a evolução dos aromas e a estabilidade. Portanto, a identidade não vem apenas de usar uvas brancas: vem das escolhas que transformam essa matéria-prima. O objetivo é equilíbrio, porque extrair mais não garante qualidade.”
+
+**Fechamento:** aponte as três relações entre escolha e efeito. “A mesma matéria-prima pode gerar perfis diferentes conforme a elaboração.” São tendências, não uma relação linear: a extração depende também da cultivar, do tempo, da temperatura e do manejo; açúcar inicial, consumo e eventual interrupção da fermentação afetam o teor alcoólico e o açúcar residual. Bases: [3], [4], [5], [7].
 
 ## Slide 10 — Referências
 
@@ -93,13 +105,13 @@ O objetivo não é extrair o máximo possível. É buscar equilíbrio entre arom
 ## Ajustar ao tempo disponível
 
 - **Cerca de 5 minutos:** resuma a história, percorra o fluxograma sem explicar cada operação e simplifique o slide 6. Preserve a comparação do slide 3. Preserve definição, maceração e conclusão.
-- **Cerca de 8 a 9 minutos:** use o roteiro e as pausas sugeridas, ajustando após ensaiar.
+- **Cerca de 9 a 10 minutos:** use o roteiro de 9 min 20 s e as pausas sugeridas, ajustando após ensaiar.
 - **Até 10 minutos:** use o tempo extra para diferenciar maturação da uva e maceração no tanque, explicar o papel da descuba e discutir como o contato com cascas e sementes pode afetar a textura.
 
 ## Fontes verificadas em 29/10/2026
 
 1. [OIV — White wine with maceration, OIV-ECO 647-2020](https://www.oiv.int/public/medias/7584/oiv-eco-647-2020-en.pdf). Definição específica, uvas brancas e duração mínima de um mês.
-2. [National Wine Agency da Geórgia — Qvevri Wine](https://wine.gov.ge/En/KvevriWine). Método e reconhecimento em 2013; [registro da UNESCO](https://ich.unesco.org/en/RL/ancient-georgian-traditional-qvevri-wine-making-method-00870).
+2. National Wine Agency da Geórgia: [Qvevri Wine](https://wine.gov.ge/En/KvevriWine), para método e patrimônio; [Kakheti](https://wine.gov.ge/En/WineMakingRegions/1), para sequência de vedação e trasfega; e [site oficial japonês: Qvevri winemaking](https://www.georgianwine.jp/wine-making/), para alcoólica de aproximadamente 20–40 dias e contato total de 5–6 meses. Os números descrevem o exemplo de Kakheti para uvas brancas e não fixam durações universais. [Registro da UNESCO](https://ich.unesco.org/en/RL/ancient-georgian-traditional-qvevri-wine-making-method-00870).
 3. [OIV — Maceration (General sheet), OIV/OENO 196/2009](https://www.oiv.int/index.php/node/3466). Contato entre sólidos e líquido e extração de compostos.
 4. [Australian Wine Research Institute — Winemaking treatment: Amber wine](https://www.awri.com.au/industry_support/winemaking_resources/winemaking-practices/winemaking-treatment-amber-wine/). Processo, textura e diversidade tecnológica.
 5. [Philipp et al. — The Influence of Prefermentation Skin Contact, Stabulation, and Skin Fermentation… (2024)](https://doi.org/10.1155/2024/9843225). Estudo experimental sobre efeitos do contato com cascas em Grüner Veltliner; seus resultados não devem ser generalizados para todas as uvas.

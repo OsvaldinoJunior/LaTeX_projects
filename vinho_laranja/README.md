@@ -1,15 +1,17 @@
 # Vinho laranja — apresentação independente
 
-Apresentação introdutória com enfoque em produção, composição e perfil sensorial, para público acadêmico. Planejada para **8 min 30 s**, dentro da faixa de 5 a 10 minutos, com 10 slides (incluindo capa e referências). O tempo real depende do ensaio e do ritmo de fala.
+Apresentação introdutória com enfoque em produção, composição e perfil sensorial, para público acadêmico. Planejada para **9 min 20 s**, dentro da faixa de 5 a 10 minutos, com 10 slides (incluindo capa e referências). O tempo real depende do ensaio e do ritmo de fala.
 
 ## Estrutura da fala
 
 - **Introdução (slides 1–2):** raízes na tradição georgiana e vestígios de vinho de cerca de 6000–5800 a.C. (aproximadamente 8 mil anos), distinguindo essa datação da origem exata do estilo laranja.
-- **Desenvolvimento (slides 3–8):** comparação com branco e tinto convencionais, história, produção, partes da uva, perfil sensorial e controle de qualidade.
-- **Conclusão (slide 9):** síntese e resposta ao objetivo inicial.
+- **Desenvolvimento (slides 3–8):** comparação com branco e tinto convencionais, método e tempos no qvevri, produção desde a colheita e seleção, partes da uva, perfil sensorial e controle de qualidade.
+- **Conclusão (slide 9):** como contato com cascas, fermentação, maturação e proteção mudam cor, aromas, textura e estabilidade.
 - **Referências (slide 10):** fontes e materiais de aula.
 
-O slide 3 compara uva, contato com cascas, cor usual e taninos. A tabela apresenta padrões de elaboração, com ressalva de que há exceções e variações de estilo.
+O slide 3 compara uva, contato com cascas, cor usual e taninos. Todas as células da tabela são centralizadas na horizontal e na vertical. Ela apresenta padrões de elaboração, com ressalva de que há exceções e variações de estilo.
+
+O slide 4 descreve um exemplo tradicional de Kakheti: alcoólica de cerca de 20–40 dias e contato total com sólidos de aproximadamente 5–6 meses, incluindo a alcoólica. O carregamento, a vedação e a trasfega são situados na sequência, sem inventar prazos fixos; maturação posterior e envase variam. As fontes e as distinções entre fermentação, maceração e maturação estão no roteiro. O slide 5 começa na colheita e seleção das uvas, e a conclusão relaciona escolhas de processo com o que muda no vinho.
 
 ## Arquivos
 

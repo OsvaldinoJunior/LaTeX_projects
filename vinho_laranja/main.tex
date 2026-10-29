@@ -73,7 +73,7 @@
 \begin{frame}[t]{Laranja, branco e tinto: qual é a diferença?}
   \framesubtitle{Comparação de estilos usuais de elaboração}
   \vspace{0.18cm}
-  % Critérios à esquerda; três estilos centralizados na horizontal e na vertical.
+  % Todas as células centralizadas na horizontal e na vertical, inclusive os critérios.
   % A configuração fica restrita a esta tabela.
   {\fontsize{11}{13.5}\selectfont
     \AlinharTabela
@@ -83,7 +83,7 @@
     \setlength{\belowrulesep}{0pt}
     \setlength{\tabcolsep}{0.20cm}
     \arrayrulecolor{Honey!50}
-    \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash\bfseries}m{2.60cm}
+    \begin{tabularx}{\textwidth}{>{\centering\arraybackslash\bfseries}m{2.60cm}
       >{\centering\arraybackslash}X
       >{\columncolor{Cream}\centering\arraybackslash}X
       >{\centering\arraybackslash}X}
@@ -110,58 +110,57 @@
   \source{[1], [4], [7], [8]}
 \end{frame}
 
-% SLIDE 4 — HISTÓRIA E CONTEXTO | 0:40
-\begin{frame}[t]{Uma tradição antiga, com expressão atual}
-  \framesubtitle{A Geórgia é uma referência histórica da vinificação com maceração}
-  \vspace{0.26cm}
+% SLIDE 4 — FERMENTAÇÃO EM QVEVRI E TEMPOS | 1:10
+\begin{frame}[t]{Como funciona a fermentação em qvevri?}
+  \framesubtitle{Exemplo tradicional de Kakheti, na Geórgia, para uvas brancas}
+  \vspace{0.16cm}
   \begin{columns}[T,onlytextwidth]
-    \begin{column}{0.43\textwidth}
-      \photo{assets/qvevri.png}{6.19cm}{4.50cm}
-      \photocaption{Qvevri enterrados: cena ilustrativa por IA, sem local identificado.}
+    \begin{column}{0.32\textwidth}
+      \photo{assets/qvevri.png}{4.60cm}{3.00cm}
+      \photocaption{Vasos de argila enterrados: cena ilustrativa por IA.}
+      \vspace{0.14cm}
+      \smalltext{\textbf{Total: 5--6 meses.}\\Inclui a alcoólica.}
+      \photocaption{Tempos variáveis. Maturação adicional conforme o estilo.}
     \end{column}
-    \begin{column}{0.53\textwidth}
-      \textrow{TRADIÇÃO GEORGIANA}{Líquido, cascas e sólidos permanecem em contato durante e após a fermentação em qvevri.}
-      \vspace{0.13cm}
-      \textrow{2013 \quad | \quad PATRIMÔNIO CULTURAL}{A UNESCO reconheceu o método tradicional georgiano em qvevri como patrimônio cultural imaterial.}
-      \vspace{0.13cm}
-      \textrow{DIVERSIDADE CONTEMPORÂNEA}{Produzido em outros países, com recipientes e tempos de maceração diversos.}
+    \begin{column}{0.64\textwidth}
+      \textrow{01 \quad CARGA \quad | \quad NA VINDIMA}{Mosto, cascas e sementes entram no qvevri limpo.}
+      \textrow{02 \quad FERMENTAÇÃO ALCOÓLICA \quad | \quad $\sim$20--40 DIAS}{Leveduras formam álcool e CO$_2$; as cascas flutuantes são submersas várias vezes ao dia.}
+      \textrow{03 \quad VEDAÇÃO \quad | \quad APÓS AS FERMENTAÇÕES}{Os sólidos sedimentam. Após a malolática, veda-se o vaso; o contato com cascas continua.}
+      \textrow{04 \quad TRASFEGA \quad | \quad $\sim$5--6 MESES DESDE O INÍCIO}{Na primavera georgiana, separar sólidos e trasfegar.}
     \end{column}
   \end{columns}
-  \source{[2], [6]}
+  \source{[2], National Wine Agency: método de Kakheti e tempos de elaboração}
 \end{frame}
 
-% SLIDE 5 — FLUXOGRAMA | 1:30
+% SLIDE 5 — DA COLHEITA AO ENVASE | 1:40
 % A figura apoia a explicação; o fluxograma continua sendo o elemento principal.
 \begin{frame}[t]{Como o vinho laranja é produzido}
-  \framesubtitle{Fermentação e extração acontecem em paralelo}
+  \framesubtitle{Da colheita e seleção das uvas brancas ao vinho na garrafa}
   \vspace{0.10cm}
   \begin{tikzpicture}[
     stagebox/.style={draw=Honey,fill=Cream,rounded corners=2pt,text=Ink,
       align=center,text width=2.25cm,minimum height=1.85cm,inner sep=0.08cm,
       font=\fontsize{9}{11}\selectfont},
     flow/.style={-{Stealth[length=2mm]},Amber,line width=0.9pt}]
-    \node[stagebox] (a) {\textbf{1. Seleção}\\Maturação\\e recepção};
-    \node[stagebox,right=0.38cm of a] (b) {\textbf{2. Preparo}\\Desengace e esmagamento cuidadoso};
-    \node[stagebox,fill=Amber,text=white,right=0.38cm of b] (c) {\textbf{3}\\\textbf{Fermentação}\\Mosto em contato com as cascas};
+    \node[stagebox] (a) {\textbf{1. Colheita}\\\textbf{e seleção}\\Maturação e sanidade};
+    \node[stagebox,right=0.38cm of a] (b) {\textbf{2. Preparo}\\Desengace\\opcional;\\esmagamento};
+    \node[stagebox,fill=Amber,text=white,right=0.38cm of b] (c) {\textbf{3}\\\textbf{Fermentação}\\Mosto e cascas juntos};
     \node[stagebox,right=0.38cm of c] (d) {\textbf{4. Descuba}\\Separação e prensagem dos sólidos};
-    \node[stagebox,right=0.38cm of d] (e) {\textbf{5. Finalização}\\Trasfega, estabilização e envase};
+    \node[stagebox,right=0.38cm of d] (e) {\textbf{5. Finalização}\\Maturação, estabilização e envase};
     \draw[flow] (a) -- (b); \draw[flow] (b) -- (c);
     \draw[flow] (c) -- (d); \draw[flow] (d) -- (e);
   \end{tikzpicture}
-  \vspace{0.18cm}
+  \vspace{0.12cm}
   \begin{columns}[T,onlytextwidth]
     \begin{column}{0.32\textwidth}
-      \photo{assets/maceracao.png}{4.60cm}{2.05cm}
+      \photo{assets/maceracao.png}{4.60cm}{2.20cm}
+      \photocaption{Categoria OIV: mínimo de 1 mês de contato com as cascas.}
     \end{column}
     \begin{column}{0.64\textwidth}
-      \smalltext{\textbf{Fermentação:} \textit{Saccharomyces cerevisiae}\\
-        fermenta glicose e frutose, formando etanol e CO$_2$.}
-      \vspace{0.12cm}
-      \smalltext{\textbf{Maceração:} extrai compostos e pode continuar depois da fermentação, conforme o estilo.}
+      \textrow{DO VINHEDO À RECEPÇÃO}{Colher pela maturação; transportar sem demora e retirar uvas deterioradas ou impurezas.}
+      \textrow{FERMENTAÇÃO + MACERAÇÃO}{Leveduras geram etanol e CO$_2$; as cascas liberam cor, aromas e taninos. O contato pode seguir após a alcoólica.}
     \end{column}
   \end{columns}
-  \callout{\textbf{Descuba:} encerra o contato desejado; não implica fim da fermentação.
-    \textbf{OIV:} maceração mínima de 1 mês.}
   \source{[1], [3], [7]}
 \end{frame}
 
@@ -237,22 +236,29 @@
 % CONCLUSÃO — retoma o objetivo e fecha a mensagem central.
 \section{Conclusão}
 
-% SLIDE 9 — CONCLUSÃO | 0:40
+% SLIDE 9 — COMO O PROCESSO CONSTRÓI A IDENTIDADE | 0:50
 \begin{frame}[plain]
   \begin{tikzpicture}[remember picture,overlay]
     \fill[Ink] (current page.south west) rectangle (current page.north east);
     \node[anchor=south west,inner sep=0pt] at ([xshift=9.2cm]current page.south west)
       {\includegraphics[width=6.8cm,height=9cm]{assets/hero.png}};
     \begin{scope}[shift={(current page.south west)},x=\paperwidth,y=\paperheight]
-      \node[anchor=west,text=Honey,font=\small\bfseries] at (0.065,0.88) {CONCLUSÃO \enspace\textbullet\enspace TRÊS IDEIAS};
-      \node[anchor=west,text=white,text width=7.1cm,align=left,font=\fontsize{20}{24}\selectfont\bfseries]
-        at (0.065,0.69) {Uvas brancas.};
-      \node[anchor=west,text=white,text width=7.1cm,align=left,font=\fontsize{20}{24}\selectfont\bfseries]
-        at (0.065,0.49) {Fermentação\\com as cascas.};
-      \node[anchor=west,text=white,text width=7.1cm,align=left,font=\fontsize{20}{24}\selectfont\bfseries]
-        at (0.065,0.25) {Identidade construída\\pelo processo.};
-      \node[anchor=west,text=Cream,text width=7.1cm,align=left,font=\fontsize{9}{12}\selectfont]
-        at (0.065,0.09) {Tradição de maceração e controle de processo.};
+      \node[anchor=north west,text=Honey,font=\fontsize{9}{11}\selectfont\bfseries]
+        at (0.065,0.92) {CONCLUSÃO \enspace\textbullet\enspace DO PROCESSO À TAÇA};
+      \node[anchor=north west,text=white,text width=7.1cm,align=left,font=\fontsize{20}{24}\selectfont\bfseries]
+        at (0.065,0.85) {Identidade construída\\pelo processo.};
+      \node[anchor=north west,text=Honey,font=\fontsize{9}{11}\selectfont\bfseries]
+        at (0.065,0.62) {CASCAS + TEMPO DE CONTATO};
+      \node[anchor=north west,text=Cream,text width=7.1cm,align=left,font=\fontsize{11.5}{14.5}\selectfont]
+        at (0.065,0.57) {Mais extração pode ampliar cor, taninos e adstringência.};
+      \node[anchor=north west,text=Honey,font=\fontsize{9}{11}\selectfont\bfseries]
+        at (0.065,0.44) {FERMENTAÇÃO};
+      \node[anchor=north west,text=Cream,text width=7.1cm,align=left,font=\fontsize{11.5}{14.5}\selectfont]
+        at (0.065,0.39) {A condução muda aromas, álcool e açúcar residual.};
+      \node[anchor=north west,text=Honey,font=\fontsize{9}{11}\selectfont\bfseries]
+        at (0.065,0.26) {MATURAÇÃO + PROTEÇÃO};
+      \node[anchor=north west,text=Cream,text width=7.1cm,align=left,font=\fontsize{11.5}{14.5}\selectfont]
+        at (0.065,0.21) {Recipiente e oxigênio mudam aromas e estabilidade.};
       \node[anchor=west,text=Honey,font=\fontsize{6.5}{8}\selectfont]
         at (0.065,0.035) {Fontes: [1], [4], [5].\quad Imagem ilustrativa por IA};
     \end{scope}
@@ -272,7 +278,8 @@
     \item OIV. \textit{White wine with maceration}. Resolução OIV-ECO 647-2020.
       \href{https://www.oiv.int/public/medias/7584/oiv-eco-647-2020-en.pdf}{Definição e prescrições.}
     \item National Wine Agency, Geórgia. \textit{Qvevri Wine}.
-      \href{https://wine.gov.ge/En/KvevriWine}{Tradição e patrimônio cultural, 2013.}
+      \href{https://wine.gov.ge/En/KvevriWine}{Tradição};
+      \href{https://www.georgianwine.jp/wine-making/}{método de Kakheti e tempos de elaboração.}
     \item OIV. \textit{Maceration (General sheet)}. Resolução OIV/OENO 196/2009.
       \href{https://www.oiv.int/index.php/node/3466}{Definição e objetivo da maceração.}
     \item AWRI. \textit{Winemaking treatment -- Amber wine}.
