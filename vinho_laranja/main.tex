@@ -1,0 +1,247 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% GUIA DE EDIÇÃO
+% Textos e slides: este arquivo. Cores e desenhos: config/estilo.tex.
+% Roteiro com falas e duração por slide: roteiro.md.
+% Para gerar o PDF: make pdf
+% Saída: output/vinho_laranja.pdf
+
+% CAPA — substitua o nome, se necessário.
+\newcommand{\Autor}{Osvaldino Junior}
+\newcommand{\Titulo}{Vinho laranja}
+\newcommand{\TituloCapa}{Vinho\\laranja}
+\newcommand{\Subtitulo}{Das cascas à identidade sensorial}
+\input{config/estilo}
+\title{\Titulo}
+\author{\Autor}
+\hypersetup{pdftitle={Vinho laranja: das cascas à identidade sensorial},pdfauthor={\Autor}}
+
+\begin{document}
+
+% SLIDE 1 — ABERTURA | 0:25
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[Ink] (current page.south west) rectangle (current page.north east);
+    \begin{scope}[shift={(current page.south west)},x=\paperwidth,y=\paperheight]
+      \fill[Amber] (0.72,0) rectangle (1,1);
+      \node[anchor=west,text=Honey,font=\small\bfseries] at (0.07,0.86) {CIÊNCIA E TECNOLOGIA DO VINHO};
+      \node[anchor=west,text=white,align=left,font=\fontsize{36}{40}\selectfont\bfseries]
+        at (0.07,0.57) {\TituloCapa};
+      \node[anchor=west,text=Cream,font=\large] at (0.07,0.31) {\Subtitulo};
+      \draw[Honey,line width=1.2pt] (0.07,0.22) -- (0.20,0.22);
+      \node[anchor=west,text=Cream,font=\small] at (0.07,0.14) {\Autor};
+      \node at (0.86,0.52) {\wineglass};
+    \end{scope}
+  \end{tikzpicture}
+\end{frame}
+
+% SLIDE 2 — DEFINIÇÃO | 1:00
+\begin{frame}[t]{Uvas brancas, outra forma de vinificar}
+  \framesubtitle{A diferença central é o contato do mosto com as partes sólidas da uva}
+  \vspace{0.20cm}
+  \bodytext{Vinho laranja é um vinho de \textbf{uvas brancas fermentado com as cascas},
+    também chamado de vinho âmbar ou branco de maceração.}
+  \vspace{0.27cm}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.48\textwidth}
+      \card{BRANCO CONVENCIONAL}{Separar antes}{Em geral, as uvas são prensadas e o mosto
+        fermenta separado das cascas.}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \card{VINHO LARANJA}{Manter o contato}{Mosto e cascas permanecem juntos durante
+        a fermentação; a maceração pode continuar depois.}
+    \end{column}
+  \end{columns}
+  \callout{\textbf{O nome vem da cor:} é vinho de uvas, não da fruta laranja.}
+  \source{[1], [4]}
+\end{frame}
+
+% SLIDE 3 — HISTÓRIA E CONTEXTO | 0:45
+\begin{frame}[t]{Uma tradição antiga, com expressão atual}
+  \framesubtitle{A Geórgia é uma referência histórica da vinificação com maceração}
+  \vspace{0.30cm}
+  \begin{columns}[c,onlytextwidth]
+    \begin{column}{0.40\textwidth}
+      \centering\qvevri\par
+      {\color{Muted}\fontsize{8}{10}\selectfont Ilustração esquemática de um qvevri.}
+    \end{column}
+    \begin{column}{0.56\textwidth}
+      \kicker{TRADIÇÃO GEORGIANA}
+      \smalltext{No qvevri, o vinho pode fermentar e permanecer em contato com cascas
+        e outras partes sólidas da uva.}
+      \vspace{0.24cm}
+      \kicker{2013}
+      \smalltext{O método tradicional georgiano em qvevri foi inscrito pela UNESCO
+        como patrimônio cultural imaterial.}
+      \vspace{0.24cm}
+      \kicker{DIVERSIDADE CONTEMPORÂNEA}
+      \smalltext{O estilo também é produzido em outros países, com recipientes
+        e tempos de maceração diferentes.}
+    \end{column}
+  \end{columns}
+  \source{[2], [6]}
+\end{frame}
+
+% SLIDE 4 — FLUXOGRAMA | 1:20
+\begin{frame}[t]{Como o vinho laranja é produzido}
+  \framesubtitle{Fluxo simplificado: fermentação e extração acontecem em paralelo}
+  \vspace{0.30cm}
+  \begin{tikzpicture}[
+    stagebox/.style={draw=Honey,fill=Cream,rounded corners=2pt,text=Ink,
+      align=center,text width=2.25cm,minimum height=1.85cm,inner sep=0.08cm,
+      font=\fontsize{9.5}{12}\selectfont},
+    flow/.style={-{Stealth[length=2mm]},Amber,line width=0.9pt}]
+    \node[stagebox] (a) {\textbf{1}\\\textbf{Uvas brancas}\\Seleção e recepção};
+    \node[stagebox,right=0.38cm of a] (b) {\textbf{2}\\\textbf{Preparo}\\Preparar o mosto};
+    \node[stagebox,fill=Amber,text=white,right=0.38cm of b] (c) {\textbf{3}\\\textbf{Fermentação}\\Maceração com as cascas};
+    \node[stagebox,right=0.38cm of c] (d) {\textbf{4}\\\textbf{Prensagem}\\Separação dos sólidos};
+    \node[stagebox,right=0.38cm of d] (e) {\textbf{5}\\\textbf{Finalização}\\Maturação e envase};
+    \draw[flow] (a) -- (b); \draw[flow] (b) -- (c);
+    \draw[flow] (c) -- (d); \draw[flow] (d) -- (e);
+  \end{tikzpicture}
+  \vspace{0.30cm}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.48\textwidth}
+      \kicker{FERMENTAÇÃO}
+      \smalltext{Leveduras transformam açúcares em etanol e CO$_2$.}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \kicker{MACERAÇÃO}
+      \smalltext{Extrai compostos das cascas e sementes; pode continuar após fermentar.}
+    \end{column}
+  \end{columns}
+  \callout{\textbf{Categoria da OIV:} mínimo de \textbf{1 mês} de maceração. No mercado,
+    o nome ``laranja'' também abrange contatos mais curtos.}
+  \source{[1], [3], [6]}
+\end{frame}
+
+% SLIDE 5 — FUNDAMENTOS QUÍMICOS | 1:05
+\begin{frame}[t]{O que o contato com as cascas modifica?}
+  \framesubtitle{Composição da uva e condições de processo constroem o estilo}
+  \vspace{0.28cm}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.35\textwidth}
+      \begin{beamercolorbox}[wd=\linewidth,sep=0.30cm]{block body}
+        \kicker{DO SÓLIDO AO LÍQUIDO}
+        {\fontsize{21}{25}\selectfont\bfseries Cascas\\e sementes}\par
+        \vspace{0.35cm}
+        {\color{Amber}\fontsize{26}{30}\selectfont$\downarrow$}\par
+        \vspace{0.22cm}
+        \smalltext{Extração de compostos fenólicos e de substâncias aromáticas.}
+      \end{beamercolorbox}
+    \end{column}
+    \begin{column}{0.60\textwidth}
+      \kicker{COR}
+      \smalltext{Extração e transformações dos compostos fenólicos contribuem
+        para os tons dourados e âmbar.}
+      \vspace{0.25cm}
+      \kicker{ESTRUTURA}
+      \smalltext{Taninos e outros fenólicos influenciam a textura,
+        a adstringência e o amargor percebido.}
+      \vspace{0.25cm}
+      \kicker{AROMA}
+      \smalltext{A extração de aromas e precursores interage com as transformações
+        da fermentação. A resposta varia com a cultivar.}
+    \end{column}
+  \end{columns}
+  \source{[3], [4], [5]}
+\end{frame}
+
+% SLIDE 6 — PERFIL SENSORIAL | 1:00
+\begin{frame}[t]{O que pode aparecer na taça?}
+  \framesubtitle{Há uma família de estilos, e não um único perfil obrigatório}
+  \vspace{0.30cm}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.315\textwidth}
+      \card{VISUAL}{Dourado a âmbar}{A intensidade depende da uva, da maceração
+        e da evolução do vinho.}
+    \end{column}
+    \begin{column}{0.315\textwidth}
+      \card{AROMAS}{Diversidade}{Podem surgir frutas secas, casca cítrica e nozes,
+        conforme o estilo.}
+    \end{column}
+    \begin{column}{0.315\textwidth}
+      \card{BOCA}{Textura}{Pode haver mais estrutura e adstringência
+        do que em brancos convencionais.}
+    \end{column}
+  \end{columns}
+  \vspace{0.25cm}
+  \smalltext{\textbf{Cor não determina doçura:} o açúcar residual depende
+    da condução da fermentação.}
+  \vspace{0.17cm}
+  \smalltext{\textbf{Estilo não é uma receita única:} não exige ânfora
+    nem ausência de aditivos.}
+  \source{[4], [6]}
+\end{frame}
+
+% SLIDE 7 — CONTROLE DE PROCESSO | 1:00
+\begin{frame}[t]{Como equilibrar extração e qualidade?}
+  \framesubtitle{As escolhas de processo precisam acompanhar o perfil desejado}
+  \vspace{0.23cm}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.48\textwidth}
+      \kicker{01 \quad UVA E TEMPO DE CONTATO}
+      \smalltext{Cultivar, maturação e duração da maceração influenciam
+        a composição e a intensidade da extração.}
+      \vspace{0.34cm}
+      \kicker{03 \quad OXIGÊNIO}
+      \smalltext{Seu manejo interfere na evolução da cor e dos aromas;
+        exposição excessiva pode prejudicar o resultado.}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \kicker{02 \quad FERMENTAÇÃO}
+      \smalltext{Acompanhar temperatura, atividade das leveduras e consumo
+        de açúcar ajuda a conduzir o processo.}
+      \vspace{0.34cm}
+      \kicker{04 \quad HIGIENE E ACOMPANHAMENTO}
+      \smalltext{Controlar alterações microbianas e avaliar o vinho ao longo
+        do contato com os sólidos.}
+    \end{column}
+  \end{columns}
+  \vspace{0.25cm}
+  \callout{\textbf{Mais extração não garante mais qualidade.} O objetivo é o equilíbrio.}
+  \source{[4], [5]}
+\end{frame}
+
+% SLIDE 8 — CONCLUSÃO | 0:40
+\begin{frame}[t]{Três ideias para levar da apresentação}
+  \framesubtitle{Matéria-prima, processo e resultado sensorial}
+  \vspace{0.32cm}
+  \kicker{01 \quad MATÉRIA-PRIMA}
+  \bodytext{Uvas brancas são a base do vinho laranja.}
+  \vspace{0.30cm}
+  \kicker{02 \quad PROCESSO}
+  \bodytext{A fermentação com as cascas é a principal diferença de elaboração.}
+  \vspace{0.30cm}
+  \kicker{03 \quad IDENTIDADE}
+  \bodytext{Cor, aromas e textura dependem das escolhas de vinificação.}
+  \callout{\textbf{Vinho laranja: tradição de maceração e controle de processo
+    construindo uma identidade sensorial.}}
+  \source{[1], [4], [5]}
+\end{frame}
+
+% SLIDE 9 — FONTES | 0:15
+% Os links são clicáveis no PDF. As notas completas estão em roteiro.md.
+\begin{frame}[t]{Fontes e leitura complementar}
+  \framesubtitle{Norma internacional, instituições técnicas e pesquisa experimental}
+  \vspace{0.20cm}
+  \fontsize{9}{12}\selectfont
+  \begin{enumerate}
+    \setlength{\itemsep}{0.17cm}
+    \item OIV. \textit{White wine with maceration}. Resolução OIV-ECO 647-2020.
+      \href{https://www.oiv.int/public/medias/7584/oiv-eco-647-2020-en.pdf}{Definição e prescrições.}
+    \item National Wine Agency, Geórgia. \textit{Qvevri Wine}.
+      \href{https://wine.gov.ge/En/KvevriWine}{Método tradicional e reconhecimento pela UNESCO em 2013.}
+    \item OIV. \textit{Maceration (General sheet)}. Resolução OIV/OENO 196/2009.
+      \href{https://www.oiv.int/index.php/node/3466}{Definição e objetivo da maceração.}
+    \item AWRI. \textit{Winemaking treatment -- Amber wine}.
+      \href{https://www.awri.com.au/industry_support/winemaking_resources/winemaking-practices/winemaking-treatment-amber-wine/}{Processo, estilo e cuidados de elaboração.}
+    \item Philipp, C. et al. \textit{The Influence of Prefermentation Skin Contact,
+      Stabulation, and Skin Fermentation\ldots} Australian Journal of Grape and Wine Research, 2024.
+      \href{https://doi.org/10.1155/2024/9843225}{DOI: 10.1155/2024/9843225.}
+    \item WSET. \textit{What is orange wine? Understanding skin-contact white wines}. 2026.
+      \href{https://www.wsetglobal.com/knowledge-centre/blog/2026/what-is-orange-wine-understanding-skin-contact-white-wines}{Estilos, tradição e características sensoriais.}
+  \end{enumerate}
+\end{frame}
+
+\end{document}
