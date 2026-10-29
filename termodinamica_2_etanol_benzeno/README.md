@@ -2,6 +2,10 @@
 
 Apresentação Beamer: `main.tex`. Figuras e script `graficos.py` preservados do ZIP original.
 
+## Onde editar os textos
+
+Abra `main.tex`. No início ficam os textos da capa, grupo e integrantes. Para localizar o conteúdo, procure os comentários `SLIDE 2`, `SLIDE 3`, `SLIDE 4` e `SLIDE 5`. Cada figura tem seus títulos e textos explicativos identificados. As configurações de cores, fontes e disposição ficam em `config/estilo.tex`.
+
 ## Gerar o PDF
 
 Instale Git, Make e uma distribuição TeX Live com Beamer e fontes recomendadas em cada computador.

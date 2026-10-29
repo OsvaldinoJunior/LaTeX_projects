@@ -1,0 +1,98 @@
+% CONFIGURAÇÕES VISUAIS DA APRESENTAÇÃO
+% Os textos da capa, os nomes e o conteúdo dos slides são editados em ../main.tex.
+% Altere este arquivo apenas para mudar cores, fontes, cabeçalhos ou disposição.
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{anyfontsize}
+\usetheme{Boadilla}
+\usecolortheme{dolphin}
+
+% Paleta de cores.
+\definecolor{PrismNavy}{RGB}{25,49,75}
+\definecolor{PrismTeal}{RGB}{0,119,126}
+\definecolor{PrismMist}{RGB}{235,244,245}
+\definecolor{PrismGold}{RGB}{220,157,45}
+
+% Cores, fontes e margens dos slides.
+\setbeamercolor{normal text}{fg=PrismNavy,bg=white}
+\setbeamercolor{structure}{fg=PrismTeal}
+\setbeamercolor{frametitle}{fg=white,bg=PrismNavy}
+\setbeamercolor{framesubtitle}{fg=PrismMist,bg=PrismNavy}
+\setbeamercolor{block title}{fg=PrismNavy,bg=PrismMist}
+\setbeamercolor{block body}{fg=PrismNavy,bg=PrismMist}
+\setbeamercolor{itemize item}{fg=PrismTeal}
+\setbeamercolor{enumerate item}{fg=PrismTeal}
+\setbeamerfont{normal text}{size=\small}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+\setbeamerfont{framesubtitle}{size=\small}
+\setbeamerfont{author}{size=\large,series=\bfseries}
+\setbeamerfont{institute}{size=\normalsize}
+\setbeamersize{text margin left=0.8cm,text margin right=0.8cm}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\raisebox{0.15ex}{\scriptsize$\blacktriangleright$}}
+\setbeamertemplate{enumerate item}{\insertenumlabel.}
+\setbeamertemplate{blocks}[default]
+% Cabeçalho dos slides de conteúdo.
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\paperwidth,sep=0.18cm,leftskip=0.62cm,rightskip=0.62cm]{frametitle}
+    {\usebeamerfont{frametitle}\strut\insertframetitle\strut\par}
+    \vskip0.02cm
+    {\usebeamerfont{framesubtitle}\color{PrismMist}\strut\insertframesubtitle\strut\par}
+  \end{beamercolorbox}%
+}
+% Rodapé e numeração.
+\setbeamertemplate{footline}{%
+  \hbox{\hspace{0.8cm}\color{PrismMist}\rule{\dimexpr\paperwidth-1.6cm\relax}{0.5pt}}%
+  \vskip0.08cm
+  \hbox to\paperwidth{\hspace{0.8cm}%
+    {\color{PrismTeal}\fontsize{7.5}{9}\selectfont \TextoDisciplina}%
+    \hspace{0.25cm}{\color{PrismNavy}\fontsize{7.5}{9}\selectfont \MisturaRodape\enspace\textbullet\enspace\NomeGrupo}%
+    \hfill{\color{PrismNavy}\fontsize{8}{9}\selectfont\bfseries\insertframenumber\,/\,\inserttotalframenumber}%
+    \hspace{0.8cm}}
+  \vskip0.15cm
+}
+
+% Cabeçalhos e notas repetidos nos slides de gráficos.
+\newcommand{\figureheading}[2]{%
+  \noindent\parbox{\linewidth}{%
+    \fontsize{11}{13}\selectfont\bfseries
+    \textcolor{PrismTeal}{Figura~#1}\hspace{0.16cm}#2}%
+  \par\vspace{0.10cm}}
+\newcommand{\figurenote}[1]{%
+  \par\vspace{0.05cm}\noindent\parbox[t]{\linewidth}{\raggedright\fontsize{9.5}{12}\selectfont #1}\par}
+% Desenho da capa; os textos vêm dos comandos definidos em main.tex.
+\setbeamertemplate{title page}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[PrismNavy] (current page.south west) rectangle (current page.north east);
+    \begin{scope}[shift={(current page.south west)},x=\paperwidth,y=\paperheight]
+      \fill[PrismTeal] (0.74,0) rectangle (1,1);
+      \fill[PrismGold] (0.07,0.745) rectangle (0.14,0.752);
+      \node[anchor=north west,text=PrismMist,inner sep=0,font=\small\bfseries]
+        at (0.07,0.88) {\TextoDisciplina};
+      \node[anchor=north west,text=white,inner sep=0,align=left,
+        font=\fontsize{29}{34}\selectfont\bfseries]
+        at (0.07,0.67) {\TituloCapa};
+      \node[anchor=north west,text=PrismMist,inner sep=0,align=left,font=\large]
+        at (0.07,0.365) {\MisturaCapa};
+      \node[anchor=north west,text=PrismMist,inner sep=0,font=\small]
+        at (0.07,0.29) {\ModeloCapa};
+      \draw[white,opacity=0.25,line width=0.4pt] (0.07,0.20) -- (0.67,0.20);
+      \node[anchor=north west,text=PrismGold,inner sep=0,font=\small\bfseries]
+        at (0.07,0.145) {\insertauthor};
+      \node[anchor=north west,text=white,inner sep=0,font=\small]
+        at (0.07,0.095) {\insertinstitute};
+      \node[text=white,opacity=0.85,font=\scriptsize\bfseries,align=center]
+        at (0.87,0.77) {\RotuloSistema};
+      \node[text=white,font=\fontsize{34}{38}\selectfont\bfseries]
+        at (0.87,0.59) {\SiglaSistema};
+      \draw[PrismGold,line width=1pt] (0.80,0.48) -- (0.94,0.48);
+      \node[text=white,font=\Large\bfseries] at (0.87,0.36) {\PressaoCapa};
+      \node[text=white,opacity=0.85,font=\scriptsize,align=center]
+        at (0.87,0.28) {\RotuloPressao};
+    \end{scope}
+  \end{tikzpicture}%
+}
+

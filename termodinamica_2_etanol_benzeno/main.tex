@@ -1,160 +1,140 @@
 \documentclass[aspectratio=169,11pt]{beamer}
 
-\usepackage[utf8]{inputenc}
-\usepackage{graphicx}
-\usepackage{tikz}
-\usepackage{anyfontsize}
-\usetheme{Boadilla}
-\usecolortheme{dolphin}
+% ======================================================================
+% GUIA RÁPIDO DE EDIÇÃO
+% ======================================================================
+% 1. CAPA E IDENTIFICAÇÃO: altere os textos entre chaves na seção abaixo.
+% 2. CONTEÚDO: procure por "SLIDE 2", "SLIDE 3", "SLIDE 4" ou "SLIDE 5".
+% 3. FIGURAS: os títulos estão em \figureheading; as legendas, em \figurenote.
+% 4. REFERÊNCIAS: cada \item é uma referência no slide 5.
+% Linhas iniciadas por % são comentários e não aparecem no PDF.
+% Preserve os comandos LaTeX (\...), chaves {...} e fórmulas entre $...$.
+%
+% Para atualizar o PDF, salve este arquivo e execute: make pdf
+% Resultado: output/termodinamica_2_etanol_benzeno.pdf
+% Cores e diagramação ficam em config/estilo.tex; cálculos, em graficos.py.
 
-\definecolor{PrismNavy}{RGB}{25,49,75}
-\definecolor{PrismTeal}{RGB}{0,119,126}
-\definecolor{PrismMist}{RGB}{235,244,245}
-\definecolor{PrismGold}{RGB}{220,157,45}
+% ======================================================================
+% CAPA E IDENTIFICAÇÃO — EDITE OS TEXTOS ENTRE CHAVES
+% ======================================================================
+\newcommand{\TextoDisciplina}{TERMODINÂMICA II}
+\newcommand{\TituloCapa}{Equilíbrio\\líquido--vapor} % \\ quebra a linha.
+\newcommand{\MisturaCapa}{Etanol (1) + benzeno (2)}
+\newcommand{\ModeloCapa}{Modelo de Van Laar}
+\newcommand{\NomeGrupo}{Grupo 5}
+\newcommand{\Integrantes}{Hycaro, Mariana e Osvaldino}
+\newcommand{\RotuloSistema}{SISTEMA BINÁRIO}
+\newcommand{\SiglaSistema}{ELV}
+\newcommand{\PressaoCapa}{1 atm}
+\newcommand{\RotuloPressao}{PRESSÃO DO SISTEMA}
+\newcommand{\MisturaRodape}{Etanol + benzeno}
 
-\setbeamercolor{normal text}{fg=PrismNavy,bg=white}
-\setbeamercolor{structure}{fg=PrismTeal}
-\setbeamercolor{frametitle}{fg=white,bg=PrismNavy}
-\setbeamercolor{framesubtitle}{fg=PrismMist,bg=PrismNavy}
-\setbeamercolor{block title}{fg=PrismNavy,bg=PrismMist}
-\setbeamercolor{block body}{fg=PrismNavy,bg=PrismMist}
-\setbeamercolor{itemize item}{fg=PrismTeal}
-\setbeamercolor{enumerate item}{fg=PrismTeal}
-\setbeamerfont{normal text}{size=\small}
-\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
-\setbeamerfont{framesubtitle}{size=\small}
-\setbeamerfont{author}{size=\large,series=\bfseries}
-\setbeamerfont{institute}{size=\normalsize}
-\setbeamersize{text margin left=0.8cm,text margin right=0.8cm}
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{itemize item}{\raisebox{0.15ex}{\scriptsize$\blacktriangleright$}}
-\setbeamertemplate{enumerate item}{\insertenumlabel.}
-\setbeamertemplate{blocks}[default]
-\setbeamertemplate{frametitle}{%
-  \nointerlineskip
-  \begin{beamercolorbox}[wd=\paperwidth,sep=0.18cm,leftskip=0.62cm,rightskip=0.62cm]{frametitle}
-    {\usebeamerfont{frametitle}\strut\insertframetitle\strut\par}
-    \vskip0.02cm
-    {\usebeamerfont{framesubtitle}\color{PrismMist}\strut\insertframesubtitle\strut\par}
-  \end{beamercolorbox}%
-}
-\setbeamertemplate{footline}{%
-  \hbox{\hspace{0.8cm}\color{PrismMist}\rule{\dimexpr\paperwidth-1.6cm\relax}{0.5pt}}%
-  \vskip0.08cm
-  \hbox to\paperwidth{\hspace{0.8cm}%
-    {\color{PrismTeal}\fontsize{7.5}{9}\selectfont TERMODINÂMICA II}%
-    \hspace{0.25cm}{\color{PrismNavy}\fontsize{7.5}{9}\selectfont Etanol + benzeno\enspace\textbullet\enspace Grupo 5}%
-    \hfill{\color{PrismNavy}\fontsize{8}{9}\selectfont\bfseries\insertframenumber\,/\,\inserttotalframenumber}%
-    \hspace{0.8cm}}
-  \vskip0.15cm
-}
+% Carrega as configurações visuais, separadas dos textos.
+\input{config/estilo}
 
-% Cabeçalhos e notas repetidos nos slides de gráficos.
-\newcommand{\figureheading}[2]{%
-  \noindent\parbox{\linewidth}{%
-    \fontsize{11}{13}\selectfont\bfseries
-    \textcolor{PrismTeal}{Figura~#1}\hspace{0.16cm}#2}%
-  \par\vspace{0.10cm}}
-\newcommand{\figurenote}[1]{%
-  \par\vspace{0.05cm}\noindent\parbox[t]{\linewidth}{\raggedright\fontsize{9.5}{12}\selectfont #1}\par}
-\setbeamertemplate{title page}{%
-  \begin{tikzpicture}[remember picture,overlay]
-    \fill[PrismNavy] (current page.south west) rectangle (current page.north east);
-    \begin{scope}[shift={(current page.south west)},x=\paperwidth,y=\paperheight]
-      \fill[PrismTeal] (0.74,0) rectangle (1,1);
-      \fill[PrismGold] (0.07,0.745) rectangle (0.14,0.752);
-      \node[anchor=north west,text=PrismMist,inner sep=0,font=\small\bfseries]
-        at (0.07,0.88) {TERMODINÂMICA II};
-      \node[anchor=north west,text=white,inner sep=0,align=left,
-        font=\fontsize{29}{34}\selectfont\bfseries]
-        at (0.07,0.67) {Equilíbrio\\líquido--vapor};
-      \node[anchor=north west,text=PrismMist,inner sep=0,align=left,font=\large]
-        at (0.07,0.365) {Etanol (1) + benzeno (2)};
-      \node[anchor=north west,text=PrismMist,inner sep=0,font=\small]
-        at (0.07,0.29) {Modelo de Van Laar};
-      \draw[white,opacity=0.25,line width=0.4pt] (0.07,0.20) -- (0.67,0.20);
-      \node[anchor=north west,text=PrismGold,inner sep=0,font=\small\bfseries]
-        at (0.07,0.145) {\insertauthor};
-      \node[anchor=north west,text=white,inner sep=0,font=\small]
-        at (0.07,0.095) {\insertinstitute};
-      \node[text=white,opacity=0.85,font=\scriptsize\bfseries,align=center]
-        at (0.87,0.77) {SISTEMA BINÁRIO};
-      \node[text=white,font=\fontsize{34}{38}\selectfont\bfseries]
-        at (0.87,0.59) {ELV};
-      \draw[PrismGold,line width=1pt] (0.80,0.48) -- (0.94,0.48);
-      \node[text=white,font=\Large\bfseries] at (0.87,0.36) {1 atm};
-      \node[text=white,opacity=0.85,font=\scriptsize,align=center]
-        at (0.87,0.28) {PRESSÃO DO SISTEMA};
-    \end{scope}
-  \end{tikzpicture}%
-}
-
+% Identificação usada pelo Beamer e pela capa.
 \title{Equilíbrio Líquido--Vapor}
 \subtitle{Etanol (1) + benzeno (2) a 1 atm}
-\author[Grupo 5]{Grupo 5}
-\institute{Hycaro, Mariana e Osvaldino}
+\author[\NomeGrupo]{\NomeGrupo}
+\institute{\Integrantes}
 \date{}
 
 \begin{document}
 
+% ======================================================================
+% SLIDE 1 — CAPA
+% Os textos são definidos em "CAPA E IDENTIFICAÇÃO", acima.
+% ======================================================================
 \begin{frame}[plain]
   \titlepage
 \end{frame}
 
+% ======================================================================
+% SLIDE 2 — NÃO IDEALIDADE DA FASE LÍQUIDA
+% ======================================================================
+% Título do slide:
 \begin{frame}[t]{Não idealidade da fase líquida}
+  % Subtítulo:
   \framesubtitle{Modelo de Van Laar \enspace\textbullet\enspace $T=73{,}55\,^{\circ}\mathrm{C}$}
   \vspace{0.12cm}
   \begin{columns}[T,onlytextwidth]
     \begin{column}{0.485\textwidth}
+      % Figura 1 — título exibido acima do gráfico:
       \figureheading{1}{Coeficientes de atividade}
+      % Arquivo da imagem (gerado por graficos.py):
       \includegraphics[width=\linewidth,height=4.15cm,keepaspectratio]{1_ln_gamma.png}\par
+      % Texto explicativo abaixo do gráfico:
       \figurenote{\textbf{$\gamma_i>1$: desvio positivo da lei de Raoult.}\\
       Diluição infinita: $\gamma_1^{\infty}\approx7$ e $\gamma_2^{\infty}\approx5$.}
     \end{column}
     \begin{column}{0.485\textwidth}
+      % Figura 2 — título exibido acima do gráfico:
       \figureheading{2}{Gibbs em excesso}
+      % Arquivo da imagem (gerado por graficos.py):
       \includegraphics[width=\linewidth,height=4.15cm,keepaspectratio]{2_GE.png}\par
+      % Texto explicativo abaixo do gráfico:
       \figurenote{\textbf{Máximo: $1{,}273\,\mathrm{kJ/mol}$ em $x_1\approx0{,}476$.}\\
       $G^E>0$ nas misturas; $G^E=0$ nos componentes puros.}
     \end{column}
   \end{columns}
 \end{frame}
 
+% ======================================================================
+% SLIDE 3 — EQUILÍBRIO LÍQUIDO–VAPOR
+% ======================================================================
+% Título do slide:
 \begin{frame}[t]{Equilíbrio líquido--vapor}
+  % Subtítulo:
   \framesubtitle{Etanol (1) + benzeno (2) \enspace\textbullet\enspace $P=1\,\mathrm{atm}$}
   \vspace{0.12cm}
   \begin{columns}[T,onlytextwidth]
     \begin{column}{0.485\textwidth}
+      % Figura 3 — título exibido acima do gráfico:
       \figureheading{3}{Diagrama $T$--$x$--$y$}
+      % Arquivo da imagem (gerado por graficos.py):
       \includegraphics[width=\linewidth,height=4.15cm,keepaspectratio]{3_Txy.png}\par
+      % Texto explicativo abaixo do gráfico:
       \figurenote{\textbf{Azeótropo de ebulição mínima.}\\
       $x_1=y_1\approx0{,}464$ a $66{,}93\,^{\circ}\mathrm{C}$.}
     \end{column}
     \begin{column}{0.485\textwidth}
+      % Figura 4 — título exibido acima do gráfico:
       \figureheading{4}{Diagrama $x$--$y$}
+      % Arquivo da imagem (gerado por graficos.py):
       \includegraphics[width=\linewidth,height=4.15cm,keepaspectratio]{4_xy.png}\par
+      % Texto explicativo abaixo do gráfico:
       \figurenote{\textbf{No azeótropo: $x_1=y_1$.}\\
       $x_1<0{,}464$: $y_1>x_1$;\quad $x_1>0{,}464$: $y_1<x_1$.}
     \end{column}
   \end{columns}
 \end{frame}
 
+% ======================================================================
+% SLIDE 4 — APLICAÇÃO PROFISSIONAL
+% ======================================================================
+% Título do slide:
 \begin{frame}[t]{Aplicação: recuperação de solventes}
+  % Subtítulo:
   \framesubtitle{Como os diagramas orientam uma decisão de processo}
   \vspace{0.12cm}
   \begin{columns}[T,onlytextwidth]
+    % Coluna esquerda: cenário, leitura dos diagramas e decisão.
     \begin{column}{0.60\textwidth}
       {\color{PrismTeal}\small\bfseries O CENÁRIO}\par\vspace{0.13cm}
-      {\fontsize{12}{15}\selectfont Uma unidade química ou petroquímica precisa recuperar etanol de uma corrente com benzeno.\par}
+      {\fontsize{12}{15}\selectfont Uma unidade química ou petroquímica precisa recuperar etanol de uma
+        corrente com benzeno.\par}
       \vspace{0.24cm}
       {\color{PrismTeal}\small\bfseries O QUE CADA DIAGRAMA ENTREGA}\par\vspace{0.12cm}
       {\fontsize{10.5}{14}\selectfont
         \textbf{$T$--$x$--$y$}\quad Estima a temperatura de operação.\par\vspace{0.16cm}
-        \textbf{$x$--$y$}\quad Mostra o enriquecimento do vapor em etanol e subsidia a análise dos estágios.\par}
+        \textbf{$x$--$y$}\quad Mostra o enriquecimento do vapor em etanol e subsidia a análise dos
+          estágios.\par}
       \vspace{0.24cm}
       {\color{PrismTeal}\small\bfseries A DECISÃO}\par\vspace{0.12cm}
-      {\fontsize{10.5}{14}\selectfont Para ultrapassar o azeótropo, avaliar outra rota de separação e os controles de segurança do benzeno [6].\par}
+      {\fontsize{10.5}{14}\selectfont Para ultrapassar o azeótropo, avaliar outra rota de separação e os
+        controles de segurança do benzeno [6].\par}
     \end{column}
+    % Coluna direita: valor em destaque e explicação do azeótropo.
     \begin{column}{0.35\textwidth}
       \begin{beamercolorbox}[wd=\linewidth,sep=0.30cm]{block body}
         {\color{PrismTeal}\fontsize{9}{12}\selectfont\bfseries LIMITE A 1 atm}\par
@@ -172,17 +152,25 @@
   \end{columns}
 \end{frame}
 
+% ======================================================================
+% SLIDE 5 — REFERÊNCIAS
+% ======================================================================
+% Título do slide:
 \begin{frame}[t]{Referências}
+  % Subtítulo:
   \framesubtitle{Fontes do modelo, dados de equilíbrio e segurança}
   \vspace{0.14cm}
   \fontsize{9}{11.5}\selectfont
   \begin{enumerate}
     \setlength{\itemsep}{0.21cm}
-    \item Smith, J. M.; Van Ness, H. C.; Abbott, M. M. \textit{Introduction to Chemical Engineering Thermodynamics}. 7. ed. McGraw-Hill, 2005. (Antoine e Van Laar.)
-    \item Prausnitz, J. M.; Lichtenthaler, R. N.; Azevedo, E. G. \textit{Molecular Thermodynamics of Fluid-Phase Equilibria}. 3. ed. Prentice Hall, 1999.
+    \item Smith, J. M.; Van Ness, H. C.; Abbott, M. M. \textit{Introduction to Chemical Engineering
+      Thermodynamics}. 7. ed. McGraw-Hill, 2005. (Antoine e Van Laar.)
+    \item Prausnitz, J. M.; Lichtenthaler, R. N.; Azevedo, E. G. \textit{Molecular Thermodynamics of
+      Fluid-Phase Equilibria}. 3. ed. Prentice Hall, 1999.
     \item NIST. \textit{Chemistry WebBook}, SRD 69: registros de etanol e benzeno.
     \item CRC. \textit{Handbook of Chemistry and Physics}, seção “Azeotropic Data of Binary Mixtures”.
-    \item Tiesinga, E. et al. CODATA recommended values of the fundamental physical constants: 2018. \textit{Rev. Mod. Phys.}, 93, 025010, 2021. DOI: 10.1103/RevModPhys.93.025010.
+    \item Tiesinga, E. et al. CODATA recommended values of the fundamental physical constants: 2018.
+      \textit{Rev. Mod. Phys.}, 93, 025010, 2021. DOI: 10.1103/RevModPhys.93.025010.
     \item National Toxicology Program. \textit{15th Report on Carcinogens: Benzene}. 2021.
     \item Tabela de grupos da disciplina, Grupo 5: parâmetros de Van Laar e faixa de temperatura.
   \end{enumerate}
