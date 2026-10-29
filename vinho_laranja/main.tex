@@ -3,7 +3,7 @@
 % GUIA DE EDIÇÃO
 % Textos e slides: este arquivo. Cores e desenhos: config/estilo.tex.
 % Roteiro com falas e duração por slide: roteiro.md.
-% Imagens: assets/. Prompts e procedência: assets/prompts.json.
+% Imagens: assets/. Fotos por IA: assets/prompts.json. Mapa: ver README.md.
 % Para gerar o PDF: make pdf
 % Saída: output/vinho_laranja.pdf
 
@@ -38,7 +38,7 @@
       \draw[Honey,line width=1.2pt] (0.065,0.22) -- (0.20,0.22);
       \node[anchor=west,text=Cream,font=\small] at (0.065,0.14) {\Autor};
       \node[anchor=west,text=Honey,font=\fontsize{6.5}{8}\selectfont]
-        at (0.065,0.055) {Imagens ilustrativas geradas por IA};
+        at (0.065,0.055) {Fotos ilustrativas geradas por IA};
     \end{scope}
   \end{tikzpicture}
 \end{frame}
@@ -48,22 +48,22 @@
   \framesubtitle{Da tradição georgiana ao vinho branco com maceração}
   \vspace{0.18cm}
   \begin{columns}[T,onlytextwidth]
-    \begin{column}{0.60\textwidth}
+    \begin{column}{0.46\textwidth}
       \kicker{GEÓRGIA \quad | \quad c. 6000--5800 a.C.}
       \bodytext{\textbf{Há cerca de 8 mil anos,} já se produzia vinho na região.}
       \vspace{0.16cm}
-      \textrow{RAÍZES DO VINHO LARANJA}{O estilo está ligado à tradição georgiana
+      \textrow{ONDE FICA?}{No Cáucaso, entre Europa e Ásia, junto ao mar Negro.}
+      \textrow{RAÍZES DO VINHO LARANJA}{O estilo se liga à tradição georgiana
         de fermentar uvas brancas com as cascas.}
-      \textrow{DA HISTÓRIA À TECNOLOGIA}{Vamos comparar os estilos e entender
-        como a maceração muda a cor, os aromas e a textura.}
       \photocaption{A datação é de vinho em geral; não determina quando o estilo laranja foi inventado.}
     \end{column}
-    \begin{column}{0.36\textwidth}
-      \photo{assets/uvas.png}{5.18cm}{4.40cm}
-      \photocaption{Uvas brancas e baga aberta: representação ilustrativa.}
+    \begin{column}{0.50\textwidth}
+      % Não recortar: o globo e os rótulos fazem parte da imagem.
+      \includegraphics[width=\linewidth]{assets/mapa_georgia.png}
+      \photocaption{Geórgia em âmbar. Base cartográfica: Natural Earth (domínio público).}
     \end{column}
   \end{columns}
-  \source{[2], [4], [9]}
+  \source{[2], [4], [9]; localização: \href{https://georgia.travel/why-georgia-geography}{Georgia Travel}; mapa: \href{https://www.naturalearthdata.com/}{Natural Earth}}
 \end{frame}
 
 % DESENVOLVIMENTO — compara os estilos e explica o processo.

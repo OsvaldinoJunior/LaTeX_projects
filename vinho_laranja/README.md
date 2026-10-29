@@ -16,7 +16,9 @@ O slide 3 compara uva, contato com cascas, cor usual e taninos. A tabela apresen
 - `main.tex`: todos os textos, títulos e referências; procure por `SLIDE 1` até `SLIDE 10`.
 - `config/estilo.tex`: cores, fontes e recorte das imagens no layout.
 - `roteiro.md`: falas sugeridas, transições, tempo por slide e fontes.
-- `assets/`: seis imagens fotorrealistas ilustrativas, geradas por IA.
+- `assets/`: seis imagens fotorrealistas ilustrativas, geradas por IA, e um mapa cartográfico da Geórgia.
+- `assets/mapa_georgia.png`: globo localizador e mapa do Cáucaso usados no slide 2.
+- `assets/mapa_georgia_dados.json` e `assets/gerar_mapa_georgia.py`: dados e script para reproduzir o mapa.
 - `assets/prompts.json`: prompts completos e identificação do modo de geração.
 - `Makefile`: comando de compilação.
 - `output/vinho_laranja.pdf`: PDF final, atualizado no mesmo caminho.
@@ -48,3 +50,14 @@ As referências verificadas estão no slide final e no roteiro. O conteúdo tamb
 - [PDF final](https://github.com/OsvaldinoJunior/LaTeX_projects/blob/main/vinho_laranja/output/vinho_laranja.pdf)
 
 Depois de editar e recompilar, use o script `sincronizar.py` na raiz `Latex/` para enviar também a nova versão do PDF.
+
+## Mapa de localização da Geórgia
+
+O slide 2 destaca o país no Cáucaso e mostra sua localização no globo. A base é o [Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), em domínio público: países a 1:110 milhões no globo e 1:50 milhões no detalhe regional. Os dados foram obtidos do [repositório dos mantenedores](https://github.com/nvkelso/natural-earth-vector/tree/master/geojson) em 29/10/2026; o extrato local mantém os polígonos mundiais e recorta o detalhe regional. A localização foi conferida em [Enterprise Georgia](https://www.enterprisegeorgia.gov.ge/en/about-georgia) e [Georgia Travel](https://georgia.travel/why-georgia-geography). O mapa é cartográfico, distinto das fotos ilustrativas por IA.
+
+O PDF compila diretamente com a imagem existente. Para redesenhar o mapa, use Python com NumPy e Matplotlib:
+
+```sh
+python assets/gerar_mapa_georgia.py
+make pdf
+```

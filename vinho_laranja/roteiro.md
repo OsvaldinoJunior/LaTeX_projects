@@ -30,7 +30,7 @@
 
 ## Slide 2 — Introdução: desde quando existe essa tradição?
 
-“Os vestígios arqueológicos situam a produção de vinho na Geórgia entre cerca de 6000 e 5800 antes de Cristo. O vinho laranja está ligado à tradição georgiana de fermentar uvas brancas com as cascas. É importante distinguir as duas informações: os achados datam vinho em geral e não determinam a data exata de invenção do estilo laranja. A partir dessas raízes históricas, vamos compará-lo aos vinhos convencionais e entender sua elaboração, sua cor, seus aromas e sua textura.”
+“O mapa situa a Geórgia no Cáucaso, entre Europa e Ásia, junto ao mar Negro. O ponto no globo mostra sua localização no planeta. Os vestígios de vinho na região são de cerca de 6000 a 5800 antes de Cristo. O estilo laranja se liga à tradição georgiana de fermentar uvas brancas com as cascas, mas esses achados datam vinho em geral, não a invenção exata do estilo. Vamos agora comparar sua elaboração com a dos brancos e tintos convencionais.”
 
 **Transição:** “Para entender o que caracteriza esse estilo, vamos comparar o laranja com o branco e o tinto.” Bases: [2], [4], [9].
 
@@ -111,3 +111,7 @@ O objetivo não é extrair o máximo possível. É buscar equilíbrio entre arom
 9. [McGovern et al. — Early Neolithic wine of Georgia in the South Caucasus (PNAS, 2017)](https://doi.org/10.1073/pnas.1714728114). [Resumo do estudo no PubMed](https://pubmed.ncbi.nlm.nih.gov/29133421/). Evidências arqueológicas de vinho na Geórgia em cerca de 6000–5800 a.C.; o estudo não estabelece uma data de invenção específica do vinho laranja. Consultado em 29/10/2026.
 
 O fluxograma é um esquema didático original. As imagens fotorrealistas são ilustrações geradas por IA, não registros de locais identificados nem dados experimentais; os prompts estão em `assets/prompts.json`. O roteiro é uma síntese própria; as falas não são citações literais das fontes.
+
+## Mapa da Geórgia — slide 2
+
+Aponte primeiro o ponto âmbar no globo e depois o país destacado no detalhe do Cáucaso. O mapa usa limites do [Natural Earth](https://www.naturalearthdata.com/), em domínio público, e não é uma imagem gerada por IA. Localização conferida em [Enterprise Georgia](https://www.enterprisegeorgia.gov.ge/en/about-georgia) e [Georgia Travel](https://georgia.travel/why-georgia-geography). Dados e script de reprodução estão em `assets/mapa_georgia_dados.json` e `assets/gerar_mapa_georgia.py`.
