@@ -1,0 +1,7 @@
+{
+  "fonte": "/home/osvaldinojunior/Desktop/tcc_2/resultados_5/resultados_4/análises/tetra_e_comerciais/interacoes/1H1B_clean_withH/interacoes_1H1B_clean_withH.xlsx",
+  "SHA256": "e561a7e6dca4e91ed14319535523103f719270065f7fcc58a96409e05e0e3bb2",
+  "linhas_ligantes": 34,
+  "residuos": 10,
+  "criterio": "matriz de interacoes preservada; FEB comercial mantida separadamente nas tabelas de energia"
+}

@@ -1,0 +1,156 @@
+{
+  "1HFC": [
+    {
+      "objeto": "Hidrofobicas",
+      "rgb": [
+        0.5050504803657532,
+        0.5050504803657532,
+        0.5050504803657532
+      ]
+    },
+    {
+      "objeto": "Ligacoes_hidrogenio",
+      "rgb": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "objeto": "Empilhamento_pi",
+      "rgb": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "objeto": "Coordenacao_metais",
+      "rgb": [
+        1.0,
+        0.5,
+        1.0
+      ]
+    }
+  ],
+  "5M8P": [
+    {
+      "objeto": "Hidrofobicas",
+      "rgb": [
+        0.5050504803657532,
+        0.5050504803657532,
+        0.5050504803657532
+      ]
+    },
+    {
+      "objeto": "Ligacoes_hidrogenio",
+      "rgb": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "objeto": "Coordenacao_metais",
+      "rgb": [
+        1.0,
+        0.5,
+        1.0
+      ]
+    }
+  ],
+  "8H78": [
+    {
+      "objeto": "Hidrofobicas",
+      "rgb": [
+        0.5050504803657532,
+        0.5050504803657532,
+        0.5050504803657532
+      ]
+    },
+    {
+      "objeto": "Ligacoes_hidrogenio",
+      "rgb": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "objeto": "Pontes_salinas",
+      "rgb": [
+        1.0,
+        0.8700000047683716,
+        0.3700000047683716
+      ]
+    },
+    {
+      "objeto": "Empilhamento_pi",
+      "rgb": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "objeto": "Coordenacao_metais",
+      "rgb": [
+        1.0,
+        0.5,
+        1.0
+      ]
+    }
+  ],
+  "1H1B": [
+    {
+      "objeto": "Hidrofobicas",
+      "rgb": [
+        0.5050504803657532,
+        0.5050504803657532,
+        0.5050504803657532
+      ]
+    },
+    {
+      "objeto": "Ligacoes_hidrogenio",
+      "rgb": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "objeto": "Pi_cation",
+      "rgb": [
+        1.0,
+        0.5,
+        0.0
+      ]
+    }
+  ],
+  "1GKC": [
+    {
+      "objeto": "Hidrofobicas",
+      "rgb": [
+        0.5050504803657532,
+        0.5050504803657532,
+        0.5050504803657532
+      ]
+    },
+    {
+      "objeto": "Ligacoes_hidrogenio",
+      "rgb": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "objeto": "Coordenacao_metais",
+      "rgb": [
+        1.0,
+        0.5,
+        1.0
+      ]
+    }
+  ]
+}

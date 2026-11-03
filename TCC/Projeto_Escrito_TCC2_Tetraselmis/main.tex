@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage{config/tcc-formatacao}
+\input{config/elementos-pretextuais}
+\begin{document}
+\hypersetup{pageanchor=false}
+\capa
+\setcounter{page}{1}
+\hypersetup{pageanchor=true}
+\pagestyle{empty}
+\input{conteudo/resumo}
+\input{conteudo/abstract}
+\listapretextual{Lista de tabelas}{tabelas}{lot}
+\listapretextual{Lista de figuras}{figuras}{lof}
+\input{conteudo/siglas}
+\listapretextual{Sumário}{sumario}{toc}
+\clearpage
+\pagestyle{fancy}
+\input{conteudo/introducao}
+\input{conteudo/objetivos}
+\input{conteudo/revisao_literatura}
+\input{conteudo/material_metodos}
+\clearpage
+\input{conteudo/resultados_discussao}
+\input{conteudo/conclusoes_parciais}
+\input{conteudo/sugestoes_trabalhos_futuros}
+\clearpage
+\input{conteudo/referencias}
+\input{conteudo/apendice_cronograma}
+\input{conteudo/apendice_estruturas}
+\end{document}

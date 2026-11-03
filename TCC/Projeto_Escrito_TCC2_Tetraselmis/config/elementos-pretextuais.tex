@@ -1,0 +1,42 @@
+% Elementos iniciais com a fonte, as margens e os títulos do estilo do trabalho.
+\newcounter{apendice}
+\renewcommand{\theapendice}{\Alph{apendice}}
+\newcommand{\elementopretextual}[2]{%
+  \clearpage
+  \pdfbookmark[1]{#1}{#2}%
+  {\centering\bfseries\MakeUppercase{#1}\par}%
+  \vspace{\baselineskip}%
+}
+\newcommand{\listapretextual}[3]{%
+  \elementopretextual{#1}{#2}%
+  \begingroup
+  \makeatletter\csname @starttoc\endcsname{#3}\makeatother
+  \endgroup
+}
+% Recuo suficiente para os números de três níveis e para legendas em várias linhas.
+\contentsmargin{2.3em}
+\titlecontents{section}[3.7em]{\bfseries}
+  {\contentslabel{3.7em}}{\hspace*{-3.7em}}
+  {\titlerule*[0.5pc]{.}\contentspage}
+\titlecontents{subsection}[3.7em]{}
+  {\contentslabel{3.7em}}{\hspace*{-3.7em}}
+  {\titlerule*[0.5pc]{.}\contentspage}
+\titlecontents{subsubsection}[3.7em]{\bfseries}
+  {\contentslabel{3.7em}}{\hspace*{-3.7em}}
+  {\titlerule*[0.5pc]{.}\contentspage}
+\titlecontents{figure}[5.6em]{}
+  {\contentslabel[\bfseries Figura~\thecontentslabel\space-\space]{5.6em}}{}
+  {\titlerule*[0.5pc]{.}\contentspage}
+\titlecontents{table}[5.6em]{}
+  {\contentslabel[\bfseries Tabela~\thecontentslabel\space-\space]{5.6em}}{}
+  {\titlerule*[0.5pc]{.}\contentspage}
+\contentsuse{quadro}{lof}
+\titlecontents{quadro}[5.6em]{}
+  {\contentslabel[\bfseries Quadro~\thecontentslabel\space-\space]{5.6em}}{}
+  {\titlerule*[0.5pc]{.}\contentspage}
+% O quadro do planejamento mantém contador próprio e integra a lista de ilustrações.
+\renewcommand{\quadrocaption}[2][]{%
+  \refstepcounter{quadro}%
+  \addcontentsline{lof}{quadro}{\protect\numberline{\thequadro}\if\relax\detokenize{#1}\relax #2\else #1\fi}%
+  \par\noindent\textbf{Quadro \thequadro} -- #2\par%
+}

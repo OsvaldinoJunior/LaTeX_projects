@@ -1,0 +1,321 @@
+% ================================================================
+%  config/tcc-formatacao.sty
+%  Configurações gerais de formatação do trabalho.
+% ================================================================
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{config/tcc-formatacao}[2026/07/05 Formatacao do TCC]
+
+% -------- PACOTES --------
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[brazilian]{babel}
+\RequirePackage[none]{hyphenat}
+
+\RequirePackage{mathptmx}
+\RequirePackage{geometry}
+\RequirePackage{setspace}
+\RequirePackage{graphicx}
+\RequirePackage{xcolor}
+\RequirePackage{tikz}
+\usetikzlibrary{calc,arrows.meta,positioning,shapes.geometric}
+\RequirePackage{amsmath}
+\RequirePackage{booktabs}
+\RequirePackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\RequirePackage{url}
+\RequirePackage{longtable}
+\RequirePackage{caption}
+\RequirePackage{pdflscape}
+\RequirePackage{indentfirst}
+\RequirePackage{ragged2e}
+\RequirePackage{etoolbox}
+\RequirePackage{needspace}
+% Mesma fonte e espaçamento interno em todas as tabelas; C centraliza nos dois eixos.
+\AtBeginEnvironment{table}{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{5pt}}
+\RequirePackage{fancyhdr}
+\RequirePackage{titlesec}
+\RequirePackage{titletoc}
+\RequirePackage{float}
+\RequirePackage{placeins}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.90}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.70}
+\RequirePackage{csquotes}
+\RequirePackage{changepage}
+\RequirePackage{xparse}
+
+% -------- BIBLATEX --------
+\RequirePackage[
+    backend=biber,
+    style=authoryear,
+    sorting=nyt,
+    sortcites=true,
+    maxcitenames=4,
+    mincitenames=1,
+    maxbibnames=99,
+    giveninits=true,
+    uniquename=false,
+    uniquelist=false,
+    dashed=false,
+    doi=false
+]{biblatex}
+\addbibresource{zotero.bib}
+
+% A data de acesso não substitui o ano de publicação na citação.
+\DeclareLabeldate{%
+    \field{date}%
+    \field{year}%
+    \field{eventdate}%
+    \field{origdate}%
+    \literal{nodate}%
+}
+
+
+% -------- CITAÇÕES AUTOR-DATA --------
+% Pessoa física: sobrenome em maiúsculas/minúsculas; pessoa jurídica: nome/sigla.
+% Até quatro autores são listados; mais de quatro usam "\textit{et al.}".
+\DeclareDelimFormat{nameyeardelim}{\addcomma\space}
+\DeclareDelimFormat{multicitedelim}{\addsemicolon\space}
+\DeclareDelimFormat[parencite]{multinamedelim}{\addsemicolon\space}
+\DeclareDelimFormat[parencite]{finalnamedelim}{\addsemicolon\space}
+\DeclareDelimFormat[textcite]{multinamedelim}{\addcomma\space}
+\DeclareDelimFormat[textcite]{finalnamedelim}{\space e\space}
+\DefineBibliographyStrings{brazilian}{andothers = {\textit{et\addabbrvspace al\adddot}}}
+
+% -------- HYPERREF --------
+\RequirePackage[hidelinks]{hyperref}
+
+% -------- MARGENS ABNT --------
+\geometry{
+    top    = 3cm,
+    left   = 3cm,
+    bottom = 2cm,
+    right  = 2cm,
+    paper  = a4paper
+}
+
+% -------- ESPAÇAMENTO E PARÁGRAFO --------
+\onehalfspacing
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+
+% -------- SEM HIFENIZAÇÃO AUTOMÁTICA --------
+\AtBeginDocument{%
+    \hyphenpenalty=10000%
+    \exhyphenpenalty=10000%
+    \tolerance=2000%
+    \emergencystretch=3em%
+    \justifying%
+}
+
+% -------- CITAÇÃO LONGA --------
+\renewenvironment{quote}
+    {\list{}{\leftmargin=4cm\rightmargin=0cm}\item\relax\singlespacing\normalsize}
+    {\endlist}
+
+% -------- PAGINAÇÃO --------
+\setlength{\headheight}{14.5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rhead{\thepage}
+
+% -------- TÍTULOS --------
+\titlespacing{\section}      {0pt}{1\baselineskip}{1\baselineskip}
+\titlespacing{\subsection}   {0pt}{1\baselineskip}{\baselineskip}
+\titlespacing{\subsubsection}{0pt}{1\baselineskip}{\baselineskip}
+\titlespacing{\paragraph}    {0pt}{1\baselineskip}{1\baselineskip}
+
+\titleformat{\section}
+    {\bfseries}
+    {\thesection\space}
+    {0pt}
+    {\MakeUppercase}
+
+\titleformat{\subsection}
+    {\normalfont}
+    {\thesubsection\space}
+    {0pt}
+    {\MakeUppercase}
+
+\titleformat{\subsubsection}
+    {\bfseries}
+    {\thesubsubsection\space}
+    {0pt}
+    {}
+
+\titleformat{\paragraph}[hang]
+    {\normalfont}
+    {\theparagraph\space}
+    {0pt}
+    {}
+
+\let\prismoldsection\section
+\RenewDocumentCommand{\section}{s o m}{%
+  \clearpage%
+  \IfBooleanTF{#1}{\prismoldsection*{#3}}{%
+    \IfNoValueTF{#2}{\prismoldsection[\MakeUppercase{#3}]{#3}}{\prismoldsection[\MakeUppercase{#2}]{#3}}%
+  }%
+}
+
+\let\prismoldsubsection\subsection
+\RenewDocumentCommand{\subsection}{s o m}{%
+  \IfBooleanTF{#1}{\prismoldsubsection*{#3}}{%
+    \IfNoValueTF{#2}{\prismoldsubsection[\MakeUppercase{#3}]{#3}}{\prismoldsubsection[\MakeUppercase{#2}]{#3}}%
+  }%
+}
+
+% -------- SUMÁRIO E LISTAS --------
+\contentsmargin{0pt}
+
+\titlecontents{section}
+    [0pt]
+    {\bfseries}
+    {\contentslabel{0pt}\hspace*{1.9em}}
+    {}
+    {\titlerule*[0.5pc]{.}\contentspage}
+
+\titlecontents{subsection}
+    [0pt]
+    {}
+    {\contentslabel{0pt}\hspace*{1.9em}}
+    {}
+    {\titlerule*[0.5pc]{.}\contentspage}
+
+\titlecontents{subsubsection}
+    [0pt]
+    {\bfseries}
+    {\contentslabel{0pt}\hspace*{1.9em}}
+    {}
+    {\titlerule*[0.5pc]{.}\contentspage}
+
+\titlecontents{paragraph}
+    [0pt]
+    {}
+    {\contentslabel{0pt}\hspace*{1.9em}}
+    {}
+    {\titlerule*[0.5pc]{.}\contentspage}
+
+\titlecontents{table}
+    [0pt]
+    {}
+    {\bfseries Tabela~\thecontentslabel\space-\space\normalfont}
+    {}
+    {\titlerule*[0.5pc]{.}\contentspage}
+
+\titlecontents{figure}
+    [0pt]
+    {}
+    {\bfseries Figura~\thecontentslabel\space-\space\normalfont}
+    {}
+    {\titlerule*[0.5pc]{.}\contentspage}
+
+% -------- FIGURAS, TABELAS E QUADROS --------
+\captionsetup{
+    labelsep=endash,
+    justification=justified,
+    singlelinecheck=false,
+    font=normalsize,
+    labelfont=bf,
+    position=above
+}
+
+\captionsetup[figure]{
+    skip=3pt,
+    justification=centering,
+    singlelinecheck=false,
+    font=normalsize,
+    position=above
+}
+
+\captionsetup[table]{
+    justification=centering,
+    singlelinecheck=false,
+    position=above
+}
+
+\newcounter{quadro}
+\newcommand{\quadrocaption}[1]{%
+    \refstepcounter{quadro}%
+    \par\noindent\textbf{Quadro \thequadro} -- #1\par%
+}
+
+\newcommand{\fonte}[1]{%
+    \par\vspace{2pt}%
+    {\centering\normalsize Fonte: #1\par}%
+}
+
+% -------- CAPA --------
+\newcommand{\capatitulo}{TRIAGEM \textit{IN SILICO} DE COMPOSTOS SELECIONADOS PARA A PROSPECÇÃO DE \textit{Tetraselmis chuii} EM ALVOS PROTEICOS ASSOCIADOS AO ENVELHECIMENTO CUTÂNEO}
+\newcommand{\capaautor}{Osvaldino Corrêa da Silveira Júnior}
+\newcommand{\capaorientadora}{Profª. Dra. Ana Priscila Centeno da Rosa}
+\newcommand{\capacoorientadora}{Profª. Dra. Karina dos Santos Machado}
+\newcommand{\capalocal}{RIO GRANDE, RS}
+\newcommand{\capaano}{2026}
+
+\newcommand{\capa}{%
+    \newgeometry{
+        top    = 2cm,
+        bottom = 2cm,
+        left   = 2.5cm,
+        right  = 2.5cm
+    }%
+    \begin{titlepage}
+        \onehalfspacing
+        \begin{center}
+            \includegraphics[width=1.7cm]{image/furg.png}\\[.5cm]
+            {\small UNIVERSIDADE FEDERAL DO RIO GRANDE}\\
+            {\small ESCOLA DE QUÍMICA E ALIMENTOS}\\
+            {\small PROJETO FINAL DE CURSO II}
+        \end{center}
+
+        \vfill
+
+        \begin{center}
+            {\large\bfseries \capatitulo}\\[0.9cm]
+            {\normalsize \MakeUppercase{\capaautor}}
+        \end{center}
+
+        \vfill
+
+        \begin{flushright}
+            \begin{minipage}{0.76\textwidth}
+                \hfill\begin{minipage}{0.63\textwidth}
+                    \RaggedRight
+                    \justifying
+                    \hyphenpenalty=10000
+                    \exhyphenpenalty=10000
+                    \noindent\normalsize Trabalho apresentado para a defesa final da disciplina Projeto Final de Curso II, como requisito parcial para obtenção do título de Engenheiro Bioquímico.
+                \end{minipage}
+
+                \vspace{1.7cm}
+                \raggedleft
+                {\normalsize \capaorientadora}\\
+                {\normalsize Orientadora}\\
+                {\normalsize \capacoorientadora}\\
+                {\normalsize Co-orientadora}
+            \end{minipage}
+        \end{flushright}
+
+        \vfill
+
+        \begin{center}
+            {\normalsize \capalocal}\\
+            {\normalsize \capaano}
+        \end{center}
+    \end{titlepage}%
+    \restoregeometry
+}
+\definecolor{mapacomercial}{HTML}{003B66}
+\definecolor{mapatetra}{HTML}{941B35}
+\definecolor{forestgreen}{rgb}{0.13,0.55,0.13}
+
+% Uma linha de espaço antes e depois das tabelas, quadros e figuras no texto.
+\setlength{\intextsep}{\baselineskip}
+
+% Alinhar figuras em páginas de flutuantes ao topo da área de texto.
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+\makeatother

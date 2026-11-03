@@ -1,0 +1,35 @@
+﻿Receptor,Ligante,Nome_no_grafico,Grupo,Residuos_distintos,Residuos_com_interacao
+1H1B,L2U,L2U,Comercial,6,ARG 147 / A; CYS 220 / A; TYR 224 / A; LEU 223 / A; GLN 188 / A; GLY 219 / A
+1H1B,Marimastat,Marimastat,Comercial,5,CYS 220 / A; TYR 224 / A; SER 222 / A; LEU 223 / A; GLY 218 / A
+1H1B,Acido_Galico,Ácido gálico,Tetraselmis,4,ARG 147 / A; CYS 220 / A; SER 222 / A; GLN 188 / A
+1H1B,Arbutina,Arbutina,Comercial,4,TYR 224 / A; ALA 221 / A; LEU 223 / A; GLN 188 / A
+1H1B,Batimastat,Batimastat,Comercial,4,TYR 224 / A; SER 222 / A; LEU 223 / A; GLN 188 / A
+1H1B,Glicose-6-sulfato,Glicose-6-sulfato,Tetraselmis,4,ARG 147 / A; SER 222 / A; GLY 218 / A; GLN 188 / A
+1H1B,KDO_3-deoxy-D-manno-oct-2-ulosonic_acid,KDO,Tetraselmis,4,CYS 220 / A; ALA 221 / A; GLY 218 / A; GLN 188 / A
+1H1B,Quercetina,Quercetina,Comercial,4,ARG 147 / A; CYS 220 / A; ALA 221 / A; SER 222 / A
+1H1B,alpha-Kdo_Isomero_comum_em_polissacarideos,α-Kdo,Tetraselmis,4,CYS 220 / A; ALA 221 / A; GLY 218 / A; GLN 188 / A
+1H1B,Acido_Ascorbico,Ácido ascórbico,Comercial,3,CYS 220 / A; SER 222 / A; GLN 188 / A
+1H1B,Acido_Ferulico,Ácido ferúlico,Tetraselmis,3,ARG 147 / A; CYS 220 / A; GLN 188 / A
+1H1B,Acido_Kojico,Ácido kójico,Comercial,3,ARG 147 / A; CYS 220 / A; GLN 188 / A
+1H1B,Cromoglicato,Cromoglicato,Comercial,3,TYR 224 / A; SER 222 / A; LEU 223 / A
+1H1B,D-Galactose,D-Galactose,Tetraselmis,3,CYS 220 / A; ALA 221 / A; GLY 218 / A
+1H1B,Doxiciclina,Doxiciclina,Comercial,3,VAL 216 / A; ARG 147 / A; CYS 220 / A
+1H1B,Galactose-6-sulfato,Galactose-6-sulfato,Tetraselmis,3,ARG 147 / A; CYS 220 / A; GLN 188 / A
+1H1B,L-Arabinose,L-Arabinose,Tetraselmis,3,CYS 220 / A; ALA 221 / A; SER 222 / A
+1H1B,L-Ramnose,L-Ramnose,Tetraselmis,3,CYS 220 / A; LEU 223 / A; GLN 188 / A
+1H1B,NFH,NFH,Comercial,3,ARG 147 / A; CYS 220 / A; LEU 223 / A
+1H1B,PLH,PLH,Comercial,3,ALA 221 / A; SER 222 / A; GLY 218 / A
+1H1B,Acido_Galacturonico,Ácido galacturônico,Tetraselmis,2,ALA 221 / A; GLY 218 / A
+1H1B,Acido_Glucuronico,Ácido glucurônico,Tetraselmis,2,SER 222 / A; GLN 188 / A
+1H1B,D-Manose,D-Manose,Tetraselmis,2,ALA 221 / A; GLY 218 / A
+1H1B,Dha_3-deoxy-D-lyxo-hept-2-ulopyranosaric_acid,Dha,Tetraselmis,2,ALA 221 / A; GLY 218 / A
+1H1B,GW475151,GW475151,Comercial,2,ARG 147 / A; LEU 223 / A
+1H1B,Hidroquinona,Hidroquinona,Comercial,2,LEU 223 / A; GLY 218 / A
+1H1B,L-Fucose,L-Fucose,Tetraselmis,2,ALA 221 / A; GLN 188 / A
+1H1B,Sivelestat,Sivelestat,Comercial,2,ARG 147 / A; LEU 223 / A
+1H1B,Tropolona,Tropolona,Comercial,2,SER 222 / A; LEU 223 / A
+1H1B,ARP-100,ARP-100,Comercial,1,TYR 224 / A
+1H1B,Apigenina,Apigenina,Comercial,1,LEU 223 / A
+1H1B,D-Glicose,D-Glicose,Tetraselmis,1,GLN 188 / A
+1H1B,D-Gulose_Raro_presente_na_SPE,D-gulose,Tetraselmis,1,SER 222 / A
+1H1B,D-Xilose,D-Xilose,Tetraselmis,1,GLN 188 / A

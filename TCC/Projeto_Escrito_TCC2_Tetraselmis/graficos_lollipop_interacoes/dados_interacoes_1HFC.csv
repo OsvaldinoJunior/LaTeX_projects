@@ -1,0 +1,35 @@
+﻿Receptor,Ligante,Nome_no_grafico,Grupo,Residuos_distintos,Residuos_com_interacao
+1HFC,L2U,L2U,Comercial,10,LEU 181 / A; TYR 240 / A; GLU 219 / A; HIS 183 / A; ALA 182 / A; HIS 222 / A; ASN 180 / A; PRO 173 / A; ASP 175 / A; GLN 186 / A
+1HFC,Glicose-6-sulfato,Glicose-6-sulfato,Tetraselmis,9,LEU 181 / A; HIS 218 / A; TYR 240 / A; GLU 219 / A; GLY 179 / A; ALA 182 / A; THR 241 / A; ARG 214 / A; TYR 237 / A
+1HFC,Sivelestat,Sivelestat,Comercial,9,LEU 181 / A; ALA 184 / A; TYR 240 / A; GLU 219 / A; PRO 238 / A; GLY 179 / A; ALA 182 / A; HIS 222 / A; HIS 228 / A
+1HFC,Quercetina,Quercetina,Comercial,8,VAL 215 / A; ALA 184 / A; TYR 240 / A; GLU 219 / A; PRO 238 / A; HIS 228 / A; THR 241 / A; TYR 237 / A
+1HFC,Acido_Ferulico,Ácido ferúlico,Tetraselmis,7,LEU 181 / A; HIS 218 / A; TYR 240 / A; ALA 182 / A; THR 241 / A; ARG 214 / A; TYR 237 / A
+1HFC,Acido_Glucuronico,Ácido glucurônico,Tetraselmis,7,LEU 181 / A; HIS 218 / A; GLU 219 / A; PRO 238 / A; ALA 182 / A; HIS 228 / A; TYR 237 / A
+1HFC,Cromoglicato,Cromoglicato,Comercial,7,LEU 181 / A; VAL 215 / A; TYR 240 / A; PRO 238 / A; ALA 182 / A; THR 241 / A; ARG 214 / A
+1HFC,D-Glicose,D-Glicose,Tetraselmis,7,LEU 181 / A; HIS 218 / A; GLU 219 / A; PRO 238 / A; ALA 182 / A; HIS 228 / A; TYR 237 / A
+1HFC,Dha_3-deoxy-D-lyxo-hept-2-ulopyranosaric_acid,Dha,Tetraselmis,7,LEU 181 / A; HIS 218 / A; TYR 240 / A; GLU 219 / A; PRO 238 / A; ALA 182 / A; HIS 228 / A
+1HFC,KDO_3-deoxy-D-manno-oct-2-ulosonic_acid,KDO,Tetraselmis,7,LEU 181 / A; HIS 218 / A; TYR 240 / A; GLU 219 / A; PRO 238 / A; ALA 182 / A; HIS 228 / A
+1HFC,NFH,NFH,Comercial,7,LEU 181 / A; HIS 218 / A; TYR 240 / A; GLU 219 / A; PRO 238 / A; GLY 179 / A; ALA 182 / A
+1HFC,alpha-Kdo_Isomero_comum_em_polissacarideos,α-Kdo,Tetraselmis,7,LEU 181 / A; HIS 218 / A; TYR 240 / A; GLU 219 / A; PRO 238 / A; ALA 182 / A; HIS 228 / A
+1HFC,Acido_Ascorbico,Ácido ascórbico,Comercial,6,LEU 181 / A; HIS 218 / A; TYR 240 / A; PRO 238 / A; ALA 182 / A; HIS 228 / A
+1HFC,Acido_Galacturonico,Ácido galacturônico,Tetraselmis,6,LEU 181 / A; HIS 218 / A; GLU 219 / A; ALA 182 / A; ARG 214 / A; TYR 237 / A
+1HFC,Apigenina,Apigenina,Comercial,6,VAL 215 / A; ALA 184 / A; TYR 240 / A; GLU 219 / A; HIS 228 / A; THR 241 / A
+1HFC,Doxiciclina,Doxiciclina,Comercial,6,LEU 181 / A; GLU 219 / A; PRO 238 / A; GLY 179 / A; HIS 183 / A; ALA 182 / A
+1HFC,GW475151,GW475151,Comercial,6,LEU 181 / A; VAL 215 / A; HIS 218 / A; ALA 184 / A; TYR 240 / A; GLU 219 / A
+1HFC,Galactose-6-sulfato,Galactose-6-sulfato,Tetraselmis,6,LEU 181 / A; HIS 218 / A; ALA 182 / A; THR 241 / A; ARG 214 / A; TYR 237 / A
+1HFC,PLH,PLH,Comercial,6,LEU 181 / A; VAL 215 / A; HIS 218 / A; ALA 184 / A; PRO 238 / A; ALA 182 / A
+1HFC,ARP-100,ARP-100,Comercial,5,LEU 181 / A; TYR 240 / A; GLU 219 / A; HIS 183 / A; ALA 182 / A
+1HFC,Acido_Galico,Ácido gálico,Tetraselmis,5,HIS 218 / A; GLU 219 / A; THR 241 / A; ARG 214 / A; TYR 237 / A
+1HFC,Arbutina,Arbutina,Comercial,5,LEU 181 / A; TYR 240 / A; GLU 219 / A; ALA 182 / A; TYR 237 / A
+1HFC,Batimastat,Batimastat,Comercial,5,LEU 181 / A; TYR 240 / A; GLU 219 / A; PRO 238 / A; GLY 179 / A
+1HFC,D-Galactose,D-Galactose,Tetraselmis,5,HIS 218 / A; ALA 184 / A; GLU 219 / A; PRO 238 / A; HIS 228 / A
+1HFC,D-Manose,D-Manose,Tetraselmis,5,LEU 181 / A; HIS 218 / A; GLU 219 / A; PRO 238 / A; ALA 182 / A
+1HFC,L-Arabinose,L-Arabinose,Tetraselmis,5,ALA 184 / A; GLU 219 / A; HIS 183 / A; ALA 182 / A; HIS 222 / A
+1HFC,L-Ramnose,L-Ramnose,Tetraselmis,5,LEU 181 / A; GLU 219 / A; PRO 238 / A; ALA 182 / A; HIS 228 / A
+1HFC,Marimastat,Marimastat,Comercial,5,LEU 181 / A; HIS 218 / A; TYR 240 / A; GLY 179 / A; ALA 182 / A
+1HFC,D-Gulose_Raro_presente_na_SPE,D-gulose,Tetraselmis,4,HIS 218 / A; GLU 219 / A; PRO 238 / A; ALA 182 / A
+1HFC,D-Xilose,D-Xilose,Tetraselmis,4,LEU 181 / A; GLU 219 / A; PRO 238 / A; ALA 182 / A
+1HFC,Hidroquinona,Hidroquinona,Comercial,4,VAL 215 / A; HIS 218 / A; GLU 219 / A; TYR 237 / A
+1HFC,L-Fucose,L-Fucose,Tetraselmis,4,LEU 181 / A; GLU 219 / A; PRO 238 / A; ALA 182 / A
+1HFC,Tropolona,Tropolona,Comercial,3,VAL 215 / A; TYR 240 / A; TYR 237 / A
+1HFC,Acido_Kojico,Ácido kójico,Comercial,2,ALA 184 / A; GLU 219 / A

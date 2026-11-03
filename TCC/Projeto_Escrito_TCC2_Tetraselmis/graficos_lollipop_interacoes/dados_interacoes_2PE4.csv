@@ -1,0 +1,35 @@
+﻿Receptor,Ligante,Nome_no_grafico,Grupo,Residuos_distintos,Residuos_com_interacao
+2PE4,Sivelestat,Sivelestat,Comercial,5,THR 392 / A; PRO 393 / A; ARG 401 / A; GLY 395 / A; GLY 396 / A
+2PE4,ARP-100,ARP-100,Comercial,4,THR 392 / A; PRO 393 / A; ARG 401 / A; GLN 390 / A
+2PE4,Acido_Ferulico,Ácido ferúlico,Tetraselmis,4,THR 392 / A; PRO 393 / A; SER 399 / A; ARG 401 / A
+2PE4,Acido_Galico,Ácido gálico,Tetraselmis,4,THR 392 / A; SER 399 / A; ARG 401 / A; GLN 390 / A
+2PE4,Dha_3-deoxy-D-lyxo-hept-2-ulopyranosaric_acid,Dha,Tetraselmis,4,THR 392 / A; SER 399 / A; ARG 401 / A; GLN 390 / A
+2PE4,Doxiciclina,Doxiciclina,Comercial,4,THR 392 / A; PRO 393 / A; SER 399 / A; ARG 401 / A
+2PE4,L-Fucose,L-Fucose,Tetraselmis,4,THR 392 / A; SER 399 / A; ARG 401 / A; GLN 390 / A
+2PE4,NFH,NFH,Comercial,4,THR 392 / A; PRO 393 / A; GLY 395 / A; GLY 396 / A
+2PE4,Acido_Ascorbico,Ácido ascórbico,Comercial,3,THR 392 / A; SER 399 / A; ARG 401 / A
+2PE4,Acido_Galacturonico,Ácido galacturônico,Tetraselmis,3,THR 392 / A; ARG 401 / A; GLN 390 / A
+2PE4,Acido_Glucuronico,Ácido glucurônico,Tetraselmis,3,THR 392 / A; ARG 401 / A; GLN 390 / A
+2PE4,Arbutina,Arbutina,Comercial,3,THR 392 / A; ARG 401 / A; GLN 390 / A
+2PE4,Batimastat,Batimastat,Comercial,3,THR 392 / A; PRO 393 / A; ARG 401 / A
+2PE4,D-Glicose,D-Glicose,Tetraselmis,3,THR 392 / A; SER 399 / A; ARG 401 / A
+2PE4,D-Gulose_Raro_presente_na_SPE,D-gulose,Tetraselmis,3,THR 392 / A; ARG 401 / A; GLN 390 / A
+2PE4,D-Manose,D-Manose,Tetraselmis,3,THR 392 / A; SER 399 / A; ARG 401 / A
+2PE4,D-Xilose,D-Xilose,Tetraselmis,3,THR 392 / A; SER 399 / A; ARG 401 / A
+2PE4,Glicose-6-sulfato,Glicose-6-sulfato,Tetraselmis,3,THR 392 / A; ARG 401 / A; GLN 390 / A
+2PE4,KDO_3-deoxy-D-manno-oct-2-ulosonic_acid,KDO,Tetraselmis,3,THR 392 / A; ARG 401 / A; GLN 390 / A
+2PE4,L-Arabinose,L-Arabinose,Tetraselmis,3,SER 399 / A; ARG 401 / A; GLN 390 / A
+2PE4,L2U,L2U,Comercial,3,THR 392 / A; PRO 393 / A; SER 399 / A
+2PE4,Marimastat,Marimastat,Comercial,3,THR 392 / A; SER 399 / A; ARG 401 / A
+2PE4,PLH,PLH,Comercial,3,THR 392 / A; SER 399 / A; ARG 401 / A
+2PE4,Quercetina,Quercetina,Comercial,3,PRO 393 / A; ARG 401 / A; GLN 390 / A
+2PE4,alpha-Kdo_Isomero_comum_em_polissacarideos,α-Kdo,Tetraselmis,3,THR 392 / A; SER 399 / A; ARG 401 / A
+2PE4,Acido_Kojico,Ácido kójico,Comercial,2,THR 392 / A; ARG 401 / A
+2PE4,Apigenina,Apigenina,Comercial,2,PRO 393 / A; SER 399 / A
+2PE4,Cromoglicato,Cromoglicato,Comercial,2,THR 392 / A; ARG 401 / A
+2PE4,D-Galactose,D-Galactose,Tetraselmis,2,THR 392 / A; ARG 401 / A
+2PE4,GW475151,GW475151,Comercial,2,ARG 401 / A; GLY 395 / A
+2PE4,Galactose-6-sulfato,Galactose-6-sulfato,Tetraselmis,2,ARG 401 / A; GLN 390 / A
+2PE4,Hidroquinona,Hidroquinona,Comercial,2,THR 392 / A; SER 399 / A
+2PE4,L-Ramnose,L-Ramnose,Tetraselmis,2,THR 392 / A; ARG 401 / A
+2PE4,Tropolona,Tropolona,Comercial,1,ARG 401 / A

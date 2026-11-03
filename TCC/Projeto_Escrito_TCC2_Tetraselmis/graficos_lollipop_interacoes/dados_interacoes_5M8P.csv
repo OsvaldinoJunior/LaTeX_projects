@@ -1,0 +1,35 @@
+﻿Receptor,Ligante,Nome_no_grafico,Grupo,Residuos_distintos,Residuos_com_interacao
+5M8P,PLH,PLH,Comercial,10,ASP 212 / A; THR 391 / A; VAL 211 / A; GLU 216 / A; VAL 196 / A; LYS 198 / A; HIS 392 / A; GLY 209 / A; GLU 210 / A; GLN 78 / A
+5M8P,GW475151,GW475151,Comercial,8,ASP 212 / A; THR 391 / A; PRO 431 / A; VAL 211 / A; GLU 216 / A; VAL 196 / A; LYS 198 / A; HIS 392 / A
+5M8P,D-Glicose,D-Glicose,Tetraselmis,7,ASP 212 / A; GLU 216 / A; HIS 215 / A; GLN 78 / A; TYR 348 / A; ILE 432 / A; SER 76 / A
+5M8P,Galactose-6-sulfato,Galactose-6-sulfato,Tetraselmis,7,CYS 290 / A; ASP 291 / A; SER 292 / A; TYR 296 / A; ASP 308 / A; ASN 304 / A; THR 306 / A
+5M8P,L-Fucose,L-Fucose,Tetraselmis,7,GLY 116 / A; TRP 117 / A; LYS 233 / A; GLN 236 / A; LEU 460 / A; GLU 232 / A; GLY 461 / A
+5M8P,L2U,L2U,Comercial,7,ASP 212 / A; THR 391 / A; GLU 216 / A; LYS 198 / A; HIS 392 / A; GLY 209 / A; GLU 294 / A
+5M8P,Quercetina,Quercetina,Comercial,7,ASP 212 / A; THR 391 / A; GLU 216 / A; VAL 196 / A; LYS 198 / A; HIS 392 / A; TYR 348 / A
+5M8P,Acido_Galico,Ácido gálico,Tetraselmis,6,THR 391 / A; HIS 215 / A; TYR 362 / A; SER 394 / A; GLU 360 / A; HIS 377 / A
+5M8P,Acido_Glucuronico,Ácido glucurônico,Tetraselmis,6,CYS 290 / A; ASP 291 / A; SER 292 / A; TYR 296 / A; ASP 308 / A; ASN 304 / A
+5M8P,D-Galactose,D-Galactose,Tetraselmis,6,GLY 116 / A; TRP 117 / A; LEU 229 / A; LYS 233 / A; LEU 460 / A; GLU 232 / A
+5M8P,Dha_3-deoxy-D-lyxo-hept-2-ulopyranosaric_acid,Dha,Tetraselmis,6,GLY 116 / A; TRP 117 / A; LEU 229 / A; LYS 233 / A; GLN 236 / A; LEU 460 / A
+5M8P,Glicose-6-sulfato,Glicose-6-sulfato,Tetraselmis,6,CYS 290 / A; ASP 291 / A; SER 292 / A; TYR 296 / A; ASP 295 / A; ASP 308 / A
+5M8P,Marimastat,Marimastat,Comercial,6,ASP 212 / A; THR 391 / A; VAL 211 / A; VAL 196 / A; GLY 209 / A; TYR 348 / A
+5M8P,alpha-Kdo_Isomero_comum_em_polissacarideos,α-Kdo,Tetraselmis,6,CYS 290 / A; ASP 291 / A; SER 292 / A; ASP 308 / A; ASN 304 / A; THR 306 / A
+5M8P,ARP-100,ARP-100,Comercial,5,ASP 212 / A; THR 391 / A; HIS 215 / A; TYR 362 / A; SER 394 / A
+5M8P,Acido_Kojico,Ácido kójico,Comercial,5,VAL 288 / A; CYS 290 / A; ASP 291 / A; SER 292 / A; TYR 296 / A
+5M8P,Batimastat,Batimastat,Comercial,5,ASP 212 / A; THR 391 / A; PRO 431 / A; VAL 211 / A; GLU 216 / A
+5M8P,D-Xilose,D-Xilose,Tetraselmis,5,LEU 382 / A; ASN 385 / A; GLY 386 / A; GLY 389 / A; ARG 321 / A
+5M8P,Doxiciclina,Doxiciclina,Comercial,5,GLU 329 / A; ASP 364 / A; VAL 373 / A; ASP 332 / A; ARG 374 / A
+5M8P,Hidroquinona,Hidroquinona,Comercial,5,ASP 212 / A; PRO 431 / A; GLU 216 / A; HIS 215 / A; TYR 348 / A
+5M8P,L-Arabinose,L-Arabinose,Tetraselmis,5,ASN 104 / A; ARG 114 / A; PRO 115 / A; ASN 459 / A; ARG 125 / A
+5M8P,L-Ramnose,L-Ramnose,Tetraselmis,5,GLY 116 / A; LYS 233 / A; GLN 236 / A; LEU 460 / A; GLU 232 / A
+5M8P,NFH,NFH,Comercial,5,ASP 212 / A; PRO 431 / A; VAL 211 / A; GLU 216 / A; TYR 348 / A
+5M8P,Acido_Ferulico,Ácido ferúlico,Tetraselmis,4,ASP 212 / A; PRO 431 / A; GLU 216 / A; ILE 432 / A
+5M8P,Acido_Galacturonico,Ácido galacturônico,Tetraselmis,4,ASP 149 / A; GLN 285 / A; ARG 287 / A; GLU 307 / A
+5M8P,Arbutina,Arbutina,Comercial,4,GLU 216 / A; TYR 362 / A; SER 394 / A; HIS 381 / A
+5M8P,Cromoglicato,Cromoglicato,Comercial,4,GLN 78 / A; TYR 348 / A; PRO 77 / A; SER 76 / A
+5M8P,D-Gulose_Raro_presente_na_SPE,D-gulose,Tetraselmis,4,CYS 290 / A; ASP 291 / A; SER 292 / A; THR 306 / A
+5M8P,Tropolona,Tropolona,Comercial,4,ASP 212 / A; PRO 431 / A; GLU 216 / A; ILE 432 / A
+5M8P,D-Manose,D-Manose,Tetraselmis,3,THR 391 / A; TYR 362 / A; SER 394 / A
+5M8P,KDO_3-deoxy-D-manno-oct-2-ulosonic_acid,KDO,Tetraselmis,3,GLY 209 / A; GLU 210 / A; GLU 206 / A
+5M8P,Sivelestat,Sivelestat,Comercial,3,THR 391 / A; TYR 362 / A; GLN 390 / A
+5M8P,Apigenina,Apigenina,Comercial,2,SER 394 / A; HIS 381 / A
+5M8P,Acido_Ascorbico,Ácido ascórbico,Comercial,1,SER 394 / A

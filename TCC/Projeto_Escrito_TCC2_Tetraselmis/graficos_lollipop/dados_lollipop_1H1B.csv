@@ -1,0 +1,35 @@
+﻿Receptor,Grupo,Ligante,Nome_no_grafico,FEB_kcal_mol,Origem_FEB
+1H1B_clean_withH,Comercial,ARP-100,ARP-100,-6.535,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,Sivelestat,Sivelestat,-6.471,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,Cromoglicato,Cromoglicato,-6.272,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,PLH,PLH,-6.204,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,Doxiciclina,Doxiciclina,-6.151,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,Batimastat,Batimastat,-6.101,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,GW475151,GW475151,-6.058,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,Quercetina,Quercetina,-5.901,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,Apigenina,Apigenina,-5.846,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,Marimastat,Marimastat,-5.441,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,Dha_3-deoxy-D-lyxo-hept-2-ulopyranosaric_acid,Dha,-5.359,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,Acido_Ferulico,Ácido ferúlico,-5.24,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,L2U,L2U,-5.196,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,Arbutina,Arbutina,-5.155,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,Acido_Glucuronico,Ácido glucurônico,-5.039,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,Galactose-6-sulfato,Galactose-6-sulfato,-5.026,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,alpha-Kdo_Isomero_comum_em_polissacarideos,α-Kdo,-4.939,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,Glicose-6-sulfato,Glicose-6-sulfato,-4.932,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,KDO_3-deoxy-D-manno-oct-2-ulosonic_acid,KDO,-4.847,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,NFH,NFH,-4.831,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,Acido_Galico,Ácido gálico,-4.777,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,Acido_Galacturonico,Ácido galacturônico,-4.677,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,D-Manose,D-Manose,-4.635,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,Acido_Ascorbico,Ácido ascórbico,-4.57,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,D-Gulose_Raro_presente_na_SPE,D-gulose,-4.474,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,L-Fucose,L-Fucose,-4.468,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,D-Galactose,D-Galactose,-4.445,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,L-Ramnose,L-Ramnose,-4.443,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,Tropolona,Tropolona,-4.35,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,Acido_Kojico,Ácido kójico,-4.281,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,D-Glicose,D-Glicose,-4.119,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,L-Arabinose,L-Arabinose,-3.977,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Comercial,Hidroquinona,Hidroquinona,-3.893,Vina 1.2.7; coordenadas corrigidas
+1H1B_clean_withH,Tetraselmis,D-Xilose,D-Xilose,-3.706,Vina 1.2.7; coordenadas corrigidas
